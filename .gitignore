@@ -1,0 +1,10 @@
+# macOS metadata
+.DS_Store
+
+# Local tooling and generated caches
+.tools/
+.wrangler/
+.img2threejs/
+
+# Unused source video exports; the site references optimized .m4v versions.
+assets/content/product-development/**/videos/*.mp4

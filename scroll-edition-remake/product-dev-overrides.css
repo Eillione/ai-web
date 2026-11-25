@@ -1,0 +1,112 @@
+/* Product development section refinements from browser annotations. */
+#product-dev .product-category--ai {
+  order: 1;
+}
+
+#product-dev .product-category--diy {
+  order: 2;
+}
+
+#product-dev .product-project > header h4 {
+  display: inline-block;
+  width: fit-content;
+  max-width: 100%;
+  padding: 2px 8px 3px;
+  background: #fff;
+  font-size: 25px !important;
+  line-height: 1.25;
+}
+
+#product-dev .product-project-note > span {
+  font-size: 26px !important;
+}
+
+#product-dev .product-project-summary {
+  padding: 8px 10px;
+  color: #000;
+  background: #f599ca;
+}
+
+#product-dev .product-project-note > div {
+  padding: 10px 12px;
+  background: #f599ca;
+}
+
+#product-dev .product-category--diy > .product-project--featured,
+#product-dev .product-category--ai > .product-project--featured {
+  border-top: 0 !important;
+}
+
+#product-dev .product-category--diy > .product-project--featured::before,
+#product-dev .product-category--ai > .product-project--featured::before {
+  display: none !important;
+}
+
+#product-dev .product-category--diy > .product-project--featured > header,
+#product-dev .product-category--ai > .product-project--featured > header {
+  border-top: 0 !important;
+}
+
+#product-dev .product-category--ai > .product-project--featured {
+  padding-top: 6px !important;
+}
+
+#product-dev .product-category--diy > .product-project--featured {
+  display: flex;
+  flex-direction: column;
+}
+
+#product-dev .product-category--diy > .product-project--featured > header {
+  order: 1;
+}
+
+#product-dev .product-category--diy > .product-project--featured > .product-project-note {
+  order: 2;
+}
+
+#product-dev .product-category--diy > .product-project--featured > .product-image-wide {
+  order: 3;
+}
+
+#product-dev .product-category--diy > .product-project--featured > .product-project-gallery--mixed {
+  order: 5;
+}
+
+#product-dev .product-category--diy > .product-project--featured > .product-copy-grid {
+  order: 4;
+}
+
+#product-dev .product-category--diy > .product-project--featured .product-project-gallery--mixed > figure.product-image--paired {
+  order: -20;
+}
+
+#product-dev .product-category:nth-of-type(1) > article.product-project--title-25:nth-of-type(5) .product-project-gallery > figure.product-image--full-row:nth-of-type(2) {
+  order: -20;
+}
+
+#product-dev .product-project--lucy .product-project-gallery--equal > figure:not(.product-image--full-row) {
+  height: 350px;
+}
+
+#product-dev .product-project--lucy .product-project-gallery--equal > figure:not(.product-image--full-row) img {
+  width: 100%;
+  height: 350px;
+  object-fit: contain;
+}
+
+#product-dev .product-project--puppy-care .product-project-gallery,
+#product-dev .product-project--cactus .product-project-gallery {
+  grid-template-columns: minmax(0, 1fr);
+  justify-items: center;
+}
+
+#product-dev .product-project--puppy-care .product-project-gallery > figure,
+#product-dev .product-project--cactus .product-project-gallery > figure {
+  width: min(1300px, 100%);
+  margin: 0;
+}
+
+#product-dev .product-project--puppy-care .product-project-gallery img,
+#product-dev .product-project--cactus .product-project-gallery img {
+  object-position: center;
+}

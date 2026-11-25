@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="479" height="507" viewBox="0 0 479 507" role="img" aria-label="Elione work 37">
+  <defs>
+    <linearGradient id="g37" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f0f4f2"/>
+      <stop offset="0.52" stop-color="#8ac0b6"/>
+      <stop offset="1" stop-color="#d7d0e8"/>
+    </linearGradient>
+    <filter id="n37" x="-20%" y="-20%" width="140%" height="140%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" seed="37"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="table" tableValues="0 0.13"/>
+      </feComponentTransfer>
+    </filter>
+  </defs>
+  <rect width="479" height="507" fill="url(#g37)"/>
+  <rect width="479" height="507" filter="url(#n37)"/>
+  <path d="M 100.6 314.3 C 112.6 195.7, 190.4 156.2, 220.3 182.5 C 334.1 193.1, 361.6 307.7, 340.1 314.3 C 330.5 427.7, 232.3 469.9, 220.3 446.2 C 112.6 435.6, 83.8 338.1, 100.6 314.3 Z" fill="#deb15b" opacity="0.72"/>
+  <circle cx="83" cy="356" r="60" fill="#6a3a35" opacity="0.12"/>
+  <circle cx="402" cy="212" r="25" fill="#d7d0e8" opacity="0.55"/>
+  <path d="M 0.0 286.4 L 59.9 303.3 L 119.8 202.7 L 179.6 131.9 L 239.5 194.7 L 299.4 299.1 L 359.3 292.1 L 419.1 184.0 L 479.0 133.2" fill="none" stroke="#6a3a35" stroke-width="1.45" opacity="0.72"/>
+  <g opacity="0.46">
+    <rect x="86.2" y="162.2" width="95.8" height="40.6" fill="#f0f4f2" transform="rotate(-4 86.2 162.2)"/>
+    <rect x="316.1" y="324.5" width="95.8" height="40.6" fill="#f0f4f2" transform="rotate(0 316.1 324.5)"/>
+  </g>
+  <g opacity="0.58" stroke="#6a3a35" stroke-width="1">
+    <line x1="344.88" y1="81.12" x2="431.1" y2="81.12"/>
+    <line x1="344.88" y1="96.33" x2="402.35999999999996" y2="96.33"/>
+    <line x1="344.88" y1="111.54" x2="445.47" y2="111.54"/>
+  </g>
+</svg>

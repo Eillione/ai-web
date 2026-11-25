@@ -1,0 +1,362 @@
+[
+  {
+    "source": "assets/content/graphic-design/fire-vi/fire-vi-page-03.jpg",
+    "transparent": "assets/content/graphic-design/fire-vi/fire-vi-page-03-transparent.png",
+    "removed_background_ratio": 0.7417
+  },
+  {
+    "source": "assets/content/graphic-design/fire-vi/fire-vi-page-04.jpg",
+    "transparent": "assets/content/graphic-design/fire-vi/fire-vi-page-04-transparent.png",
+    "removed_background_ratio": 0.6561
+  },
+  {
+    "source": "assets/content/graphic-design/fire-vi/fire-vi-page-05.jpg",
+    "transparent": "assets/content/graphic-design/fire-vi/fire-vi-page-05-transparent.png",
+    "removed_background_ratio": 0.5237
+  },
+  {
+    "source": "assets/content/graphic-design/fire-vi/fire-vi-page-06.jpg",
+    "transparent": "assets/content/graphic-design/fire-vi/fire-vi-page-06-transparent.png",
+    "removed_background_ratio": 0.3329
+  },
+  {
+    "source": "assets/content/graphic-design/fire-vi/fire-vi-page-07.jpg",
+    "transparent": "assets/content/graphic-design/fire-vi/fire-vi-page-07-transparent.png",
+    "removed_background_ratio": 0.3351
+  },
+  {
+    "source": "assets/content/graphic-design/fire-vi/fire-vi-page-08.jpg",
+    "transparent": "assets/content/graphic-design/fire-vi/fire-vi-page-08-transparent.png",
+    "removed_background_ratio": 0.4434
+  },
+  {
+    "source": "assets/content/graphic-design/fire-vi/fire-vi-page-10.jpg",
+    "transparent": "assets/content/graphic-design/fire-vi/fire-vi-page-10-transparent.png",
+    "removed_background_ratio": 0.3204
+  },
+  {
+    "source": "assets/content/graphic-design/fire-vi/fire-vi-page-14.jpg",
+    "transparent": "assets/content/graphic-design/fire-vi/fire-vi-page-14-transparent.png",
+    "removed_background_ratio": 0.2038
+  },
+  {
+    "source": "assets/content/graphic-design/orbit-spring-tea-application.png",
+    "transparent": "assets/content/graphic-design/orbit-spring-tea-application-transparent.png",
+    "removed_background_ratio": 0.412
+  },
+  {
+    "source": "assets/content/graphic-design/vi-page-08.jpg",
+    "transparent": "assets/content/graphic-design/vi-page-08-transparent.png",
+    "removed_background_ratio": 0.4373
+  },
+  {
+    "source": "assets/content/graphic-design/vi-page-09.jpg",
+    "transparent": "assets/content/graphic-design/vi-page-09-transparent.png",
+    "removed_background_ratio": 0.4235
+  },
+  {
+    "source": "assets/content/graphic-design/vi-page-21.jpg",
+    "transparent": "assets/content/graphic-design/vi-page-21-transparent.png",
+    "removed_background_ratio": 0.3583
+  },
+  {
+    "source": "assets/content/product-diy/01-emotion-board-a.png",
+    "transparent": "assets/content/product-diy/01-emotion-board-a-transparent.png",
+    "removed_background_ratio": 0.3696
+  },
+  {
+    "source": "assets/content/product-diy/01-emotion-board-b.png",
+    "transparent": "assets/content/product-diy/01-emotion-board-b-transparent.png",
+    "removed_background_ratio": 0.3886
+  },
+  {
+    "source": "assets/content/product-diy/01-emotion-main.jpg",
+    "transparent": "assets/content/product-diy/01-emotion-main-transparent.png",
+    "removed_background_ratio": 0.6859
+  },
+  {
+    "source": "assets/content/product-diy/02-poke-main-a.jpg",
+    "transparent": "assets/content/product-diy/02-poke-main-a-transparent.png",
+    "removed_background_ratio": 0.4786
+  },
+  {
+    "source": "assets/content/product-diy/02-poke-main-b.jpg",
+    "transparent": "assets/content/product-diy/02-poke-main-b-transparent.png",
+    "removed_background_ratio": 0.4852
+  },
+  {
+    "source": "assets/content/product-diy/02-poke-reference.jpg",
+    "transparent": "assets/content/product-diy/02-poke-reference-transparent.png",
+    "removed_background_ratio": 0.3996
+  },
+  {
+    "source": "assets/content/product-diy/03-storybook-c.jpg",
+    "transparent": "assets/content/product-diy/03-storybook-c-transparent.png",
+    "removed_background_ratio": 0.3477
+  },
+  {
+    "source": "assets/content/product-diy/03-storybook-d.jpg",
+    "transparent": "assets/content/product-diy/03-storybook-d-transparent.png",
+    "removed_background_ratio": 0.3257
+  },
+  {
+    "source": "assets/content/product-diy/04-fashion-d.jpg",
+    "transparent": "assets/content/product-diy/04-fashion-d-transparent.png",
+    "removed_background_ratio": 0.3453
+  },
+  {
+    "source": "assets/content/product-diy/06-artist-a.jpg",
+    "transparent": "assets/content/product-diy/06-artist-a-transparent.png",
+    "removed_background_ratio": 0.1739
+  },
+  {
+    "source": "assets/content/product-diy/06-artist-c.jpg",
+    "transparent": "assets/content/product-diy/06-artist-c-transparent.png",
+    "removed_background_ratio": 0.2281
+  },
+  {
+    "source": "assets/content/product-diy/06-artist-e.jpg",
+    "transparent": "assets/content/product-diy/06-artist-e-transparent.png",
+    "removed_background_ratio": 0.3107
+  },
+  {
+    "source": "assets/content/product-diy/06-origami-a.jpg",
+    "transparent": "assets/content/product-diy/06-origami-a-transparent.png",
+    "removed_background_ratio": 0.4243
+  },
+  {
+    "source": "assets/content/product-diy/06-origami-b.jpg",
+    "transparent": "assets/content/product-diy/06-origami-b-transparent.png",
+    "removed_background_ratio": 0.4271
+  },
+  {
+    "source": "assets/content/product-diy/06-origami-data.png",
+    "transparent": "assets/content/product-diy/06-origami-data-transparent.png",
+    "removed_background_ratio": 0.5701
+  },
+  {
+    "source": "assets/content/textile-2020/catalog-page-02.jpg",
+    "transparent": "assets/content/textile-2020/catalog-page-02-transparent.png",
+    "removed_background_ratio": 0.9091
+  },
+  {
+    "source": "assets/content/textile-2020/catalog-page-03.jpg",
+    "transparent": "assets/content/textile-2020/catalog-page-03-transparent.png",
+    "removed_background_ratio": 0.9526
+  },
+  {
+    "source": "assets/content/textile-2020/catalog-page-06.jpg",
+    "transparent": "assets/content/textile-2020/catalog-page-06-transparent.png",
+    "removed_background_ratio": 0.4348
+  },
+  {
+    "source": "assets/content/textile-2020/catalog-page-07.jpg",
+    "transparent": "assets/content/textile-2020/catalog-page-07-transparent.png",
+    "removed_background_ratio": 0.4742
+  },
+  {
+    "source": "assets/content/textile-2020/catalog-page-08.jpg",
+    "transparent": "assets/content/textile-2020/catalog-page-08-transparent.png",
+    "removed_background_ratio": 0.6395
+  },
+  {
+    "source": "assets/content/textile-2020/catalog-page-09.jpg",
+    "transparent": "assets/content/textile-2020/catalog-page-09-transparent.png",
+    "removed_background_ratio": 0.6511
+  },
+  {
+    "source": "assets/content/textile-2020/catalog-page-10.jpg",
+    "transparent": "assets/content/textile-2020/catalog-page-10-transparent.png",
+    "removed_background_ratio": 0.7389
+  },
+  {
+    "source": "assets/content/textile-2020/catalog-page-12.jpg",
+    "transparent": "assets/content/textile-2020/catalog-page-12-transparent.png",
+    "removed_background_ratio": 0.3615
+  },
+  {
+    "source": "assets/content/textile-2020/catalog-page-13.jpg",
+    "transparent": "assets/content/textile-2020/catalog-page-13-transparent.png",
+    "removed_background_ratio": 0.5658
+  },
+  {
+    "source": "assets/content/textile-2020/catalog-page-14.jpg",
+    "transparent": "assets/content/textile-2020/catalog-page-14-transparent.png",
+    "removed_background_ratio": 0.5199
+  },
+  {
+    "source": "assets/content/textile-2020/catalog-page-15.jpg",
+    "transparent": "assets/content/textile-2020/catalog-page-15-transparent.png",
+    "removed_background_ratio": 0.6848
+  },
+  {
+    "source": "assets/content/textile-2020/catalog-page-16.jpg",
+    "transparent": "assets/content/textile-2020/catalog-page-16-transparent.png",
+    "removed_background_ratio": 0.9873
+  },
+  {
+    "source": "assets/content/textile-2020/catalog-page-18.jpg",
+    "transparent": "assets/content/textile-2020/catalog-page-18-transparent.png",
+    "removed_background_ratio": 0.4827
+  },
+  {
+    "source": "assets/content/textile-2020/catalog-page-19.jpg",
+    "transparent": "assets/content/textile-2020/catalog-page-19-transparent.png",
+    "removed_background_ratio": 0.6115
+  },
+  {
+    "source": "assets/content/textile-2020/catalog-page-20.jpg",
+    "transparent": "assets/content/textile-2020/catalog-page-20-transparent.png",
+    "removed_background_ratio": 0.4803
+  },
+  {
+    "source": "assets/content/textile-2020/catalog-page-21.jpg",
+    "transparent": "assets/content/textile-2020/catalog-page-21-transparent.png",
+    "removed_background_ratio": 0.411
+  },
+  {
+    "source": "assets/content/textile-2020/catalog-page-22.jpg",
+    "transparent": "assets/content/textile-2020/catalog-page-22-transparent.png",
+    "removed_background_ratio": 0.6906
+  },
+  {
+    "source": "assets/content/textile-2020/catalog-page-23.jpg",
+    "transparent": "assets/content/textile-2020/catalog-page-23-transparent.png",
+    "removed_background_ratio": 0.1641
+  },
+  {
+    "source": "assets/content/textile-2020/catalog-page-24.jpg",
+    "transparent": "assets/content/textile-2020/catalog-page-24-transparent.png",
+    "removed_background_ratio": 0.5014
+  },
+  {
+    "source": "assets/content/textile-2020/catalog-page-25.jpg",
+    "transparent": "assets/content/textile-2020/catalog-page-25-transparent.png",
+    "removed_background_ratio": 0.7488
+  },
+  {
+    "source": "assets/content/textile-2020/catalog-page-26.jpg",
+    "transparent": "assets/content/textile-2020/catalog-page-26-transparent.png",
+    "removed_background_ratio": 0.5074
+  },
+  {
+    "source": "assets/content/textile-2020/catalog-page-27.jpg",
+    "transparent": "assets/content/textile-2020/catalog-page-27-transparent.png",
+    "removed_background_ratio": 0.4461
+  },
+  {
+    "source": "assets/content/textile-2020/catalog-page-28.jpg",
+    "transparent": "assets/content/textile-2020/catalog-page-28-transparent.png",
+    "removed_background_ratio": 0.4471
+  },
+  {
+    "source": "assets/content/textile-2020/catalog-page-29.jpg",
+    "transparent": "assets/content/textile-2020/catalog-page-29-transparent.png",
+    "removed_background_ratio": 0.6453
+  },
+  {
+    "source": "assets/content/textile-2020/catalog-page-31.jpg",
+    "transparent": "assets/content/textile-2020/catalog-page-31-transparent.png",
+    "removed_background_ratio": 0.1641
+  },
+  {
+    "source": "assets/content/textile-2020/catalog-page-32.jpg",
+    "transparent": "assets/content/textile-2020/catalog-page-32-transparent.png",
+    "removed_background_ratio": 0.5475
+  },
+  {
+    "source": "assets/content/textile-2020/catalog-page-33.jpg",
+    "transparent": "assets/content/textile-2020/catalog-page-33-transparent.png",
+    "removed_background_ratio": 0.7538
+  },
+  {
+    "source": "assets/content/textile-2020/catalog-page-34.jpg",
+    "transparent": "assets/content/textile-2020/catalog-page-34-transparent.png",
+    "removed_background_ratio": 0.963
+  },
+  {
+    "source": "assets/content/textile-2025/03-travel-system.jpg",
+    "transparent": "assets/content/textile-2025/03-travel-system-transparent.png",
+    "removed_background_ratio": 0.6766
+  },
+  {
+    "source": "assets/content/textile-2025/05-travel-blue.jpg",
+    "transparent": "assets/content/textile-2025/05-travel-blue-transparent.png",
+    "removed_background_ratio": 0.6545
+  },
+  {
+    "source": "assets/content/textile-2025/06-backpack-system.jpg",
+    "transparent": "assets/content/textile-2025/06-backpack-system-transparent.png",
+    "removed_background_ratio": 0.4499
+  },
+  {
+    "source": "assets/content/textile-2025/07-prototype-close.jpg",
+    "transparent": "assets/content/textile-2025/07-prototype-close-transparent.png",
+    "removed_background_ratio": 0.4248
+  },
+  {
+    "source": "assets/content/textile-2025/09-design-board.png",
+    "transparent": "assets/content/textile-2025/09-design-board-transparent.png",
+    "removed_background_ratio": 0.6662
+  },
+  {
+    "source": "assets/content/textile-2025/10-design-board.png",
+    "transparent": "assets/content/textile-2025/10-design-board-transparent.png",
+    "removed_background_ratio": 0.5057
+  },
+  {
+    "source": "assets/content/textile-2025/11-design-board.png",
+    "transparent": "assets/content/textile-2025/11-design-board-transparent.png",
+    "removed_background_ratio": 0.3842
+  },
+  {
+    "source": "assets/content/textile-2025/12-design-board.png",
+    "transparent": "assets/content/textile-2025/12-design-board-transparent.png",
+    "removed_background_ratio": 0.4742
+  },
+  {
+    "source": "assets/content/textile-2025/13-design-board.png",
+    "transparent": "assets/content/textile-2025/13-design-board-transparent.png",
+    "removed_background_ratio": 0.6268
+  },
+  {
+    "source": "assets/content/textile-2025/14-design-board.png",
+    "transparent": "assets/content/textile-2025/14-design-board-transparent.png",
+    "removed_background_ratio": 0.4242
+  },
+  {
+    "source": "assets/content/textile-2025/15-design-board.png",
+    "transparent": "assets/content/textile-2025/15-design-board-transparent.png",
+    "removed_background_ratio": 0.5135
+  },
+  {
+    "source": "assets/content/textile-2025/17-design-board.png",
+    "transparent": "assets/content/textile-2025/17-design-board-transparent.png",
+    "removed_background_ratio": 0.4479
+  },
+  {
+    "source": "assets/content/textile-2025/18-design-board.png",
+    "transparent": "assets/content/textile-2025/18-design-board-transparent.png",
+    "removed_background_ratio": 0.6799
+  },
+  {
+    "source": "assets/content/textile-2025/19-design-board.png",
+    "transparent": "assets/content/textile-2025/19-design-board-transparent.png",
+    "removed_background_ratio": 0.7507
+  },
+  {
+    "source": "assets/content/textile-2025/20-design-board.png",
+    "transparent": "assets/content/textile-2025/20-design-board-transparent.png",
+    "removed_background_ratio": 0.6262
+  },
+  {
+    "source": "assets/content/textile-2025/21-design-board.png",
+    "transparent": "assets/content/textile-2025/21-design-board-transparent.png",
+    "removed_background_ratio": 0.5203
+  },
+  {
+    "source": "assets/content/textile-2025/22-product-image.jpg",
+    "transparent": "assets/content/textile-2025/22-product-image-transparent.png",
+    "removed_background_ratio": 0.5885
+  }
+]

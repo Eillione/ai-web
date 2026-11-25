@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 224 108" role="img" aria-label="手绘翻页箭头">
+  <path fill="#171513" d="M8 43c43-3 92 1 145-1l-22-21 14-12c24 23 44 35 70 46-25 12-45 27-68 48l-15-13 23-24C104 69 57 68 12 72L5 59l8-5z"/>
+  <path fill="#171513" opacity=".92" d="M14 38c46 1 91 4 138 2l-10-8c-37 3-83 0-126-4zM16 76c45-5 91-3 135-7l-10 10c-41 4-82 5-122 7z"/>
+  <path d="M142 14c20 18 40 30 67 41M144 98c19-18 39-31 65-42" fill="none" stroke="#171513" stroke-width="7" stroke-linecap="round" opacity=".72"/>
+</svg>

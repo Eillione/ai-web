@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="1180" viewBox="0 0 960 1180" role="img" aria-label="Elione portrait placeholder">
+  <defs>
+    <linearGradient id="portraitBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e9d8dc"/>
+      <stop offset="0.45" stop-color="#f4efe8"/>
+      <stop offset="1" stop-color="#bed1d6"/>
+    </linearGradient>
+    <filter id="portraitGrain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.55" numOctaves="3" seed="21"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="table" tableValues="0 0.1"/>
+      </feComponentTransfer>
+    </filter>
+  </defs>
+  <rect width="960" height="1180" fill="url(#portraitBg)"/>
+  <rect width="960" height="1180" filter="url(#portraitGrain)"/>
+  <ellipse cx="480" cy="380" rx="180" ry="198" fill="#2c342f" opacity="0.82"/>
+  <path d="M296 422 C250 248 344 130 488 128 C642 126 728 264 678 458 C640 374 582 330 482 332 C382 334 330 376 296 422Z" fill="#40342f"/>
+  <ellipse cx="480" cy="430" rx="138" ry="154" fill="#e2b6a2"/>
+  <path d="M330 360 C402 314 520 330 644 274 C656 328 666 374 662 420 C598 348 468 380 330 360Z" fill="#40342f"/>
+  <path d="M210 1090 C256 806 344 664 480 664 C618 664 706 806 750 1090Z" fill="#315550"/>
+  <path d="M392 682 C418 724 446 746 480 746 C514 746 542 724 568 682 L600 820 C542 856 460 866 360 812Z" fill="#f1d2c2" opacity="0.88"/>
+  <circle cx="432" cy="430" r="8" fill="#272522"/>
+  <circle cx="530" cy="430" r="8" fill="#272522"/>
+  <path d="M438 510 C474 532 512 532 548 510" fill="none" stroke="#7a473d" stroke-width="6" stroke-linecap="round"/>
+  <text x="70" y="102" fill="#26342f" font-family="Arial, Helvetica, sans-serif" font-size="28" letter-spacing="0">SHEN JIEWEI</text>
+  <text x="70" y="142" fill="#26342f" font-family="Arial, Helvetica, sans-serif" font-size="18" opacity="0.62" letter-spacing="0">portrait placeholder</text>
+</svg>

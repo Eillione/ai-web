@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A local visual remake of the Shopify Editions Winter 2026 page, rebuilt with local assets and performance-minded static code."
+    />
+    <title>Shopify Editions | 26年冬 Remake</title>
+    <link rel="icon" href='data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"%3E%3Crect width="64" height="64" rx="14" fill="%2311110f"/%3E%3Ctext x="32" y="43" text-anchor="middle" font-family="Arial" font-size="34" font-weight="800" fill="white"%3ES%3C/text%3E%3C/svg%3E' />
+    <link rel="preload" as="image" href="assets/backgrounds/academy-tour.jpg" />
+    <link rel="preload" as="image" href="assets/backgrounds/renaissance-triptych.jpg" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">メインコンテンツにスキップ</a>
+    <div class="grain" aria-hidden="true"></div>
+    <div class="scan-grid" aria-hidden="true"></div>
+    <div class="scroll-progress" aria-hidden="true"><span data-progress></span></div>
+
+    <header class="edition-header" aria-label="主導航">
+      <a class="brand" href="#cover" aria-label="Shopify Editions cover">
+        <span class="bag-mark" aria-hidden="true">S</span>
+        <span>Shopify Editions</span>
+        <small>26年冬</small>
+      </a>
+      <nav class="top-nav" aria-label="上部ナビゲーション">
+        <button class="nav-button" type="button" data-toggle-editions aria-expanded="false">
+          Editions
+          <span aria-hidden="true">⌄</span>
+        </button>
+        <button class="nav-button search-button" type="button" data-toggle-search aria-expanded="false">
+          検索
+          <span aria-hidden="true">⌕</span>
+        </button>
+      </nav>
+      <nav class="header-actions" aria-label="外部リンク">
+        <a href="#updates">Shopify.com</a>
+        <a class="pill-cta" href="#start">無料で始める</a>
+      </nav>
+    </header>
+
+    <div class="editions-popover" data-editions-popover hidden>
+      <a href="#cover"><strong>26年冬</strong><span>Renaissance</span></a>
+      <a href="#sidekick"><strong>26年春</strong><span>Everywhere</span></a>
+      <a href="#online"><strong>25年夏</strong><span>Horizons</span></a>
+      <a href="#updates"><strong>25年冬</strong><span>Boring</span></a>
+    </div>
+
+    <aside class="chapter-sidebar" aria-label="章節ナビゲーション">
+      <a class="edition-wordmark" href="#cover">The<br /><em>Renaissance</em><br />Edition</a>
+      <nav>
+        <a class="is-active" href="#sidekick" data-section-link="sidekick"><span>Sidekick</span><small>I</small></a>
+        <a href="#agents" data-section-link="agents"><span>AIエージェント</span><small>II</small></a>
+        <a href="#online" data-section-link="online"><span>オンライン</span><small>III</small></a>
+        <a href="#retail" data-section-link="retail"><span>小売</span><small>IV</small></a>
+        <a href="#marketing" data-section-link="marketing"><span>マーケティング</span><small>V</small></a>
+        <a href="#checkout" data-section-link="checkout"><span>チェックアウト</span><small>VI</small></a>
+        <a href="#operations" data-section-link="operations"><span>オペレーション</span><small>VII</small></a>
+        <a href="#shop" data-section-link="shop"><span>Shopアプリ</span><small>VIII</small></a>
+        <a href="#b2b" data-section-link="b2b"><span>B2B</span><small>IX</small></a>
+        <a href="#finance" data-section-link="finance"><span>財務</span><small>X</small></a>
+        <a href="#shipping" data-section-link="shipping"><span>配送</span><small>XI</small></a>
+        <a href="#developers" data-section-link="developers"><span>開発者</span><small>XII</small></a>
+      </nav>
+      <footer>
+        <span>© Shopify Inc</span>
+        <a href="#terms">利用規約</a>
+        <a href="#privacy">プライバシーポリシー</a>
+      </footer>
+    </aside>
+
+    <main id="main">
+      <section class="cover-section section-dark" id="cover" data-observe="cover">
+        <div class="scene-bg scene-bg-academy" aria-hidden="true"></div>
+        <div class="triptych-backdrop" aria-hidden="true"></div>
+        <div class="living-figures living-figures-cover" aria-hidden="true">
+          <img class="living-figure figure-left" src="assets/processed/figure-left.jpg" alt="" />
+          <img class="living-figure figure-center" src="assets/processed/figure-center.jpg" alt="" />
+          <img class="living-figure figure-right" src="assets/processed/figure-right.jpg" alt="" />
+        </div>
+        <div class="hero-vignette" aria-hidden="true"></div>
+        <div class="floating-object cup" aria-hidden="true"></div>
+        <div class="floating-object board" aria-hidden="true"></div>
+        <div class="floating-object bag-one" aria-hidden="true"></div>
+        <div class="floating-object bag-two" aria-hidden="true"></div>
+        <article class="cover-card">
+          <h1>The<br /><em>Renaissance</em><br />Edition</h1>
+          <p>コマースの新たな世界を拓く<br />150以上の製品アップデート</p>
+          <ul>
+            <li><span>Sidekick</span><small>I</small></li>
+            <li><span>AIエージェント</span><small>II</small></li>
+            <li><span>オンライン</span><small>III</small></li>
+            <li><span>小売</span><small>IV</small></li>
+            <li><span>マーケティング</span><small>V</small></li>
+            <li><span>チェックアウト</span><small>VI</small></li>
+            <li><span>オペレーション</span><small>VII</small></li>
+            <li><span>Shopアプリ</span><small>VIII</small></li>
+            <li><span>B2B</span><small>IX</small></li>
+            <li><span>財務</span><small>X</small></li>
+            <li><span>配送</span><small>XI</small></li>
+            <li><span>開発者</span><small>XII</small></li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="portal-section section-dark" aria-label="Renaissance transition">
+        <div class="scene-bg scene-bg-academy" aria-hidden="true"></div>
+        <div class="triptych-backdrop portal-triptych" aria-hidden="true"></div>
+        <div class="living-figures living-figures-portal" aria-hidden="true">
+          <img class="living-figure figure-left" src="assets/processed/figure-left.jpg" alt="" />
+          <img class="living-figure figure-center" src="assets/processed/figure-center.jpg" alt="" />
+          <img class="living-figure figure-right" src="assets/processed/figure-right.jpg" alt="" />
+        </div>
+        <div class="light-field" aria-hidden="true">
+          <div class="etch-layer etch-layer-left"></div>
+          <div class="etch-layer etch-layer-right"></div>
+          <div class="star-map star-map-left"></div>
+          <div class="star-map star-map-center"></div>
+          <div class="star-map star-map-right"></div>
+          <div class="light-burst"></div>
+          <div class="light-ribbon"></div>
+          <div class="spark spark-a"></div>
+          <div class="spark spark-b"></div>
+          <div class="spark spark-c"></div>
+          <div class="spark spark-d"></div>
+          <div class="spark spark-e"></div>
+        </div>
+        <div class="portal-orb" aria-hidden="true"></div>
+        <div class="floating-object cup portal-cup" aria-hidden="true"></div>
+        <div class="floating-object board portal-board" aria-hidden="true"></div>
+        <h2 class="portal-title" aria-hidden="true">Sidekick</h2>
+      </section>
+
+      <section class="feature-section sidekick-section section-dark" id="sidekick" data-observe="sidekick">
+        <div class="section-bg bg-studio" aria-hidden="true"></div>
+        <div class="section-heading">
+          <span>I</span>
+          <h2>Sidekick</h2>
+        </div>
+        <div class="narrative-copy">
+          <h3>インサイトをプロアクティブに提供</h3>
+          <p>ストアの状況、購入傾向、在庫の変化を読み取り、次の一手をすぐ使える形で提案します。</p>
+        </div>
+        <div class="sidekick-console" aria-label="Sidekick demo panel">
+          <div class="console-toolbar"><span></span><span></span><span></span></div>
+          <div class="prompt-line">在庫を分析し、注意が必要なものにフラグを立ててください。</div>
+          <div class="metric-grid">
+            <span>Orders <strong>+28%</strong></span>
+            <span>Repeat <strong>41%</strong></span>
+            <span>Risk <strong>12 SKU</strong></span>
+          </div>
+        </div>
+        <div class="prompt-marquee" aria-hidden="true">
+          <span>SEOに最適化</span>
+          <span>メールキャンペーン</span>
+          <span>購入離脱分析</span>
+          <span>バンドル提案</span>
+        </div>
+      </section>
+
+      <section class="feature-section agents-section section-dark" id="agents" data-observe="agents">
+        <div class="section-bg bg-water" aria-hidden="true"></div>
+        <div class="section-heading">
+          <span>II</span>
+          <h2>AIエージェント</h2>
+        </div>
+        <div class="agent-lab">
+          <article>
+            <h3>Shopify Agentic Storefronts</h3>
+            <p>会話型のストア体験を、ブランドの世界観と商品データにつなげます。</p>
+          </article>
+          <div class="agent-bubbles" aria-hidden="true">
+            <span>Ask</span>
+            <span>Choose</span>
+            <span>Buy</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="feature-section online-section section-light" id="online" data-observe="online">
+        <div class="section-heading giant">
+          <span>III</span>
+          <h2>オンライン</h2>
+        </div>
+        <div class="card-grid">
+          <article class="update-card wide dark">
+            <h3>Rolloutsでローンチのテストとタイミングを管理</h3>
+            <p>テーマ、商品、キャンペーンを安全に公開するための実験レイヤー。</p>
+          </article>
+          <article class="update-card image-card">
+            <div class="mini-store" aria-hidden="true"></div>
+            <h3>モバイルでテーマ生成</h3>
+          </article>
+          <article class="update-card">
+            <h3>WordPressで販売</h3>
+            <p>既存サイトにコマース機能を追加。</p>
+          </article>
+          <article class="update-card">
+            <h3>商品あたり2048種類のバリエーション</h3>
+            <p>複雑な商品構成に対応。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="feature-section retail-section section-dark" id="retail" data-observe="retail">
+        <div class="section-bg bg-retail" aria-hidden="true"></div>
+        <div class="section-heading">
+          <span>IV</span>
+          <h2>小売</h2>
+        </div>
+        <div class="retail-scene" aria-hidden="true">
+          <div class="deck-wall">
+            <span></span><span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <div class="counter"></div>
+          <div class="pos-hub"></div>
+          <div class="pink-bag"></div>
+        </div>
+        <div class="narrative-copy retail-copy">
+          <h3>揺るぎない信頼性を備えた、新しい実店舗向けハードウェアです。</h3>
+          <p>POS Hub、スキャナー、当日配達、棚卸しを一つの売り場体験にまとめます。</p>
+        </div>
+      </section>
+
+      <section class="feature-section marketing-section section-light" id="marketing" data-observe="marketing">
+        <div class="section-heading giant">
+          <span>V</span>
+          <h2>マーケティング</h2>
+        </div>
+        <div class="split-content">
+          <article>
+            <h3>ブランドイメージ、メール、チャネル分析を一気通貫に。</h3>
+            <p>AIが商品、顧客、キャンペーンをつなぎ、発見から再購入までの流れを設計します。</p>
+          </article>
+          <div class="campaign-board" aria-hidden="true">
+            <span>Instagram</span>
+            <span>Email</span>
+            <span>Segment</span>
+            <span>Retain</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="feature-section checkout-section section-dark" id="checkout" data-observe="checkout">
+        <div class="section-bg bg-checkout" aria-hidden="true"></div>
+        <div class="section-heading">
+          <span>VI</span>
+          <h2>チェックアウト</h2>
+        </div>
+        <div class="checkout-device">
+          <div class="checkout-screen">
+            <span>Express</span>
+            <strong>¥12,800</strong>
+            <button type="button">Pay now</button>
+          </div>
+        </div>
+        <div class="narrative-copy">
+          <h3>購入完了までの摩擦を減らす</h3>
+          <p>高速ログイン、決済リンク、カスタムコピーでカート離脱を抑えます。</p>
+        </div>
+      </section>
+
+      <section class="feature-section operations-section section-light" id="operations" data-observe="operations">
+        <div class="section-heading giant">
+          <span>VII</span>
+          <h2>オペレーション</h2>
+        </div>
+        <div class="ops-grid">
+          <article><span>01</span><h3>会社のクイック作成</h3><p>B2Bアカウントをまとめて作成。</p></article>
+          <article><span>02</span><h3>資金管理</h3><p>キャッシュフローを一つの画面に。</p></article>
+          <article><span>03</span><h3>返品とキャンセル</h3><p>判断ルールを自動化。</p></article>
+        </div>
+      </section>
+
+      <section class="list-section section-dark" id="shop" data-observe="shop">
+        <h2>Shopアプリ</h2>
+        <ul class="link-list">
+          <li><a href="#updates">Shopでお客様のログインを高速化</a></li>
+          <li><a href="#updates">ソーシャルアカウントによるログイン</a></li>
+          <li><a href="#updates">カスタマイズ可能なログインコピー</a></li>
+        </ul>
+      </section>
+
+      <section class="list-section section-dark" id="b2b" data-observe="b2b">
+        <h2>B2B</h2>
+        <ul class="link-list">
+          <li><a href="#updates">カタログでの割引前価格</a></li>
+          <li><a href="#updates">バンドルオプションの組み合わせ</a></li>
+          <li><a href="#updates">CSVから会社情報を一括アップロード</a></li>
+        </ul>
+      </section>
+
+      <section class="list-section section-dark" id="finance" data-observe="finance">
+        <h2>財務</h2>
+        <ul class="link-list">
+          <li><a href="#updates">資金管理のダッシュボード</a></li>
+          <li><a href="#updates">ディスカウント効果の分析</a></li>
+          <li><a href="#updates">収益機会の自動検出</a></li>
+        </ul>
+      </section>
+
+      <section class="list-section section-dark" id="shipping" data-observe="shipping">
+        <h2>配送</h2>
+        <ul class="link-list">
+          <li><a href="#updates">Uber Directによる当日配達</a></li>
+          <li><a href="#updates">配送ラベルの改善</a></li>
+          <li><a href="#updates">フルフィルメント状況の確認</a></li>
+        </ul>
+      </section>
+
+      <section class="list-section section-dark" id="developers" data-observe="developers">
+        <h2>開発者</h2>
+        <ul class="link-list">
+          <li><a href="#updates">テーマブロック生成</a></li>
+          <li><a href="#updates">Lovableでバイブコーディング</a></li>
+          <li><a href="#updates">アプリ発見とターゲット選択</a></li>
+        </ul>
+      </section>
+
+      <section class="updates-section section-light" id="updates" data-observe="updates">
+        <p class="eyebrow">150+ updates</p>
+        <h2>すべてのアップデート</h2>
+        <div class="updates-index">
+          <a href="#sidekick"><span>I</span> Sidekick</a>
+          <a href="#agents"><span>II</span> AIエージェント</a>
+          <a href="#online"><span>III</span> オンライン</a>
+          <a href="#retail"><span>IV</span> 小売</a>
+          <a href="#marketing"><span>V</span> マーケティング</a>
+          <a href="#checkout"><span>VI</span> チェックアウト</a>
+          <a href="#operations"><span>VII</span> オペレーション</a>
+          <a href="#developers"><span>XII</span> 開発者</a>
+        </div>
+      </section>
+
+      <section class="start-section section-dark" id="start">
+        <div class="scene-bg scene-bg-academy" aria-hidden="true"></div>
+        <article>
+          <p class="eyebrow">Local remake</p>
+          <h2>Renaissance commerce, rebuilt as a static page.</h2>
+          <p>This local version recreates the layout, rhythm, and performance profile with local assets and CSS-generated objects.</p>
+        </article>
+      </section>
+    </main>
+
+    <dialog class="search-modal" data-search-modal aria-label="検索">
+      <form method="dialog">
+        <button type="submit" aria-label="Dismiss">×</button>
+      </form>
+      <label>
+        <span>検索</span>
+        <input type="search" placeholder="Sidekick、POS、B2B..." autofocus />
+      </label>
+      <div class="search-suggestions">
+        <a href="#sidekick">Sidekick</a>
+        <a href="#retail">POS Hub</a>
+        <a href="#online">Horizon</a>
+        <a href="#developers">Developers</a>
+      </div>
+    </dialog>
+
+    <script src="script.js"></script>
+  </body>
+</html>

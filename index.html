@@ -1,0 +1,1092 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="沈婕薇 Elione，产品经理 / 自由设计师。产品研究文章、产品开发、纺织类产品与平面设计作品集。"
+    />
+    <title>Elione | 产品经理 / 自由设计师</title>
+    <script>
+      document.documentElement.dataset.initialRoute = (location.hash || "#home").slice(1);
+    </script>
+    <link rel="icon" href='data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"%3E%3Crect width="64" height="64" rx="14" fill="%2311110f"/%3E%3Ctext x="32" y="43" text-anchor="middle" font-family="Arial" font-size="34" font-weight="800" fill="white"%3EE%3C/text%3E%3C/svg%3E' />
+    <link rel="preload" as="image" href="assets/backgrounds/home-section-02-monet.jpg" />
+    <link rel="preload" as="image" href="assets/backgrounds/home-section-03-gaddi.jpg" />
+    <link rel="preload" as="image" href="assets/typewriter/typewriter-machine-generated.png" />
+    <link rel="stylesheet" href="styles.css?v=20261115-reconnect-1" />
+    <link rel="stylesheet" href="product-dev-overrides.css?v=20261123-iteration-12" />
+    <link rel="stylesheet" href="reconnect-overrides.css?v=20261124-market-table-34" />
+  </head>
+  <body>
+    <div class="site-grain" aria-hidden="true"></div>
+    <div class="edition-motion-field" aria-hidden="true"></div>
+    <div class="home-burn-effect" aria-hidden="true"></div>
+
+    <header class="site-header" aria-label="主导航">
+      <a class="brand" href="#home" aria-label="回到首页">
+        <span>沈婕薇</span>
+        <span>Elione</span>
+      </a>
+      <nav class="nav-links" aria-label="页面模块">
+        <a href="#content-analysis"><span>产品研究思辨</span></a>
+        <a href="#product-dev"><span>跨境产品开发</span></a>
+        <a href="#textile-design"><span>纺织类产品</span></a>
+        <a href="#graphic-design"><span>平面设计</span></a>
+        <a href="#about"><span>关于我</span></a>
+      </nav>
+      <a class="back-home unified-home-return" href="#home" aria-label="返回主页"><span>返回主页</span><small>BACK TO HOME</small></a>
+    </header>
+
+    <div class="language-switcher" data-language-switcher role="group" aria-label="语言选择">
+      <button type="button" data-language-option="zh" aria-pressed="true">中文</button>
+      <span aria-hidden="true">/</span>
+      <button type="button" data-language-option="en" aria-pressed="false">EN</button>
+      <small data-language-status aria-live="polite" hidden></small>
+    </div>
+
+    <main>
+      <section class="hero" id="home" aria-label="Elione 首页">
+        <div class="home-book-experience" data-home-book-experience aria-label="交互式作品集书本">
+          <div class="home-atmosphere" aria-hidden="true"></div>
+          <div class="book-loader" data-book-loader aria-live="polite">
+            <div class="game-loader" role="group" aria-label="互动掌机加载器">
+              <div class="game-loader__top"><span>ELIONE</span><small>PORTFOLIO PLAYER</small></div>
+              <div class="game-loader__screen">
+                <div class="game-loader__pixel" data-game-pixel aria-hidden="true">Welcome</div>
+                <p>LOADING HOME ARCHIVE</p>
+                <div class="book-loader__track"><span data-book-loader-bar></span></div>
+                <strong><span data-book-loader-value>00</span>%</strong>
+              </div>
+              <div class="game-loader__controls">
+                <div class="game-loader__dpad" aria-label="方向键">
+                  <button type="button" data-game-control="up" aria-label="向上">▲</button>
+                  <button type="button" data-game-control="left" aria-label="向左">◀</button>
+                  <button type="button" data-game-control="right" aria-label="向右">▶</button>
+                  <button type="button" data-game-control="down" aria-label="向下">▼</button>
+                </div>
+                <button class="game-loader__start" type="button" data-game-control="start">START</button>
+                <div class="game-loader__actions">
+                  <button type="button" data-game-control="b" aria-label="B 按键">B</button>
+                  <button type="button" data-game-control="a" aria-label="A 按键">A</button>
+                </div>
+              </div>
+              <p class="game-loader__hint">按下按钮试听音效 · PRESS TO PLAY</p>
+            </div>
+          </div>
+
+          <div class="book-mosaic" data-book-mosaic aria-hidden="true"></div>
+
+          <div class="book-world" data-book-world>
+            <div class="book-stage" data-book-stage>
+              <header class="book-canvas-header" aria-label="首页作品目录">
+                <a class="book-canvas-name" href="#home" aria-label="回到首页">ELIONE <span>/ 沈婕薇</span></a>
+                <nav>
+                  <a href="#content-analysis"><span>产品研究思辨</span></a>
+                  <a href="#product-dev"><span>跨境产品开发</span></a>
+                  <a href="#textile-design"><span>纺织类产品</span></a>
+                  <a href="#graphic-design"><span>平面设计</span></a>
+                  <a href="#about"><span>关于我</span></a>
+                </nav>
+              </header>
+              <section class="book-spread book-spread--intro is-active" data-book-page="intro" aria-label="书本开场">
+                <div class="book-intro-media">
+                  <div class="book-notebook-final" data-book-notebook-final aria-hidden="true">
+                    <div class="book-notebook-canvas">
+                      <img class="book-notebook-base" src="assets/home-book/intro-composite.png" alt="Elione 个人档案记事本首页" draggable="false" />
+                      <nav class="book-tab-hotspots" aria-label="彩色标签作品目录">
+                        <a class="book-tab-hotspot book-tab-hotspot--research" href="#content-analysis" aria-label="进入产品研究思辨板块"><span>产品研究思辨</span></a>
+                        <a class="book-tab-hotspot book-tab-hotspot--product" href="#product-dev" aria-label="进入跨境产品开发板块"><span>跨境产品开发</span></a>
+                        <a class="book-tab-hotspot book-tab-hotspot--textile" href="#textile-design" aria-label="进入纺织类产品板块"><span>纺织类产品</span></a>
+                        <a class="book-tab-hotspot book-tab-hotspot--graphic" href="#graphic-design" aria-label="进入平面设计板块"><span>平面设计</span></a>
+                      </nav>
+                      <div class="book-id-card-motion" aria-label="Elione 个人工牌">
+                        <img class="book-id-card" src="assets/about/decor/id-card.png" alt="Elione 个人工牌" draggable="false" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <nav class="book-side-controls" aria-label="记事本翻页">
+                  <button class="book-side-arrow book-side-arrow--prev" type="button" data-book-prev="cart" aria-label="翻到购物篮页"><img src="assets/home-book/hand-drawn-arrow.svg" alt="" /></button>
+                  <button class="book-side-arrow book-side-arrow--next" type="button" data-book-next="objects" aria-label="翻到对象导航页"><img src="assets/home-book/hand-drawn-arrow.svg" alt="" /></button>
+                </nav>
+              </section>
+
+              <section class="book-spread book-spread--cart" data-book-page="cart" aria-label="可拖动物品购物篮页面" aria-hidden="true">
+                <img class="cart-layout-reference" src="assets/home-book/cart-layout-reference.png" alt="" aria-hidden="true" draggable="false" />
+                <div class="binder-page binder-page--right">
+                  <div class="cart-stage" data-cart-stage>
+                    <img class="cart-basket" src="assets/home-book/chrome-basket-reference.png" alt="银色铬金属网格购物篮" draggable="false" />
+                    <img class="cart-item cart-item--storybook" src="assets/home-book/cart-items/storybook.png" alt="故事绘画书" data-draggable-item draggable="false" />
+                    <img class="cart-item cart-item--lunch" src="assets/home-book/cart-items/lunch-bag.png" alt="粉色午餐包" data-draggable-item draggable="false" />
+                    <img class="cart-item cart-item--backpack" src="assets/home-book/cart-items/backpack.png" alt="儿童背包" data-draggable-item draggable="false" />
+                    <img class="cart-item cart-item--dog" src="assets/home-book/cart-items/plush-dog.png" alt="毛绒狗玩具" data-draggable-item draggable="false" />
+                    <img class="cart-item cart-item--princess" src="assets/home-book/cart-items/princess-kit.png" alt="公主手作套装" data-draggable-item draggable="false" />
+                    <img class="cart-item cart-item--doll" src="assets/home-book/cart-items/doll-fabric.png" alt="玩偶布艺套装" data-draggable-item draggable="false" />
+                    <img class="cart-item cart-item--emotion" src="assets/home-book/cart-items/emotion-book.png" alt="情绪学习绘本" data-draggable-item draggable="false" />
+                  </div>
+                  <p class="cart-instruction">（可以尝试拖动物品加入购物车）</p>
+                  <nav class="cart-tab-links" aria-label="购物篮页板块目录">
+                    <a href="#content-analysis">产品研究思辨<small>Product Research</small></a>
+                    <a href="#product-dev">跨境产品开发<small>Cross-border Product Development</small></a>
+                    <a href="#textile-design">纺织类产品<small>Textile Products</small></a>
+                    <a href="#graphic-design">平面设计<small>Graphic Design</small></a>
+                  </nav>
+                </div>
+                <nav class="book-side-controls" aria-label="记事本翻页">
+                  <button class="book-side-arrow book-side-arrow--prev" type="button" data-book-prev="objects" aria-label="翻到上一页"><img src="assets/home-book/hand-drawn-arrow.svg" alt="" /></button>
+                  <button class="book-side-arrow book-side-arrow--next" type="button" data-book-next="intro" aria-label="翻到下一页"><img src="assets/home-book/hand-drawn-arrow.svg" alt="" /></button>
+                </nav>
+              </section>
+
+              <section class="book-spread book-spread--objects" data-book-page="objects" aria-label="对象导航页面" aria-hidden="true">
+                <canvas class="book-object-canvas" data-book-object-canvas aria-label="ABOUT、SKILLS、WORK 三个三维对象"></canvas>
+                <div class="object-layout-frame">
+                  <p class="object-camera-quote">In the middle of every difficulty lies opportunity.<br />Welcome to my world.</p>
+                  <a class="object-printer-link" href="#contact" aria-label="打印联系方式并跳转到联系板块">
+                    <img src="assets/typewriter/typewriter-machine-generated.png" alt="蓝色打字机" draggable="false" />
+                    <span>CONTACT<br /><small>打印联系方式 ↓</small></span>
+                  </a>
+                  <div class="object-camera" aria-label="情绪变化熊互动相机">
+                    <div class="object-camera__screen" role="button" tabindex="0" aria-label="播放视频并开启声音">
+                      <video class="object-camera__video" data-camera-video data-video-index="0" playsinline muted loop preload="metadata">
+                        <source src="assets/content/product-development/ai/videos/emotion-hug-bear.m4v" type="video/mp4" />
+                        <source src="assets/content/product-development/ai/videos/smart-dialog-dog.m4v" type="video/mp4" />
+                      </video>
+                    </div>
+                    <img class="object-camera__frame" src="assets/home-book/camera-frame.png" alt="银色数码相机，屏幕内播放抱抱熊与智能对话小狗互动视频" draggable="false" />
+                    <p class="object-camera__play-label" aria-hidden="true">play with me!</p>
+                    <div class="object-camera__controls" aria-label="视频控制">
+                      <button type="button" data-camera-action="switch" aria-label="切换视频" title="切换视频 Switch video"></button>
+                      <button type="button" data-camera-action="toggle" aria-label="播放或暂停视频" title="播放 / 暂停 Play / Pause"></button>
+                      <button type="button" data-camera-action="pause" aria-label="暂停视频" title="暂停 Pause"></button>
+                    </div>
+                  </div>
+                  <div class="object-labels" aria-label="对象入口">
+                    <button type="button" data-object-focus="about"><span>01</span><strong>ABOUT</strong><small>关于我</small></button>
+                    <button type="button" data-object-focus="skills"><span>02</span><strong>SKILLS</strong><small>技能</small></button>
+                    <button type="button" data-object-focus="work"><span>03</span><strong>WORK</strong><small>作品</small></button>
+                    <a href="#content-analysis"><span>04</span><strong>THINKING</strong><small>产品研究思辨文章</small></a>
+                  </div>
+                </div>
+                <nav class="book-side-controls" aria-label="记事本翻页">
+                  <button class="book-side-arrow book-side-arrow--prev" type="button" data-book-prev="intro" aria-label="翻回上一页"><img src="assets/home-book/hand-drawn-arrow.svg" alt="" /></button>
+                  <button class="book-side-arrow book-side-arrow--next" type="button" data-book-next="cart" aria-label="翻到购物篮页"><img src="assets/home-book/hand-drawn-arrow.svg" alt="" /></button>
+                </nav>
+              </section>
+            </div>
+          </div>
+
+          <dialog class="book-object-dialog" data-book-object-dialog>
+            <button class="book-object-dialog__close" type="button" data-book-dialog-close aria-label="关闭">×</button>
+            <div data-book-dialog-content></div>
+          </dialog>
+
+        </div>
+        <div class="home-cd-player" data-home-cd-player data-playing="true" aria-label="主页背景音乐黑胶唱机">
+          <button class="home-cd-player__toggle" type="button" data-home-cd-toggle aria-pressed="true" aria-label="暂停背景音乐">
+            <span class="home-cd-player__deck" aria-hidden="true">
+              <span class="home-cd-player__lid"></span>
+              <span class="home-cd-player__disc"><i></i></span>
+              <span class="home-cd-player__arm"></span>
+              <span class="home-cd-player__hinge"></span>
+              <span class="home-cd-player__light"></span>
+              <span class="home-cd-player__button"></span>
+            </span>
+            <span class="home-cd-player__notes" aria-hidden="true">
+              <i>♪</i><i>♫</i><i>♩</i><i>♬</i><i>♪</i><i>♫</i><i>♩</i><i>♬</i>
+            </span>
+            <span class="home-cd-player__copy"><strong>8BITE — 2025</strong><small data-home-cd-status>PLAYING · VINYL</small></span>
+          </button>
+          <audio data-home-cd-audio src="assets/audio/8bite-2025.m4a" loop preload="auto"></audio>
+        </div>
+        <div class="float-field" data-floating-gallery></div>
+        <a class="hero-learn-link" href="#content-analysis" aria-label="产品研究思辨">Time tries truth.</a>
+        <div class="hero-copy">
+          <div class="hero-signature">
+            <h1>Elione</h1>
+            <span class="signature-ornament signature-ornament--top" aria-hidden="true">✧ ✦ ✧</span>
+          </div>
+          <p class="hero-role-cn">产品经理/自由设计师</p>
+          <p class="hero-role-en">Product Manager / Designer</p>
+        </div>
+        <nav class="hero-index" aria-label="首页目录">
+          <span class="hero-index-title">目录入口</span>
+          <a href="#content-analysis"><span>产品研究思辨</span><b>I</b></a>
+          <a href="#product-dev"><span>跨境产品开发</span><b>II</b></a>
+          <a href="#textile-design"><span>纺织类产品</span><b>III</b></a>
+          <a href="#graphic-design"><span>平面设计</span><b>IV</b></a>
+          <a href="#about"><span>关于我</span><b>V</b></a>
+        </nav>
+        <p class="hero-bottom-motto">A merry heart goes all the way.</p>
+      </section>
+      <section class="contact-envelope-section typewriter-section" id="contact" aria-label="联系方式">
+        <div class="typewriter-stage" data-envelope-stage data-typewriter-stage tabindex="0" role="button" aria-label="启动打字机查看联系方式">
+          <div class="typewriter-paper" data-typewriter-paper>
+            <p class="letter-kicker">A note from Elione</p>
+            <h2><span class="typewriter-title-cn">保持联系</span><span class="typewriter-title-en">Stay in Touch</span></h2>
+            <p>
+              产品合作、自由设计与有趣的想法，都欢迎来信。
+              <span class="letter-intro-en">Product collaborations, freelance design, and interesting ideas are always welcome.</span>
+            </p>
+            <div class="letter-links">
+              <span>Business call：17859381562</span>
+              <span>Wechat：Eillioness</span>
+              <span>Mailbox：<a href="mailto:eillione@foxmail.com">eillione@foxmail.com</a></span>
+              <span class="contact-indent"><a href="mailto:garecelle@gmail.com">garecelle@gmail.com</a></span>
+              <span>LinkedIn：<a href="https://www.linkedin.com/public-profile/settings" target="_blank" rel="noreferrer">Public profile</a></span>
+            </div>
+          </div>
+          <div class="typewriter-roller" aria-hidden="true"></div>
+          <img class="typewriter-machine" src="assets/typewriter/typewriter-machine-generated.png" alt="" aria-hidden="true" />
+          <div class="typewriter-caret" aria-hidden="true"></div>
+        </div>
+        <p class="envelope-hint typewriter-hint">Click / hover to type</p>
+      </section>
+      <section class="work-section product-dev" id="product-dev">
+        <div class="section-heading">
+          <p>02 / Product Development</p>
+          <h2>跨境市场-产品开发</h2>
+        </div>
+        <div class="product-line-intro" aria-label="产品开发品类逻辑">
+          <article tabindex="0" role="link" data-scroll-target="#product-ai-title" aria-label="跳转到 AI 智能玩具品线">
+            <p>01 / Electronic Toy Line</p>
+            <h3>电子玩偶品线开发逻辑</h3>
+            <p>站在产品经理角度：AI不是功能，而是交互方式；无论是离线版本还是AI版本，本质上都是互动；从单向输出变成交互体验；<br /><br />价值点：互动功能可以使用户生命周期更长；对于ai模型的版本，未来品牌还能持续更新模型内容。 产品生命周期会被不断延长。不过也要考虑当地的ai政策限制，比如欧洲限制中国品牌出口ai联网产品。<br /><br />如果角色成功，整个产品生态是否围绕同一个角色和成长体系不断扩展。对于离线版本的指令玩偶：语音指令只是实现这种互动体验的方式，会回应孩子，可以一起玩 能鼓励孩子开口表达，能培养互动习惯 ，足照顾宠物的角色扮演，重要的是无需联网，使用入口简单，购买价格更低；它与AI毛绒并不是替代关系，而是不同层级的产品。</p>
+          </article>
+          <article tabindex="0" role="link" data-scroll-target="#product-diy-title" aria-label="跳转到 DIY 产品开发品线">
+            <p>02 / DIY Product Line</p>
+            <h3>DIY 品线开发逻辑</h3>
+            <p>美国早期教育与学前准备体系把精细动作、视觉—动作协调和自理操作视为儿童发展的基础能力。精细动作并不只是“手更灵活”：抓握、剪、折、贴、穿、拼等重复操作，需要视觉、触觉、动作计划与注意控制协同参与，并与执行功能、早期书写和数学学习等能力存在关联。因此，DIY产品线不以单一主题为起点，而采用“年龄阶段 × 核心技能 × 材料形式 × 内容主题”的开发逻辑：先依据儿童发展阶段拆分可持续进阶的手部任务，再组合纸艺、毛毡、布艺、贴纸、泡棉等材料，延展公主、恐龙、动物和交通工具等主题，形成同一技能多种玩法、同一玩法多种主题的产品矩阵。产品强调低门槛、可重复和渐进挑战，但不把手工活动简单宣传为“提升智力”，而是通过真实操作支持儿童的专注、协调、独立完成与创造表达。</p>
+          </article>
+          <article tabindex="0" role="link" data-scroll-target="#product-iteration-title" aria-label="跳转到迭代类型项目开发">
+            <p>03 / Iterative Product Development</p>
+            <h3>迭代类型项目开发</h3>
+            <p>面向已经进入市场但增长放缓的成熟产品，以数据复盘驱动持续迭代。通过竞品与评价分析重新识别需求，调整供应链与结构方案，并以配色、主题、组合和附加属性的小步测试验证方向；持续跟踪销量、利润与用户反馈，把传统纸艺和学校用品从存量款升级为可持续盈利的产品线。</p>
+          </article>
+        </div>
+        <section class="product-simulation" aria-label="产品开发模拟反馈">
+          <div class="simulation-copy">
+            <p>Simulation Signals</p>
+            <h3>产品开发前的信号收集</h3>
+            <span>26年6月后使用的新方法：用codex结合编写的产品工作流skill，把产品开发把市场判断、用户评论、成本风险和教育价值先做成可观察的模拟反馈，再进入具体开品。</span>
+            <small class="simulation-copy-en">New method after June 2026: use Codex together with a custom product-workflow skill to turn market judgment, user comments, cost risk, and educational value into observable simulation feedback before moving into concrete product development.</small>
+          </div>
+          <div class="simulation-stage" aria-hidden="true">
+            <article class="signal-card signal-card--one">
+              <span class="signal-avatar">AI</span>
+              <div><strong>Luna</strong><small>互动粘性高</small><p>⏱ 6m · ✦ 42 · $29.9</p></div>
+            </article>
+            <article class="signal-card signal-card--two">
+              <span class="signal-avatar">DIY</span>
+              <div><strong>Mia</strong><small>家长指导明确</small><p>⏱ 4m · ✦ 31 · $16.9</p></div>
+            </article>
+            <article class="signal-card signal-card--three">
+              <span class="signal-avatar">SEL</span>
+              <div><strong>Noah</strong><small>教育价值清晰</small><p>⏱ 8m · ✦ 56 · $22.0</p></div>
+            </article>
+            <article class="signal-card signal-card--four">
+              <span class="signal-avatar">UX</span>
+              <div><strong>Emma</strong><small>入口要更简单</small><p>⏱ 2m · ✦ 18 · $0.0</p></div>
+            </article>
+            <article class="signal-card signal-card--five">
+              <span class="signal-avatar">PM</span>
+              <div><strong>Oliver</strong><small>供应链风险低</small><p>⏱ 5m · ✦ 27 · $18.5</p></div>
+            </article>
+          </div>
+        </section>
+        <nav class="project-directory product-project-directory" data-project-directory="product" aria-label="产品项目目录"></nav>
+        <div class="product-archive">
+          <section class="product-category product-category--diy" aria-labelledby="product-diy-title">
+            <header class="product-category-heading">
+              <p>02 / Creative Product Development</p>
+              <h3 id="product-diy-title">DIY 产品开发</h3>
+            </header>
+
+            <article class="product-project product-project--title-25 product-project--papercut">
+              <header><p>DIY / 06</p><h4>分阶剪纸书套装</h4></header>
+              <div class="product-project-lead product-project-lead--diy-video">
+                <button class="product-video-entry product-video-entry--small" type="button" data-product-video-src="assets/content/product-development/diy/videos/papercut-kit.m4v" data-product-video-title="分阶剪纸书套装" aria-label="播放产品视频：分阶剪纸书套装">
+                  <video muted playsinline preload="metadata" aria-hidden="true" tabindex="-1"><source src="assets/content/product-development/diy/videos/papercut-kit.m4v" type="video/mp4" /></video>
+                  <span><b>播放产品视频</b><small>分阶剪纸书套装</small></span>
+                </button>
+                <p class="product-project-summary"><strong class="product-project-summary-lead">#4,097 玩具和游戏 · BS榜单 Top 16 儿童纸艺套装 · 亚马逊推荐精选黑标</strong>剪纸套装产品线以儿童剪刀技能发展为核心，从"精细动作能力培养"而非"单一主题"出发进行产品规划。围绕3-6岁儿童精细动作发展规律，以4个循序渐进的学习阶段设计由易到难的成长路径，从直线剪、曲线剪、形状剪逐步过渡到折叠、粘贴、场景搭建等综合创作能力，让孩子在循序渐进的挑战中建立动手能力和创作信心。同年龄段需要的四合一技能培养方法远不止于剪！孩子们通过剪、折、贴甚至撕——这是幼儿学习的基础活动，实现教育价值与趣味体验的结合。未来，剪纸套装产品线将围绕"主题拓展、玩法优化迭代"方向持续开品。</p>
+              </div>
+              <div class="product-project-gallery"><figure class="product-image--full-row product-image--centered-board"><img loading="lazy" src="assets/content/product-development/diy/05-papercut/01.png" alt="剪纸套装项目图片 1" /></figure><figure class="product-image--full-row product-image--centered-board product-image--large-vertical"><img loading="lazy" src="assets/content/product-development/diy/05-papercut/08-four-skill-levels.png" alt="剪纸套装撕、剪、折、贴四项技能与四阶段学习路径" /></figure><figure class="product-image--full-row product-image--centered-board"><img loading="lazy" src="assets/content/product-development/diy/05-papercut/07-product-line-board.png" alt="剪纸书系列产品与主题规划展示" /></figure><figure class="product-image--full-row product-image--centered-board"><img loading="lazy" src="assets/content/product-development/diy/05-papercut/03.png" alt="剪纸套装项目图片 3" /></figure></div>
+              <div class="product-project-gallery product-project-gallery--supplemental product-project-gallery--three" aria-label="剪纸套装销量与市场趋势补充图">
+                <figure><img loading="lazy" src="assets/content/product-development/diy/05-papercut/04-daily-theme-trend-v2.png" alt="剪纸套装日常主题销量趋势" /></figure>
+                <figure><img loading="lazy" src="assets/content/product-development/diy/05-papercut/05-unicorn-theme-trend.png" alt="剪纸套装独角兽主题销量趋势" /></figure>
+                <figure><img loading="lazy" src="assets/content/product-development/diy/05-papercut/06-market-vs-product-trend.png" alt="剪纸套装市场趋势与单品趋势对比" /></figure>
+              </div>
+            </article>
+
+            <article class="product-project product-project--featured">
+              <header><p>DIY / 01</p><h4>EMO社会情绪学习项目</h4></header>
+              <aside class="product-project-note">
+                <span>项目背景 / Project Background</span>
+                <div>
+                  <p><strong>SEL（社会情绪学习）理念的起源</strong></p>
+                  <p>20世纪中期，心理学家 Daniel Goleman 等提出“情绪智力（Emotional Intelligence，EI）”的概念，强调一个人管理情绪、理解他人情绪的能力与成功和幸福密切相关。</p>
+                  <p>1980s-1990s，美国学校开始发现，仅靠认知教育不足以解决校园欺凌、冲突、学生焦虑等问题，于是教育研究者推动把“社交-情绪学习”引入课堂。</p>
+                  <p>儿童精神病学家帕梅拉·坎托在2019年告诉Edutopia：“当我们能够将社交、情感、情感和认知发展结合在一起时，我们会在发育中的大脑中创建更多、更多的互连，使儿童能够加速学习和发展。”</p>
+                  <p>1994年，美国成立 CASEL（Collaborative for Academic, Social, and Emotional），明确了 SEL 的五大核心能力：自我认知、自我管理、社交认知、人际关系技能、负责任的决策。CASEL 就是 SEL 的“标准制定者 + 推广者 + 政策推动者”。</p>
+                  <p>自我认知（Self-Awareness）是指能辨识、理解并表达自己的想法、情绪和优势，并了解情绪如何影响思想与行为。这部分涵盖辨识情绪、理解情绪产生的原因，以及了解情绪对行为和决策的影响。透过自我觉察，个人能更有意识地选择行动，同时客观评估自己的强项与弱项，准确的自我认知有助于提升自信与自尊，并促进持续的改善与成长。</p>
+                  <p>SEL 是直接纳入课程框架的；很多州已规定 SEL 能力必须融入课堂，无固定工具，因为这是一个理念。CASEL 官方建议：SEL 应该贯穿学前-K12（甚至延伸到成人），因为情绪与社交能力是“持续发展”的，不是某个阶段突然学会的。</p>
+                </div>
+              </aside>
+              <figure class="product-image-wide"><img loading="lazy" src="assets/content/product-development/diy/01-emo/emotional-map-2026.jpg" alt="EMO 社会情绪学习项目产品展示" /></figure>
+              <figure class="product-image-wide product-image--document"><img loading="lazy" src="assets/content/product-development/diy/01-emo/08.jpg" alt="EMO 项目立项逻辑" /></figure>
+              <div class="product-copy-grid">
+                <p><strong>1 / 色彩编码的SEL情绪学习</strong>每种情绪都与一种独特的颜色相关联，这种关联体现在服装部件、面部表情示例和情绪卡片上。这个简单而有针对性的系统帮助孩子们将颜色提示与情绪词汇和面部特征联系起来，通过游戏支持情绪识别、自我表达、沟通技巧和早期自我调节能力的发展。</p>
+                <p><strong>2 / 塑造表情，命名情绪</strong>孩子们使用磁性表情板和表情组件来展示快乐、悲伤、愤怒、平静、担忧等情绪。孩子可以先回忆事件、选择情绪、照镜子观察自己的表情，再用磁力件拼出对应的情绪脸。这种亲身体验的形式为孩子们提供了一种直观的方式，让他们在还不总是能用语言解释之前就可以谈论强烈的情绪。</p>
+                <p><strong>3 / 家长指导（3-5岁适用）</strong>最适合3-5岁的学龄前儿童，在家长或教师的指导下使用，有助于进行有意义的情绪学习。较小的学龄前儿童可以在成人的帮助下玩动手操作的组件，而较大的学龄前儿童则可以从情绪卡片、故事提示和冷静对话中收获更多。</p>
+                <p><strong>4 / 内含情绪卡片和指导手册</strong>通俗易懂的儿童卡片帮助孩子探索情绪并做出更好的选择，而内容更详尽的家长和教师指导卡片则有助于开展温和的情绪对话。卡片内容经美国专家审核，适用于“平静角”、学前社会情感学习（SEL）活动、引导式治疗式游戏以及家庭亲子学习。</p>
+              </div>
+              <div class="product-project-gallery product-project-gallery--mixed" aria-label="EMO 社会情绪学习项目图片">
+                <figure class="product-image--full-row product-image--captioned"><img loading="lazy" src="assets/content/product-development/diy/01-emo/07.png" alt="EMO 情绪卡片与指导卡片" /><figcaption>产品搭配儿童情绪引导卡片以及家长/学校指导卡片；儿童卡片的内容更易读。</figcaption></figure>
+                <figure class="product-image--full-row"><img loading="lazy" src="assets/content/product-development/diy/01-emo/06.png" alt="EMO 项目使用步骤" /></figure>
+                <figure class="product-image--full-row"><img loading="lazy" src="assets/content/product-development/diy/01-emo/01.jpg" alt="EMO 用户评价 1" /></figure>
+                <figure class="product-image--full-row"><img loading="lazy" src="assets/content/product-development/diy/01-emo/02.jpg" alt="EMO 用户评价 2" /></figure>
+                <figure class="product-image--full-row"><img loading="lazy" src="assets/content/product-development/diy/01-emo/03.jpg" alt="EMO 用户评价 3" /></figure>
+              </div>
+            </article>
+
+            <article class="product-project product-project--title-25"><header><p>DIY / 02</p><h4>Poke-In 戳戳游戏套装</h4></header><p class="product-project-summary">项目注释：Poke In 是已延续十余年的经典纸艺玩法，本项目不改变“戳入—固定—成型”的核心动作，而是通过新主题、新材料组合与立体化套装结构更新体验。产品从单件平面手作扩展为可陈列的公主裙、城堡舞台与角色场景，并加入皇冠、项链等DIY贴纸装饰，让儿童在熟悉的低门槛玩法中获得更强的造型参与感、完成感与展示价值。</p><div class="product-project-gallery product-project-gallery--poke-in"><figure><img loading="lazy" src="assets/content/product-development/diy/02-poke-in/02.jpg" alt="Poke In Aat 套装展示" /></figure><figure><img loading="lazy" src="assets/content/product-development/diy/02-poke-in/03.jpg" alt="Poke In Aat 成品效果" /></figure><figure><img loading="lazy" src="assets/content/product-development/diy/02-poke-in/06-princess-castle.png" alt="Poke In Aat 公主城堡主题实景展示" /></figure><figure class="product-image--full-row"><img loading="lazy" src="assets/content/product-development/diy/02-poke-in/01.jpg" alt="Poke In Aat 立项解释" /></figure><figure class="product-image--full-row"><img loading="lazy" src="assets/content/product-development/diy/02-poke-in/poke-in-art-04.jpg" alt="Poke In Art 儿童纸艺项目展示" /></figure><figure class="product-image--full-row"><img loading="lazy" src="assets/content/product-development/diy/02-poke-in/poke-in-art-05.jpg" alt="Poke In Art 儿童纸艺套装展示" /></figure></div></article>
+            <article class="product-project product-project--title-25"><header><p>DIY / 04</p><h4>时尚布料戳戳套装</h4></header><p class="product-project-summary">项目注释：以服装造型与材质搭配为主题，将戳戳纸艺、贴纸装饰和角色换装结合，让儿童在完成时尚造型的过程中发展精细动作、审美判断与创造表达。</p><div class="product-project-gallery"><figure class="product-image--full-row"><img loading="lazy" src="assets/content/product-development/diy/03-other/06.jpg" alt="时尚搭配戳戳套装" /></figure></div></article>
+            <article class="product-project product-project--title-25">
+              <header><p>DIY / 05</p><h4>Storybook故事绘画书</h4></header>
+              <div class="product-project-lead product-project-lead--diy-video">
+                <button class="product-video-entry product-video-entry--small" type="button" data-product-video-src="assets/content/product-development/diy/videos/storybook-writing-kit.m4v" data-product-video-title="Storybook故事绘画书" aria-label="播放产品视频：Storybook故事绘画书">
+                  <video muted playsinline preload="metadata" aria-hidden="true" tabindex="-1"><source src="assets/content/product-development/diy/videos/storybook-writing-kit.m4v" type="video/mp4" /></video>
+                  <span><b>播放产品视频</b><small>Storybook故事绘画书</small></span>
+                </button>
+                <p class="product-project-summary"><strong class="product-project-summary-lead">项目注释：BS榜单 #21 in Scrapbooking Kits · 评分 4.8</strong><strong class="product-project-summary-lead product-project-summary-lead--secondary">亚马逊推荐精选黑标</strong>绘画书产品线面向6–10岁儿童，以创意思维和写作能力培养为核心，构建一套循序渐进的故事创作体系。产品以绘画作为兴趣引入，通过主题创作激发孩子的想象力，再结合主题引导卡、主题单词卡及写作描述学习卡片，为孩子提供丰富的创作素材和表达支架，帮助他们逐步建立完整的写作思维。 产品遵循"画—词—句—文"的成长路径：从绘制故事场景、激发创意开始，逐步积累主题词汇，学习人物、场景、动作及情绪的描述方式，再过渡到句子组织和完整故事创作，让孩子在创作过程中自然掌握观察、联想、逻辑组织和语言表达能力。这种由兴趣驱动、循序渐进的学习方式，有效降低了写作难度，帮助孩子突破"不知道写什么、不会组织内容、表达不够丰富"等常见问题，建立写作兴趣与表达自信。</p>
+              </div>
+              <div class="product-project-gallery"><figure class="product-image--full-row"><img loading="lazy" src="assets/content/product-development/diy/04-story-painting/02.jpg" alt="Storybook 故事绘画书立项说明" /></figure><figure class="product-image--full-row"><img loading="lazy" src="assets/content/product-development/diy/04-story-painting/04.jpg" alt="Storybook 故事绘画书横版产品说明" /></figure><figure class="product-image--full-row"><img loading="lazy" src="assets/content/product-development/diy/04-story-painting/03.jpg" alt="Storybook 故事绘画书用户评价" /></figure></div>
+              <div class="product-project-gallery product-project-gallery--supplemental product-project-gallery--two product-project-gallery--storybook-data" aria-label="Storybook 故事绘画书市场数据补充图">
+                <figure><img loading="lazy" src="assets/content/product-development/diy/04-story-painting/06-market-daily.png" alt="Storybook 故事绘画书日销量与市场趋势" /></figure>
+                <figure><img loading="lazy" src="assets/content/product-development/diy/04-story-painting/07-market-monthly.png" alt="Storybook 故事绘画书月销量趋势" /></figure>
+              </div>
+            </article>
+            <article class="product-project product-project--title-25 product-project--face-gems">
+              <header><p>DIY / 07</p><h4>钻石脸贴装扮系列</h4></header>
+              <p class="product-project-summary"><strong class="product-project-summary-lead">产品注释：低门槛的一体式闪亮装扮体验</strong>一体式钻石脸贴装扮系列以“贴上即可完成造型”为核心，把面部钻饰、主题包装与闪粉、指甲贴等装扮元素整合为一套低门槛的角色扮演体验。产品面向4岁以上儿童，通过预排的一体式贴片降低散钻操作难度，并围绕公主、冰雪、花园等主题持续扩展款式；开发重点在于皮肤接触材料安全、贴合舒适度、一次性使用体验与礼赠陈列效果，在提升完成感的同时形成可持续迭代的主题系列。</p>
+              <div class="product-project-gallery product-project-gallery--face-gems"><figure class="product-image--full-row product-image--centered-board"><img loading="lazy" src="assets/content/product-development/diy/06-face-gems/01-face-gems-board.png" alt="一体式钻石脸贴装扮系列产品、使用步骤与主题场景" /></figure></div>
+            </article>
+            <article class="product-project product-project--title-25 product-project--new-diy product-project--sticker-puzzle">
+              <header><p>DIY / 08</p><h4>贴纸拼图套装</h4></header>
+              <p class="product-project-summary">项目注释：以“观察形状—寻找对应—补全画面”为核心，把传统贴纸游戏设计成由易到难的四阶段拼图体验。孩子先从角色与物件的直观配对开始，再进入几何形状识别、局部图像判断与圆形贴纸旋转对位，逐步提升精细动作、逻辑推理、手眼协调、视觉辨识与专注力。产品通过公主、恐龙、动物等主题扩展内容，同一套基础操作可覆盖不同年龄与能力阶段，让贴纸从一次性装饰材料转化为具有明确学习路径和重复挑战价值的益智产品。</p>
+              <div class="product-project-gallery product-project-gallery--new-diy"><figure class="product-image--full-row product-image--centered-board"><img loading="lazy" src="assets/content/product-development/diy/07-sticker-puzzle/sticker-puzzle-board.png" alt="Sticker Puzzle 四阶段形状对应玩法与公主、恐龙、动物主题套装" /></figure></div>
+            </article>
+            <article class="product-project product-project--title-25 product-project--new-diy product-project--felt-stickers">
+              <header><p>DIY / 09</p><h4>毛毡贴双面场景板</h4></header>
+              <p class="product-project-summary">项目注释：以柔软布料制作可反复取放的毛毡贴纸，将贴纸书从平面粘贴升级为可触摸、可组合、可重复创作的场景游戏。异形双面板分别承载主题配对与开放式场景搭建，儿童可依据轮廓完成形状对应，也可以自由布置角色、动物和交通工具；服装搭配主题进一步利用毛毡易叠加的特性，实现上衣、裙装、配饰等多层叠穿组合。产品兼顾低门槛操作、触觉体验与开放式表达，并通过公主、动物、恐龙等主题形成可持续扩展的内容系列。</p>
+              <div class="product-project-gallery product-project-gallery--new-diy product-project-gallery--felt-stickers">
+                <figure class="product-image--full-row product-image--centered-board"><img loading="lazy" src="assets/content/product-development/diy/08-felt-stickers/felt-sticker-princess-board.png" alt="公主主题毛毡贴纸双面板与服装叠穿搭配玩法" /></figure>
+                <figure class="product-image--full-row product-image--centered-board"><img loading="lazy" src="assets/content/product-development/diy/08-felt-stickers/felt-sticker-animal-board.png" alt="动物与交通主题毛毡贴纸双面板场景搭建玩法" /></figure>
+              </div>
+            </article>
+          </section>
+
+          <section class="product-category product-category--ai" aria-labelledby="product-ai-title">
+            <header class="product-category-heading"><p>01 / Interactive Toy Development</p><h3 id="product-ai-title">AI 智能玩具</h3></header>
+            <article class="product-project product-project--featured product-project--lucy">
+              <header><p>AI / 01</p><h4>Lucy / Toby 智能宠物</h4></header>
+              <div class="product-copy-grid product-copy-grid--three">
+                <p><strong>认识一下LUCY / TOBY，呼唤名字激活</strong>这只聪明伶俐的小狗会说话，无需联网，你只需要跟它说出指令，她就会走路/坐下/唱歌/跳舞；当然如果你能帮它联网，它可以给你讲故事，跟你说明天的天气，回应所有你跟它的自由对话。轻轻触摸它的头部，她会开心的向你摇尾巴，快试试吧！</p>
+                <p><strong>寓教于乐</strong>露西不仅可爱，还能帮助孩子练习说话。只需发出“学说”的指令，露西就能重复孩子说的话，以轻松有趣的方式促进语言发展、增强自信心和沟通能力。</p>
+                <p><strong>语音控制，乐趣无穷</strong>语音控制让玩耍时光充满魔力。说“去吃东西”，露西就会发出可爱的舔舐声。告诉她“开心点”，她就会高兴地摇尾巴。每个指令都能激发孩子的想象力、角色扮演能力和爱心行为。</p>
+              </div>
+              <div class="product-project-gallery product-project-gallery--equal"><figure class="product-image--full-row product-image--centered-board"><img loading="lazy" src="assets/content/product-development/ai/01-lucy/joycat-lucy-toby-smart-pet.png" alt="JoyCat Lucy / Toby 智能宠物项目展示" /></figure><figure><img loading="lazy" src="assets/content/product-development/ai/01-lucy/01.jpg" alt="Lucy 智能宠物项目图片 1" /></figure><figure><img loading="lazy" src="assets/content/product-development/ai/01-lucy/02.png" alt="Lucy 智能宠物项目图片 2" /></figure><button class="product-video-entry product-video-entry--equal" type="button" data-product-video-src="assets/content/product-development/ai/videos/smart-dialog-dog.m4v" data-product-video-title="智能对话小狗" aria-label="播放产品视频：智能对话小狗"><video muted playsinline preload="metadata" aria-hidden="true" tabindex="-1"><source src="assets/content/product-development/ai/videos/smart-dialog-dog.m4v" type="video/mp4" /></video><span><b>播放产品视频</b><small>智能对话小狗</small></span></button><figure class="product-image--full-row product-image--review"><img loading="lazy" src="assets/content/product-development/ai/01-lucy/03.jpg" alt="Lucy / Toby 用户评价" /></figure></div>
+            </article>
+            <article class="product-project product-project--puppy-care"><header><p>AI / 02</p><h4>电子小狗过家家玩具</h4></header><div class="product-project-lead"><button class="product-video-entry product-video-entry--small" type="button" data-product-video-src="assets/content/product-development/ai/videos/puppy-care-roleplay.m4v" data-product-video-title="过家家" aria-label="播放产品视频：过家家"><video muted playsinline preload="metadata" aria-hidden="true" tabindex="-1"><source src="assets/content/product-development/ai/videos/puppy-care-roleplay.m4v" type="video/mp4" /></video><span><b>播放产品视频</b><small>过家家</small></span></button><p class="product-project-summary">项目注释：在亚马逊互动玩具的大盘中，占比最高的形态就是仙人掌玩偶以及过家家套装。过家家套装主要走礼品属性，爆发在12月。主要调整了毛绒品质、音源内容以及狗屋形态（市场原来的形态是飞机箱），狗屋的模具以及品质都做了更新，走高端礼品路线。</p></div><div class="product-project-gallery"><figure class="product-image--full-row product-image--centered-board"><img loading="lazy" src="assets/content/product-development/ai/02-role-play/puppy-care-playset-2026.jpg" alt="电子过家家智能玩具项目展示" /></figure></div></article>
+            <article class="product-project product-project--compact-title product-project--cactus"><header><p>AI / 03</p><h4>仙人掌摇铃电子玩具</h4></header><div class="product-project-lead"><button class="product-video-entry product-video-entry--small" type="button" data-product-video-src="assets/content/product-development/ai/videos/cactus-listing.m4v" data-product-video-title="仙人掌" aria-label="播放产品视频：仙人掌"><video muted playsinline preload="metadata" aria-hidden="true" tabindex="-1"><source src="assets/content/product-development/ai/videos/cactus-listing.m4v" type="video/mp4" /></video><span><b>播放产品视频</b><small>仙人掌</small></span></button><p class="product-project-summary">项目注释：面向0+低龄儿童的多感官互动需求，将传统唱跳仙人掌升级为“玩偶＋摇铃/沙锤”的组合体验。产品通过音乐播放、语音跟读、摆动唱跳和按键触发形成即时反馈，并把可抓握的沙锤配件融入安抚、节奏感与亲子互动场景；在保留低门槛操作的同时，强化听觉刺激、动作追视与陪伴属性。</p></div><div class="product-project-gallery"><figure class="product-image--full-row product-image--centered-board"><img loading="lazy" src="assets/content/product-development/ai/03-other/cactus-interactive-2026.jpg" alt="0+yrs 仙人掌摇铃电子互动玩具项目展示" /></figure></div></article>
+            <article class="product-project product-project--emotion-bear"><header><p>AI / 04</p><h4>情绪互动抱抱熊</h4></header><div class="product-project-lead"><button class="product-video-entry product-video-entry--small" type="button" data-product-video-src="assets/content/product-development/ai/videos/emotion-hug-bear.m4v" data-product-video-title="情绪互动抱抱熊" aria-label="播放产品视频：情绪互动抱抱熊"><video muted playsinline preload="metadata" aria-hidden="true" tabindex="-1"><source src="assets/content/product-development/ai/videos/emotion-hug-bear.m4v" type="video/mp4" /></video><span><b>播放产品视频</b><small>情绪互动抱抱熊</small></span></button><p class="product-project-summary">项目注释：围绕儿童情绪识别、陪伴安抚与照护角色扮演开发的互动抱抱熊。产品用四色灯光对应快乐、安抚、平静与生气等情绪状态，孩子可通过按压手掌触发音乐、使用奶瓶触发饮水音效，并在拥抱、喂养和照顾过程中获得即时反馈。开发重点是把情绪表达转化为无需联网、入口简单的多感官互动，让低龄儿童在重复游戏中练习识别情绪、表达感受和建立关怀行为。</p></div><div class="product-project-gallery product-project-gallery--emotion-bear"><figure class="product-image--full-row product-image--centered-board"><img loading="lazy" src="assets/content/product-development/ai/04-emotion-bear-board.png" alt="情绪互动抱抱熊产品功能与互动场景展示" /></figure></div></article>
+          </section>
+
+          <section class="product-category product-category--iteration" aria-labelledby="product-iteration-title">
+            <header class="product-category-heading">
+              <p>03 / Iterative Product Development</p>
+              <h3 id="product-iteration-title">迭代类型项目开发</h3>
+            </header>
+            <article class="product-project product-project--compact-title product-project--iteration-origami">
+              <header><p>ITERATION / 01</p><h4>DIY折纸-纸艺类</h4></header>
+              <p class="product-project-summary">项目注释：目前两个产品分别是亚马逊纸艺套装细分中的 best sell 榜单 Top 8 / Top 20；围绕折叠、塑形和装饰等基础纸艺动作，规划由易到难的图案与步骤，让儿童在完成作品的过程中训练精细动作、空间理解和创造表达。该类产品是比较传统的产品，利润空间小、开发路径长，一旦开发，必须有长期售卖与持续迭代的规划。</p>
+              <div class="product-project-gallery product-project-gallery--iteration-products"><figure><img loading="lazy" src="assets/content/product-development/diy/03-other/01.jpg" alt="DIY 折纸纸艺项目图片 1" /></figure><figure><img loading="lazy" src="assets/content/product-development/diy/03-other/02.jpg" alt="DIY 折纸纸艺项目图片 2" /></figure><figure><img loading="lazy" src="assets/content/product-development/diy/03-other/03.jpg" alt="DIY 折纸纸艺项目图片 3" /></figure><figure><img loading="lazy" src="assets/content/product-development/diy/03-other/04.jpg" alt="DIY 折纸纸艺项目图片 4" /></figure><figure><img loading="lazy" src="assets/content/product-development/diy/03-other/06-animal-trend.png" alt="动物主题折纸产品销售趋势" /></figure><figure><img loading="lazy" src="assets/content/product-development/diy/03-other/07-origami-trend.png" alt="经典折纸产品长期销售趋势" /></figure></div>
+              <div class="product-project-gallery product-project-gallery--supplemental product-project-gallery--two product-project-gallery--iteration-paper" aria-label="折纸纸艺项目补充图"><figure><img loading="lazy" src="assets/content/product-development/diy/03-other/05.png" alt="DIY 折纸纸艺横版图片 5" /></figure><figure><img loading="lazy" src="assets/content/product-development/diy/03-other/08-art-paper-trend.png" alt="花纹折纸纸张产品销售趋势" /></figure></div>
+            </article>
+            <article class="product-project product-project--iteration-pencil-case">
+              <header><p>ITERATION / 02</p><h4>学校用品-笔盒</h4></header>
+              <div class="product-project-summary product-project-summary--structured">
+                <p><strong>1 / 供应链重新开发</strong>从竞品调研、评价分析开始重新寻厂，并推进产品结构迭代。</p>
+                <p><strong>2 / 策略变化</strong>根据竞品分析建议，上新女性配色进行测试；第一年上新策略较保守，因此利润主要在第二年体现。</p>
+                <p><strong>3 / 属性改变</strong>依据评价和人群分析，增加可爱贴纸进行组合测试。</p>
+                <p><strong>效果</strong>老品前几年的利润主要来自多只装的 ToB 客户，单只装仅用于引流；但多只装利润逐年下滑。从更换属性并上新后，利润开始转移到单只装，笔盒累计贡献 25w+ 净利。</p>
+              </div>
+              <div class="product-project-gallery product-project-gallery--pencil-case" aria-label="学校用品笔盒产品与销售趋势">
+                <figure class="product-image--full-row product-image--centered-board"><img loading="lazy" src="assets/content/product-development/iteration/02-pencil-case/01-product-line.png" alt="学校用品笔盒产品线与贴纸组合展示" /></figure>
+                <figure class="product-image--full-row product-image--centered-board"><img loading="lazy" src="assets/content/product-development/iteration/02-pencil-case/02-sales-trends.png" alt="学校用品笔盒新旧产品销量与利润趋势" /></figure>
+              </div>
+            </article>
+          </section>
+        </div>
+      </section>
+
+      <section class="work-section product-diy" id="product-diy" hidden aria-hidden="true">
+        <div class="section-heading section-heading--bilingual">
+          <p>02.1 / DIY Product Development</p>
+          <h2><span>DIY 产品开发</span><small>DIY Product Development</small></h2>
+        </div>
+
+        <section class="diy-research">
+          <div class="diy-research-heading">
+            <p>Research Archive / 研究档案</p>
+            <h3>研究与开品逻辑</h3>
+            <small>User, Market, Data &amp; Product Logic</small>
+          </div>
+          <div class="diy-document-grid">
+            <article>
+              <span>01</span>
+              <h4>用户研究</h4>
+              <p>User Research</p>
+              <small>预留文档展示位 / Reserved document space</small>
+            </article>
+            <article>
+              <span>02</span>
+              <h4>市场分析</h4>
+              <p>Market Analysis</p>
+              <small>预留文档展示位 / Reserved document space</small>
+            </article>
+            <article>
+              <span>03</span>
+              <h4>数据分析</h4>
+              <p>Data Analysis</p>
+              <small>预留文档展示位 / Reserved document space</small>
+            </article>
+            <article>
+              <span>04</span>
+              <h4>开品逻辑</h4>
+              <p>Product Development Logic</p>
+              <small>预留文档展示位 / Reserved document space</small>
+            </article>
+          </div>
+        </section>
+
+        <div class="diy-project-list">
+          <article class="diy-project">
+            <header>
+              <p>01 / Core age: 3–6 yrs</p>
+              <h3>情绪磁力片</h3>
+              <small>Emotion Learning Magnetic Tiles</small>
+              <p class="project-summary">用可组合的表情、情境与引导内容，帮助儿童识别、表达并讨论自己的情绪。</p>
+              <dl class="project-facts"><div><dt>目标年龄</dt><dd>3–6 岁</dd></div><div><dt>成长维度</dt><dd>社会情感</dd></div><div><dt>内容形态</dt><dd>磁力片 + 引导手册</dd></div></dl>
+            </header>
+            <div class="diy-project-gallery">
+              <figure><img loading="lazy" src="assets/content/product-diy/01-emotion-main-transparent.png" alt="情绪磁力片产品包装" /></figure>
+              <figure><img loading="lazy" src="assets/content/product-diy/01-emotion-guide.png" alt="情绪磁力片说明书" /></figure>
+              <figure class="diy-wide"><img loading="lazy" src="assets/content/product-diy/01-emotion-board-a-transparent.png" alt="情绪磁力片项目展示一" /></figure>
+              <figure class="diy-wide"><img loading="lazy" src="assets/content/product-diy/01-emotion-board-b-transparent.png" alt="情绪磁力片项目展示二" /></figure>
+            </div>
+          </article>
+
+          <article class="diy-project">
+            <header>
+              <p>02 / Core age: 3–6 yrs</p>
+              <h3>精细运动戳戳系列</h3>
+              <small>Fine Motor Poke Art Series</small>
+              <p class="project-summary">把戳刺动作转化为可循序完成的图形任务，在手工成就感中训练手眼协调与精细动作。</p>
+              <dl class="project-facts"><div><dt>目标年龄</dt><dd>3–6 岁</dd></div><div><dt>成长维度</dt><dd>精细动作</dd></div><div><dt>产品体系</dt><dd>主题套件系列</dd></div></dl>
+            </header>
+            <div class="diy-project-gallery">
+              <figure><img loading="lazy" src="assets/content/product-diy/02-poke-main-a-transparent.png" alt="3D 公主戳戳套件包装" /></figure>
+              <figure><img loading="lazy" src="assets/content/product-diy/02-poke-main-b-transparent.png" alt="3D 公主戳戳套件展示" /></figure>
+              <figure><img loading="lazy" src="assets/content/product-diy/02-poke-reference-transparent.png" alt="3D 公主戳戳套件参考展示" /></figure>
+              <figure><img loading="lazy" src="assets/content/product-diy/02-poke-detail-a.jpg" alt="3D 公主戳戳套件细节一" /></figure>
+              <figure><img loading="lazy" src="assets/content/product-diy/02-poke-detail-b.jpg" alt="3D 公主戳戳套件细节二" /></figure>
+              <figure class="diy-wide"><img loading="lazy" src="assets/content/product-diy/02-poke-variants-a.png" alt="精细运动戳戳系列其他产品一" /></figure>
+              <figure class="diy-wide"><img loading="lazy" src="assets/content/product-diy/02-poke-variants-b.png" alt="精细运动戳戳系列其他产品二" /></figure>
+            </div>
+          </article>
+
+          <article class="diy-project">
+            <header>
+              <p>03 / Core age: 6–10 yrs</p>
+              <h3>写作绘画故事书</h3>
+              <small>Writing &amp; Drawing Storybook</small>
+              <p class="project-summary">通过绘画、书写和故事组织的连续任务，让儿童把想象转化为可阅读、可分享的作品。</p>
+              <dl class="project-facts"><div><dt>目标年龄</dt><dd>6–10 岁</dd></div><div><dt>成长维度</dt><dd>语言与创造力</dd></div><div><dt>内容结构</dt><dd>绘画 + 写作 + 装订</dd></div></dl>
+            </header>
+            <div class="diy-project-gallery">
+              <figure><img loading="lazy" src="assets/content/product-diy/03-storybook-a.jpg" alt="写作绘画故事书展示一" /></figure>
+              <figure><img loading="lazy" src="assets/content/product-diy/03-storybook-b.jpg" alt="写作绘画故事书展示二" /></figure>
+              <figure><img loading="lazy" src="assets/content/product-diy/03-storybook-c-transparent.png" alt="写作绘画故事书展示三" /></figure>
+              <figure><img loading="lazy" src="assets/content/product-diy/03-storybook-d-transparent.png" alt="写作绘画故事书展示四" /></figure>
+              <figure class="diy-wide"><img loading="lazy" src="assets/content/product-diy/03-storybook-board-a.png" alt="写作绘画故事书项目展示一" /></figure>
+              <figure class="diy-wide"><img loading="lazy" src="assets/content/product-diy/03-storybook-board-b.png" alt="写作绘画故事书项目展示二" /></figure>
+            </div>
+          </article>
+
+          <article class="diy-project">
+            <header>
+              <p>04 / Core age: 5–8 yrs</p>
+              <h3>时尚戳戳套件</h3>
+              <small>Fashion Poke Art Kit</small>
+              <p class="project-summary">将精细动作练习与服装搭配主题结合，用可展示的完成结果增强持续创作意愿。</p>
+              <dl class="project-facts"><div><dt>目标年龄</dt><dd>5–8 岁</dd></div><div><dt>成长维度</dt><dd>精细动作</dd></div><div><dt>主题方向</dt><dd>时尚与个性表达</dd></div></dl>
+            </header>
+            <div class="diy-project-gallery">
+              <figure><img loading="lazy" src="assets/content/product-diy/04-fashion-a.jpg" alt="时尚戳戳套件展示一" /></figure>
+              <figure><img loading="lazy" src="assets/content/product-diy/04-fashion-b.jpg" alt="时尚戳戳套件展示二" /></figure>
+              <figure><img loading="lazy" src="assets/content/product-diy/04-fashion-c.jpg" alt="时尚戳戳套件展示三" /></figure>
+              <figure><img loading="lazy" src="assets/content/product-diy/04-fashion-d-transparent.png" alt="时尚戳戳套件展示四" /></figure>
+              <figure class="diy-wide"><img loading="lazy" src="assets/content/product-diy/04-fashion-board.png" alt="时尚戳戳套件项目展示" /></figure>
+            </div>
+          </article>
+
+          <article class="diy-project">
+            <header>
+              <p>05 / Core age: 3–6 yrs</p>
+              <h3>进阶剪纸套装</h3>
+              <small>Advanced Paper-cutting Kit</small>
+              <p class="project-summary">依据直线、曲线、简单形状到复杂形状的技能路径，组织可逐步进阶的剪纸内容。</p>
+              <dl class="project-facts"><div><dt>目标年龄</dt><dd>3–6 岁</dd></div><div><dt>成长维度</dt><dd>剪刀技能</dd></div><div><dt>训练路径</dt><dd>直线 → 曲线 → 形状</dd></div></dl>
+            </header>
+            <div class="diy-project-gallery">
+              <figure class="diy-wide"><img loading="lazy" src="assets/content/product-diy/05-papercut-board-a.png" alt="进阶剪纸套装项目展示一" /></figure>
+              <figure class="diy-wide"><img loading="lazy" src="assets/content/product-diy/05-papercut-board-b.png" alt="进阶剪纸套装项目展示二" /></figure>
+            </div>
+          </article>
+
+          <article class="diy-project">
+            <header>
+              <p>06 / Core age: 6 yrs+</p>
+              <h3>纸艺折纸项目</h3>
+              <small>Paper Art &amp; Origami</small>
+              <p class="project-summary">以不同主题和难度组织折纸材料与指导内容，并用上架数据持续验证新品方向。</p>
+              <dl class="project-facts"><div><dt>目标年龄</dt><dd>6 岁以上</dd></div><div><dt>成长维度</dt><dd>空间与步骤认知</dd></div><div><dt>验证材料</dt><dd>新品上架数据</dd></div></dl>
+            </header>
+            <div class="diy-project-gallery">
+              <figure><img loading="lazy" src="assets/content/product-diy/06-origami-a-transparent.png" alt="折纸项目展示一" /></figure>
+              <figure><img loading="lazy" src="assets/content/product-diy/06-origami-b-transparent.png" alt="折纸项目展示二" /></figure>
+              <figure><img loading="lazy" src="assets/content/product-diy/06-artist-a-transparent.png" alt="艺术家折纸材料展示一" /></figure>
+              <figure><img loading="lazy" src="assets/content/product-diy/06-artist-b.jpg" alt="艺术家折纸材料展示二" /></figure>
+              <figure><img loading="lazy" src="assets/content/product-diy/06-artist-c-transparent.png" alt="艺术家折纸材料展示三" /></figure>
+              <figure><img loading="lazy" src="assets/content/product-diy/06-artist-d.jpg" alt="艺术家折纸材料展示四" /></figure>
+              <figure><img loading="lazy" src="assets/content/product-diy/06-artist-e-transparent.png" alt="艺术家折纸材料展示五" /></figure>
+              <figure><img loading="lazy" src="assets/content/product-diy/06-artist-f.jpg" alt="艺术家折纸材料展示六" /></figure>
+              <figure><img loading="lazy" src="assets/content/product-diy/06-artist-g.jpg" alt="艺术家折纸材料展示七" /></figure>
+              <figure><img loading="lazy" src="assets/content/product-diy/06-artist-h.jpg" alt="艺术家折纸材料展示八" /></figure>
+              <figure><img loading="lazy" src="assets/content/product-diy/06-artist-i.jpg" alt="艺术家折纸材料展示九" /></figure>
+              <figure class="diy-wide"><img loading="lazy" src="assets/content/product-diy/06-origami-data-transparent.png" alt="折纸项目新品上架数据截图" /></figure>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="work-section analysis" id="content-analysis">
+        <div class="section-heading">
+          <p>01 / Product Research Articles</p>
+          <h2>产品研究文章</h2>
+        </div>
+        <div class="research-intro">
+          <p>这里收录的是我从业以来对产品研究与实践的思考；希望这些文章也能让你进一步了解我的工作方式与思考方向，也欢迎与我交流、讨论。</p>
+        </div>
+        <div class="blog-index">
+          <article class="research-card research-card--01" data-article-target="#article-toy-content-consumer" tabindex="0" role="link" aria-label="打开可滚动文章：内容开发、消费者的关系思辨">
+            <span class="research-card-bg" aria-hidden="true"></span>
+            <div class="blog-index-meta"><figure><img src="assets/content/articles/entry-covers/toy-content-consumer.png" alt="文章缩略图：关于玩具开发与内容开发、消费者的关系思辨" /></figure><p class="blog-index-number">01 / Thinking Journal</p></div>
+            <div class="blog-index-copy"><h3><a href="#article-toy-content-consumer">内容开发、消费者的关系思辨</a></h3><p>从产品体系、内容研究与消费者需求出发，讨论玩具品牌如何摆脱断点式开发，建立能够持续生长的长期路径。</p></div>
+            <a class="blog-index-arrow" href="#article-toy-content-consumer" aria-label="阅读全文">阅读全文 →</a>
+          </article>
+          <article class="research-card research-card--02" data-article-target="#article-innovation-demand" tabindex="0" role="link" aria-label="打开可滚动文章：创新应该建立在消费者需求之上">
+            <span class="research-card-bg" aria-hidden="true"></span>
+            <div class="blog-index-meta"><figure><img src="assets/content/articles/entry-covers/innovation-demand.png" alt="文章缩略图：创新应该建立在消费者需求之上" /></figure><p class="blog-index-number">02 / Thinking Journal</p></div>
+            <div class="blog-index-copy"><h3><a href="#article-innovation-demand">创新应该建立在消费者需求之上</a></h3><p>审美、方法论和赛道趋势都不能替代真实需求。产品规则的意义，是帮助价值落地，而不是成为产品本身。</p></div>
+            <a class="blog-index-arrow" href="#article-innovation-demand" aria-label="阅读全文">阅读全文 →</a>
+          </article>
+          <article class="research-card research-card--03" data-article-target="#article-innovators-dilemma" tabindex="0" role="link" aria-label="打开可滚动文章：成熟公司如何孕育非连续性创新">
+            <span class="research-card-bg" aria-hidden="true"></span>
+            <div class="blog-index-meta"><figure><img src="assets/content/articles/innovators-dilemma/entry.jpg" alt="文章缩略图：成熟公司如何孕育非连续性创新" /></figure><p class="blog-index-number">03 / Thinking Journal</p></div>
+            <div class="blog-index-copy"><h3><a href="#article-innovators-dilemma">成熟公司如何孕育非连续性创新</a></h3><p>从《创新者的窘境》出发，讨论成熟组织如何保护探索性创新，并建立不同于主航道业务的验证机制。</p></div>
+            <a class="blog-index-arrow" href="#article-innovators-dilemma" aria-label="阅读全文">阅读全文 →</a>
+          </article>
+        </div>
+        <div class="research-content-view" aria-hidden="true" hidden>
+          <section class="research-content-item" data-article-source="#article-toy-content-consumer">
+            <div class="research-content-intro">
+              <img class="research-content-image" src="assets/content/articles/entry-covers/toy-content-consumer.png" alt="关于玩具开发与内容开发、消费者的关系思辨" />
+              <h2 class="research-content-title">玩具开发与内容开发</h2>
+            </div>
+            <h3 class="research-content-subtitle">“从内容研究、产品体系到消费者需求”</h3>
+            <div class="research-content-text"></div>
+          </section>
+          <section class="research-content-item" data-article-source="#article-innovation-demand">
+            <div class="research-content-intro">
+              <img class="research-content-image" src="assets/content/articles/entry-covers/innovation-demand.png" alt="创新应该建立在消费者需求之上" />
+            </div>
+            <h3 class="research-content-subtitle">“审美、方法论和趋势都不能替代真实需求”</h3>
+            <div class="research-content-text"></div>
+          </section>
+          <section class="research-content-item" data-article-source="#article-innovators-dilemma">
+            <div class="research-content-intro">
+              <img class="research-content-image" src="assets/content/articles/innovators-dilemma/entry.jpg" alt="成熟公司如何孕育非连续性创新" />
+              <h2 class="research-content-title">成熟公司如何孕育非连续性创新</h2>
+            </div>
+            <h3 class="research-content-subtitle">“读《创新者的窘境》后感”</h3>
+            <div class="research-content-text"></div>
+          </section>
+          <button class="research-content-close" type="button" aria-label="关闭文章并返回文章目录"><span>关闭文章</span><small>返回上一级</small></button>
+          <span class="research-content-indicator" aria-hidden="true">⌄</span>
+        </div>
+      </section>
+
+      <section class="work-section blog-entry" id="article-toy-content-consumer">
+        <article>
+          <header><p>Thinking Journal / 01</p><h2>《关于玩具开发与内容开发、消费者的关系思辨》</h2></header>
+          <p>在玩具行业里，最简单的开发方式其实是跟随市场。看到什么卖得好，就快速复制；看到哪个品类起量，就迅速切入。这也是过去跨境电商和国内很多品牌最常见的发展路径。短期来看，这种模式投入小、见效快，能够用较低的人效获得不错的收益。但如果从品牌长期发展的角度来看，并不是一种健康的发展模式。</p>
+          <p>我认为，一个玩具品牌的发展，需要想清楚三个问题：玩具开发是什么？内容开发是什么？消费者真正需要什么？</p>
+          <h3>一、产品开发不是不断推出新品，而是建立产品体系[1]</h3>
+          <p>在开始研究海外的品牌之后，我发现新品数量不重要，重要的是“有没有前后代关系”</p>
+          <p>在海外玩具展上，你或许也经常会看到这样的情况：</p>
+          <p>● 新品就在老产品旁边：他们的新品不是全新的产品，而是基于产品系列，开发的适应新市场的主题新品</p>
+          <p>● 包装逻辑一脉相承， 说明书结构高度统一</p>
+          <p>它们不是“新品发布”，而是“持续生长”。他们更在意的，是：这个产品能不能每年卖、这个系列能不能慢慢长、这个定位能不能十年不变</p>
+          <p>这里关乎公司上层的标准：从业者是否愿意建立长期主义世界观。评估标准应从“季度销售额”转向“客户生命周期价值”、从“新品数量”转向“产品系列存活率”。</p>
+          <p>我们更熟悉的是：</p>
+          <p>某款突然爆了， 大家一拥而上， 半年后集体撤退</p>
+          <p>短期看很刺激，长期看却很累。</p>
+          <p>我们太容易被短期反馈左右，却很少问一句：这个产品方向，我愿不愿意坚持三年？</p>
+          <h3>二、内容开发决定了产品能否真正满足消费者需求，内容研究最终会转化为品牌信任</h3>
+          <p>如果说产品体系决定品牌能走多远，那么内容开发则决定产品能走多深。</p>
+          <p>这里的内容开发，并不是简单地增加活动数量或者更换主题素材，而是研究消费者背后的真实需求。</p>
+          <p>以儿童剪纸书为例。</p>
+          <p>当我们决定开发一款剪纸书时，需要思考的问题远不止“画什么图案”。</p>
+          <p>更重要的是：</p>
+          <p>孩子的剪刀技能是如何发展的？</p>
+          <p>几岁开始学习使用剪刀？ 不同年龄阶段能够完成哪些动作？</p>
+          <p>哪些内容会让孩子获得成就感？ 哪些内容又会造成挫败感？</p>
+          <p>如果这些问题没有研究清楚，产品开发就容易停留在表面。</p>
+          <p>例如，针对3-5岁儿童的初级剪纸书，美国幼儿园教育体系普遍将剪刀使用能力视为重要的入学准备技能之一。</p>
+          <p>经过长期教育实践验证，儿童剪刀技能的发展路径通常遵循：直线 → 曲线 → 简单形状 → 复杂形状</p>
+          <p>这也是大量经典剪纸产品沿用至今的训练逻辑。</p>
+          <p>1/发展精细动作：在传统的剪纸书基础中，从直线到曲线再到形状练习是这么多年积累下来的练习路径，应顺势开品。</p>
+          <p>2/我们应先把内容逻辑确定，再去规划产品页数、产品配置、思考如何提高这类传统产品的溢价。</p>
+          <p>但目前市场上很多的品牌在做这类产品的时候，并没有考虑儿童发展的操作逻辑，而是把各个技能随机混在一起，或者简单的按图案分；而且有些产品会把折纸/手工加进去做了一套综合玩法的套装等等。在剪纸套装作为数据趋势比较好的产品的情况下，哪怕是逻辑不太严谨，也是可以卖出高销量的，毕竟每个城市的教育资源分配和家长对教育的学习研究本身就是不平衡，没有平均数的。只是我想讲的是长期品牌价值，企业做教育类产品的时候，应该有更严谨的调研，为家长提供更好的解决方案。长期来说，内容研究会转化为品牌信任，这个时候再加上美育的图案优势，把产品的生命周期做得更长久。</p>
+          <figure class="word-figure"><img src="assets/content/articles/toy-content-consumer/image1.png" alt="剪纸技能发展路径" /></figure>
+          <p>以下是我开发的剪纸书系列产品，把基础阶段练习路径按技能分为4个阶段，同时结合颜色匹配+形状匹配，融入简单的贴/折的辅助技能，这些同年龄段学习的认知发展的内容规划；在练习剪刀的基础下，可以通过游戏提高认知，通过辅助玩法增加乐趣。设计方面，考虑系列的发展，用了主题图案区分来扩展单品。产品发展方面，盈利稳定后，每年都会推出新主题套装，并优化迭代转化比较差的主题。</p>
+          <figure class="word-figure"><img src="assets/content/articles/toy-content-consumer/image2.png" alt="剪纸系列产品" /></figure>
+          <div class="word-figure-group"><figure class="word-figure"><img src="assets/content/articles/toy-content-consumer/image3.png" alt="剪纸系列产品展示一" /></figure><figure class="word-figure"><img src="assets/content/articles/toy-content-consumer/image4.png" alt="剪纸系列产品展示二" /></figure></div>
+          <p>这个技能路径每个细分阶段都有可观的产品市场需求</p>
+          <p>Preschool Activity Books（学前活动书）</p>
+          <p>↓</p>
+          <p>Scissor Skills Workbook（剪刀技能训练书）</p>
+          <p>↓</p>
+          <p>Arts &amp; Crafts Activity Kits（儿童手工活动）</p>
+          <p>产品经理最大的工作，其实不是找产品，而是找需求；如果目前品线的核心需求是：帮助3-6岁儿童完成精细动作训练</p>
+          <p>那么剪纸书、贴纸书、戳戳画、穿线板、拼贴活动其实都属于同一个方向。但不建议把这些技能混合揉进一款产品。</p>
+          <p>产品形式变了；需求没有变。</p>
+          <p>品牌依然在同一条线上成长。</p>
+          <h3>三/用内容研究指导产品开发，用产品开发满足消费者需求，再通过持续积累建立品牌信任。</h3>
+          <p>在海外市场，这条路径已经被许多细分教育品牌验证过。由于成熟的家庭教育文化和 Homeschool 理念的普及，家长并不会完全依赖学校完成教育，而是会主动寻找能够帮助孩子成长的产品。</p>
+          <p>因此，真正有竞争力的玩具品牌，卖的从来不只是玩具本身。</p>
+          <p>它卖的是对儿童成长的理解，以及对消费者需求的洞察。</p>
+          <p>而这，或许才是玩具开发、内容开发与消费者之间最重要的关系。</p>
+          <div class="word-figure-group word-figure-group--three"><figure class="word-figure"><img src="assets/content/articles/toy-content-consumer/image5.png" alt="儿童成长产品体系展示一" /></figure><figure class="word-figure"><img src="assets/content/articles/toy-content-consumer/image6.png" alt="儿童成长产品体系展示二" /></figure><figure class="word-figure"><img src="assets/content/articles/toy-content-consumer/image7.png" alt="儿童成长产品体系展示三" /></figure></div>
+          <p>目前的我看来我们每条产品线都应该有内容研究保底，再去生长出产品规划。</p>
+          <p>我们太习惯“先把东西做出来”，却很少在一开始，就把三年的路径想清楚。</p>
+          <p class="article-emphasis">之前我做国内市场的时候，还是主要想把产品做好，实际上本质上就是【断点式的开发】。</p>
+          <p class="article-case-emphasis">我曾工作过的品牌“uek”曾是中国电商细分行业Top1；断点单品开发模式缺少沉淀，最后也只是成为"全行业打板中心"下逐渐落寞。反倒有体系化的 Tiger Family 低谷进入高潮，短短3年曾经的100名开外顶替了Top1的位置。这或许就是品牌长期主义的最好案例。</p>
+          <p class="article-case-emphasis">当我看到2019年设计的爆款“蘑菇包”被盗用初版手稿抄袭结构，换个图案又再次在2023年爆火之后，我问自己为什么我们当时为什么没有想到爆款-也需要产品迭代。这个结构灵感参考泡泡玛特其中一个主题，从10根缝线一直试版减到两根做出帽子的形状，花了心思的好产品貌似是不会过时的，但是视觉外观是会过时的，需要更新。</p>
+          <p>因此我认为我在2021年进入产品经理岗位，是我觉得非常正确的决定，我从一位设计师变成了从一开始就定义产品的产品经理。</p>
+          <p>尽管一开始在国内市场已经萌生这方面意识，但没跳出国内的大环境下，很多细节想不明白；这几年深入了解欧美市场，才慢慢想清楚产品路径应该怎么做。</p>
+          <p class="article-end-marker">交易的本质，就是需求匹配被需求，实现双赢。对于企业来说，做品牌是为了长久的生意，实现成交转化。本质上也是从利益出发的，只是目光会比铺货型的企业更长远。----end</p>
+          <p class="article-development-intro">以下是我2025年基于0-1负责的类目下，基于参考美国幼教协会、疾病防控中心给出的幼儿成长里程碑，成长维度分类开发的对应产品。</p>
+          <p>动作发展（Physical）----剪纸书、拼图匹配贴纸套装、戳戳系列产品、折纸系列产品</p>
+          <p>语言发展（Language）-----绘画故事书套装、社交对话小狗</p>
+          <p>社会情感发展（Social-Emotional）---我的情绪地图磁力片</p>
+          <footer><p>引用：</p><p>文章部分标明字段：[1]《德国展回来后,我不再焦虑了》，龙哥，玩具前线，2026.2.1.</p><p>图片来源： [2] https://scholastic.asia/en/educator/scholastic-light-up</p></footer>
+        </article>
+      </section>
+
+      <section class="work-section blog-entry" id="article-innovation-demand">
+        <article>
+          <header><p>Thinking Journal / 02</p><h2>《创新应该建立在消费者需求之上》</h2></header>
+          <p>品牌发展到一定阶段后，很容易从“没有方法论”走向“方法论过剩”。</p>
+          <p>玩具行业和很多消费品行业不同。像母婴行业中的品牌，例如 Momcozy，其实是在一个相对明确的赛道中持续深耕。无论是吸奶器、哺乳用品还是孕产护理，本质上服务的都是同一类人群、同一种需求。但玩具不同。玩具行业有个特点，有太多形态，边界太宽：绘本、DIY手工、STEM教育、拼图、电子玩具、角色扮演、艺术启蒙理论上，一个品牌似乎什么都能做。也正因为如此，品牌发展到后期往往容易陷入两个发展问题中。1/陷入审美导向大于产品导向产品审美设计是最容易宣传也是最方便统一各类产品的视觉点，也是最直观的。品牌把设计美感放在了产品逻辑之前。产品开发逐渐变成换插画风格、换包装设计、换颜色体系、换视觉语言，但对产品本身是否符合儿童发展规律、是否符合真实使用场景、是否能解决消费者需求，反而研究得不够。这种开发方式看似是在做品牌升级，本质上有时只是“盲目跟随市场后，换一个更好看的外观”。不可否认，像 Djeco 这样的品牌确实拥有很强的设计能力和视觉体系，也能通过审美形成明显的品牌识别。但如果一个品牌想继续向上跨越，仅靠审美溢价是不够的。因为消费者最终购买的仍然是产品价值，而不是设计师的审美表达。更需要警惕的是，脱离内容规划和用户研究的审美，很容易变成品牌自己的审美。品牌开始满足自己的风格偏好，而不是回应所在市场和使用者的真实需求。很多时候，一个设计团队觉得“高级”的东西，未必是消费者觉得“好用、好懂、值得买”的东西。<span class="article-break">所以我一直觉得，Djeco 和 Lakeshore 是两个很有意思的参照。Djeco 可能看不上 Lakeshore 的审美，Lakeshore Learning 也未必认同 Djeco 的产品逻辑，但两家公司都成立，因为它们服务的是不同用户，解决的是不同需求。每家公司都有自己的墙，也都有自己的市场边界。但不可否认的是Djeco 的市场体量跟 Lakeshore 不在一个量级。</span></p>
+          <p>第三方商业数据库估算：</p>
+          <p>●年营收约8亿美元级别</p>
+          <p>●员工约2500-3500人规模</p>
+          <p>即便第三方收入数据有误差，Lakeshore依然属于美国教育玩具领域的头部企业。</p>
+          <p>我认为最关键的地方是中国品牌最容易学的是Djeco。因为：插画能看见 ，包装能模仿 ，风格能复制但真正难学的是Lakeshore。因为它研究的是： 儿童发展 、 教育场景 、课堂使用方式 、技能成长路径这些东西消费者看不见，竞争对手也看不见，但却决定了产品能卖多久。单纯复制 Djeco，永远只能停留在风格层面；而理解 Lakeshore 背后的需求体系，才有机会建立自己的产品体系和长期品牌壁垒。问题从来不是谁的审美更高级，而是谁更清楚自己服务的是谁。对于玩具品牌来说，设计美感当然重要，但它应该帮助产品价值被更好地理解，而不是替代产品价值本身。</p>
+          <figure class="word-figure"><img src="assets/content/articles/innovation-demand/image1.png" alt="Lakeshore Learning 品牌研究" /></figure>
+          <p>[1]Lakeshore体量数据来源：https://growjo.com/company/Lakeshore_Learning</p>
+          <p>2/赛道方法论过剩品牌开始不断寻找新的赛道。每一种方向似乎都有道理。每一种趋势似乎都有市场；结果品牌越研究越觉得什么都应该做。最后，消费者却越来越不知道你是谁。本质上不是机会太少，而是机会太多。</p>
+          <p>用Lakeshore Learning 的逻辑举例，它从来不是围绕产品形态规划。而是围绕教育目标规划。今天用拼图解决问题。明天用教具解决问题。后天用游戏解决问题。产品变了，需求没变。所以消费者始终知道它是谁。</p>
+          <p class="article-indent">还有一个特别容易忽略的问题，品牌发展到后期都会开始思考：我们是谁？我们的品牌价值是什么？我们的设计语言是什么？我们的教育理念是什么？于是开始建立大量品牌规则。这些规则本身没有问题，甚至是品牌成长过程中必须经历的阶段。但很多公司容易出现一个现象：规则越来越完善，产品却没有越来越好。但有时候规则管理太严格；为了框架而框架，反而失去了对消费者的观察。因为团队开始把大量精力放在维护框架本身，而不是解决消费者问题。</p>
+          <p class="article-indent">因为消费者购买产品的时候，从来不会关心你的矩阵是否完整，也不会关心你的开发流程是否严谨。他们只会关心：这个东西是不是刚好解决了我的问题。优秀的规则应该帮助产品落地。但当规则本身成为目标时，产品就很容易陷入形式主义。</p>
+          <p>举例：我不认为 Momcozy这类有明确赛道的调研方法适用于多品类形态发展的玩具行业，但不意味着这个框架是错的，调研框架有70%适用于玩具行业，但剩下30%恰恰是最关键的部分；还是需要根据实际情况作出一定变通。</p>
+          <p>因为母婴产品本质是：功能需求驱动市场。用户的问题很明确： 奶不够 、吸奶不方便 、 哺乳疼 、出行麻烦所以只要找到需求，优化产品即可。</p>
+          <div class="research-market-table-wrap" role="region" aria-label="行业通用市场调研表" tabindex="0">
+            <table class="research-market-table">
+              <caption>市场调研</caption>
+              <colgroup><col class="research-market-table__category"><col class="research-market-table__module"><col class="research-market-table__method"></colgroup>
+              <thead><tr><th scope="col">一级分类</th><th scope="col">调研模块</th><th scope="col">目的、工具与数据采集方法</th></tr></thead>
+              <tbody>
+                <tr><th scope="rowgroup" rowspan="3">市场调研分类</th><td>产品开品</td><td>目的：分析产品市场数据，作为产品开发依据</td></tr>
+                <tr><td>新品推广</td><td>目的：跟进新品动态<br>• 跟进竞品动态，及时调整销售策略</td></tr>
+                <tr><td>老品追踪</td><td>目的：市场变动趋势追踪<br>• 市场新品、新卖点跟踪<br>• 掌握竞品动态</td></tr>
+                <tr><th scope="rowgroup" rowspan="10">市场调研维度及数据采集</th><td>关键词流量</td><td>工具：卖家精灵等</td></tr>
+                <tr><td>关键词趋势</td><td>工具：谷歌趋势等</td></tr>
+                <tr><td>销售情况分析</td><td>数据采集方法<br>• 小类大数固定的产品：采用 BS 采集（默认使用此方法）<br>• 小类不固定的产品：采用关键词采集，采集至预估销量</td></tr>
+                <tr><td>品牌占有率分析</td><td>基础数据分析</td></tr>
+                <tr><td>产品功能的差异对比分析（卖点分析）</td><td>基础数据分析</td></tr>
+                <tr><td>产品痛点分析（评论和 Q&amp;A）</td><td>listing 卖家精灵抓取</td></tr>
+                <tr><td>产品价格分析</td><td>基础数据分析</td></tr>
+                <tr><td>竞品分析</td><td>竞品数据收集<br>• 品牌链接　• 独立站　• 布局区域　• 社交媒体</td></tr>
+                <tr><td>用户画像</td><td>listing 详情及亚马逊后台卖家介绍</td></tr>
+                <tr><td>供应链分析</td><td>• 行业供应链调研　• 竞品供应链调研　• 竞争对手背景调查</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>[2] 行业通用市场调研表</p>
+          <p class="article-indent">玩具行业有一个本质区别：使用者和购买者往往不是同一个人。以 Momcozy 为例，其多数产品面对的是“使用者＝购买者”的场景，即妈妈为自己做出购买决策；儿童玩具则需要同时理解儿童使用者与家长购买者，因此，产品研究必须覆盖更完整的需求链条与决策框架。</p>
+          <p class="article-indent">在常规数据分析中，例如研究剪纸书，我们通常可以获得月销量 5000、客单价 14.99、Review 4.8、品牌集中度中等一类指标。这些数据对于判断市场规模、竞争强度和商业机会都很有价值，却仍无法直接回答一个关键问题：为什么这个产品能够卖得好？</p>
+          <p class="article-indent">前面提到的：Djeco 通过设计与图案风格建立品牌识别，Lakeshore 则围绕儿童发展目标与教育场景组织产品体系。两条路径都成立，不在于哪一种更“高级”，而在于它是否与所服务的人群和需求相匹配。或者说，想跟体量挂钩，更需考虑哪个需求人群体量更大；不是盲目套用哪一种方法论；真正有效的产品研究，或许还是应明确品牌服务的是谁、解决什么问题，再让数据、方法、审美表达与真实使用情境的观察彼此验证。</p>
+          <p class="article-indent"><span class="article-conclusion">基于以上，品牌早期往往受限于缺少方法论，品牌发展到后期则可能受困于方法论过剩。产品创新除了基础市场调研，还需要站在更高的视角，同时考虑使用者的兴趣、购买者的教育观念与真实使用场景。真正的创新未必意味着大幅改变或彻底革新，很多时候恰恰来自一个细小而准确的功能调整。当创新建立在真实需求之上时，产品会形成系列，系列会沉淀为品牌；当创新脱离需求时，再多的新品也只是在一次次重新开始。<br>---end</span></p>
+        </article>
+      </section>
+
+      <section class="work-section blog-entry" id="article-innovators-dilemma">
+        <article>
+          <header><p>Thinking Journal / 03</p><h2>《读〈创新者的窘境〉后感——成熟公司如何孕育非连续性创新》</h2></header>
+          <p>《创新者的窘境》提到，很多大型公司和成熟产品往往无法应对破坏性创新的挑战，因为它们总是优先考虑现有业绩以及现有客户的需求，忽视了潜在市场的变化和新兴技术的力量。我基本认同这个观点；我一开始也是这样认为，但后来在脑海里反复复盘思考，我认为，这样的想法还是太浅了。</p>
+          <p>我认为很多人会跟我一样，一开始会误解《创新者的窘境》的核心。</p>
+          <p>可能很多人以为这本书是在说：“大公司不够创新，所以失败。”其实 The Innovator's Dilemma 真正想表达的是：很多优秀的公司，正因为管理做得太好，所以才错过了破坏性创新。</p>
+
+          <h3>一、企业永远会优先服务现在最赚钱的客户</h3>
+          <p>企业真正的敌人，往往不是竞争对手，而是自己过去成功的那套逻辑。</p>
+          <p>过去让你成功的东西，比如客户导向、利润导向、流程管理、资源集中、风险控制，在面对破坏性创新时，可能会变成障碍。</p>
+          <p>如果你是一个成熟品牌，每年几十亿元销售额；你的核心客户告诉你：</p>
+          <p>产品做得更高端一点、性能再提升一点、包装再精致一点、售后再完善一点。</p>
+          <p>这些需求都是真实的，而且马上就能带来收入。</p>
+          <p>但与此同时，一个新技术刚出现。它：</p>
+          <p>● 功能很弱</p>
+          <p>● 用户很少</p>
+          <p>● 利润很低</p>
+          <p>● 市场还看不出来</p>
+          <p>公司内部几乎所有数据都会告诉你：不要投入。因为 ROI 不好看。成熟企业的数据，本身就是“过去”的数据。</p>
+          <p>流程最喜欢问：</p>
+          <p>竞品卖得怎么样？</p>
+          <p>Review 怎么说？</p>
+          <p>如果当年的胶卷公司去问用户：你想要什么？用户不会回答：我想要数码相机。</p>
+          <p>他们只会说：我希望胶卷便宜一点、冲洗快一点、底片容量更大一点。</p>
+          <p>因为用户只能基于已有经验表达需求。</p>
+          <p>因此，在考虑现在的用户需要什么的同时，也要考虑未来会出现什么用户；或许这才是创新的核心。破坏性创新最大的特点就是：</p>
+          <p class="article-emphasis">未来的客户今天还不存在。</p>
+          <p>基于以上，书本的内容大概结束了。其实《创新者的窘境》提出的是为什么会发生（Why）；我想讨论一下解决方案（How）。</p>
+
+          <h3>二、制度比文化更真实。员工相信绩效，不相信口号</h3>
+          <p>“怎么提高创新能力？”我觉得，这个问题本身可能问错了。真正应该问的是：“怎样设计一个组织，让普通人也敢创新？”</p>
+          <p>很多企业会积极倡导：鼓励创新、鼓励试错、大胆尝试。但是制度没有改，最后创新文化一定失败。为什么？因为制度比文化更真实。员工相信绩效，不相信口号。</p>
+          <p>如果公司规则没有变，再好的团队，最后也会逐渐变成另一个按流程做事的部门。</p>
+          <p>前面内容提到：公司内部几乎所有数据都会告诉你不要投入，因为 ROI 不好看。老板第一句话：今年销售目标是多少？创新部门说：不知道。</p>
+          <p>老板：那为什么要养你们？结束。</p>
+          <p>所以创新部门最后也开始做微创新，因为只有这样才能汇报。</p>
+          <p>我思考了一下，根据 NPDP 的理论知识，是不是可以分开一个创新团队，设立不同指标？也就是双系统组织（Dual Operating System）。</p>
+          <p>在主航道组织做现在的事——赚钱，占业绩的大头；因为这里不需要突破性创新，需要的是效率。</p>
+          <p class="article-emphasis">把创新从原有组织逻辑里切出来，但又不能让它彻底脱离业务。主航道组织继续赚钱，这个部分不要被创新打乱。</p>
+          <p>所以创新小队伍的价值，不是比主团队更聪明，而是它能给一个新机会提供“幼苗期保护”。</p>
+          <p>丰田产品开发里有一个很重要的角色叫 Chief Engineer / Shusa。Lean Enterprise Institute 对它的解释是：这是对一个产品线开发负总责的人，带领一个小型专职团队，从产品概念、商业论证、技术设计，到协调生产工程、销售和量产都负责。这和普通公司里“产品经理提需求、设计做图、工程做结构、采购算成本、销售给意见”的分工逻辑不一样。它本质上是在组织里设置一个有完整产品判断权的人和小团队，避免产品被部门流程切碎。</p>
+          <p>公司不缺创新想法，缺的是创新想法的生存机制。很多创意不是被证明失败了，而是在还没有被正确验证之前，就已经被流程杀死了。</p>
+          <p>真正的解决方案不是让员工更勇敢，而是让员工不需要用个人职业风险去替公司承担创新风险。公司必须把创新风险制度化、预算化、边界化。</p>
+          <p>也就是说：失败不能是个人事故，而应该是组织预算的一部分。</p>
+          <p>一边利用现有能力赚钱，一边 exploration，探索新机会。O’Reilly 和 Tushman 关于双元组织的研究也强调，探索与利用需要高级管理团队明确拥有、清晰传达，并通过共同愿景和不同机制来同时管理。（完整引用文章已附在末尾）</p>
+          <figure class="word-figure"><img src="assets/content/articles/innovators-dilemma/image1.png" alt="组织双元能力研究节选" /></figure>
+          <p>例如，这个团队一年不要求做出 20 个上市 SKU，而是要求完成：</p>
+          <p>真实用户观察、趋势研究、低成本样机、概念测试、小批量试销、失败复盘、机会地图。</p>
+          <p>它的核心 KPI 不是 ROI，而是：学习速度。也就是：这个团队今年帮公司弄清楚了哪些未知问题？</p>
+          <table class="research-article-table">
+            <thead><tr><th>类型</th><th>目标</th><th>管理方式</th><th>考核标准</th></tr></thead>
+            <tbody>
+              <tr><td>主航道项目</td><td>稳定赚钱</td><td>IPD / 流程管理</td><td>销量、利润、交付、质量</td></tr>
+              <tr><td>创新项目</td><td>探索未来</td><td>创新特区 / 小队伍</td><td>学习速度、验证质量、机会发现</td></tr>
+            </tbody>
+          </table>
+          <p>很多大公司并不是不重视创新，也不是没有人才和资源，而是组织内部天然更倾向于确定性，本质上都是为了保障现有业务稳定运转。但当所有新想法都必须用成熟业务的标准来衡量时，那些早期不成熟、市场不清晰、短期回报不确定的机会，往往还没有被真正验证，就已经被组织机制筛掉了。</p>
+          <p class="article-end-marker">所以，《创新者的窘境》给我的启发并不是“企业要不要创新”，而是：企业能否设计出一种机制，让创新不必依赖少数人的勇气，而成为组织长期能力的一部分。当创新不再只是个人冒险，而是被组织正式保护、持续验证和有效转化时，企业才真正有可能跨越自己的成功惯性，走向下一条增长曲线。——end</p>
+          <footer>
+            <p>推荐研读海外文章：</p>
+            <p>主题：组织双元能力，即企业如何同时做好“利用现有业务”与“探索新机会”。</p>
+            <p>文章名称：Organizational Ambidexterity in Action: How Managers Explore and Exploit</p>
+            <p>作者：Charles A. O’Reilly III、Michael L. Tushman</p>
+            <p>期刊出处：California Management Review 收录，Harvard Business School 发表</p>
+            <p>年份：2011；卷期：Vol. 53, No. 4；DOI：10.1525/cmr.2011.53.4.5</p>
+            <p>文章来源：https://cmr.berkeley.edu/</p>
+          </footer>
+        </article>
+      </section>
+
+      <section class="work-section textile-design" id="textile-design">
+        <div class="section-heading">
+          <p>03 / Textile Products</p>
+          <h2>纺织类产品（产品设计/产品开发）</h2>
+        </div>
+        <nav class="project-directory textile-project-directory" data-project-directory="textile" aria-label="纺织项目目录"></nav>
+        <section class="textile-project textile-project--preschool">
+          <div class="collection-heading">
+            <p>01 / Textile Project</p><h2>01</h2>
+            <div><h3>幼儿背包设计/开发</h3><small class="collection-title-en">Preschool Backpack Design and Development</small></div>
+          </div>
+          <aside class="collection-note"><span>项目注释 / Project Notes</span><p>项目时间：2019-2023；围绕幼儿日常使用场景、造型比例、图案语言与基础收纳功能展开设计，兼顾低龄儿童的识别度、趣味性和背负体验。</p></aside>
+          <div class="complete-image-gallery complete-image-gallery--catalog collection-gallery-single" aria-label="幼儿背包设计及开发作品">
+            <figure><img loading="lazy" src="assets/content/textile-preschool-backpacks/01.jpg" alt="幼儿背包设计及开发作品 1" /></figure>
+            <figure><img loading="lazy" src="assets/content/textile-preschool-backpacks/02.jpg" alt="幼儿背包设计及开发作品 2" /></figure>
+            <figure><img loading="lazy" src="assets/content/textile-preschool-backpacks/03.jpg" alt="幼儿背包设计及开发作品 3" /></figure>
+            <figure><img loading="lazy" src="assets/content/textile-preschool-backpacks/04.jpg" alt="幼儿背包设计及开发作品 4" /></figure>
+            <figure><img loading="lazy" src="assets/content/textile-preschool-backpacks/05.jpg" alt="幼儿背包设计及开发作品 5" /></figure>
+            <figure><img loading="lazy" src="assets/content/textile-preschool-backpacks/06.jpg" alt="幼儿背包设计及开发作品 6" /></figure>
+            <figure><img loading="lazy" src="assets/content/textile-preschool-backpacks/07.jpg" alt="幼儿背包设计及开发作品 7" /></figure>
+          </div>
+        </section>
+
+      <section class="textile-project textile-project--school">
+        <div class="collection-heading">
+          <p>02 / Textile Project</p><h2>02</h2>
+          <div><h3>护脊类学龄儿童背包设计/开发</h3><small class="collection-title-en">Ergonomic School Backpack Design and Development</small></div>
+        </div>
+        <aside class="collection-note"><span>项目注释 / Project Notes</span><p>项目时间：2020-2023，围绕学龄儿童身体、护脊需求、收纳路径与上学出行场景展开结构设计，覆盖前期研究、产品系列规划、结构设计、实物落地研究、视觉表达。</p></aside>
+        <div class="complete-image-gallery complete-image-gallery--catalog collection-gallery-single" aria-label="护脊类学龄儿童背包设计及开发作品">
+          <figure><img loading="lazy" src="assets/content/textile-school-backpacks/01.jpg" alt="护脊类学龄儿童背包作品 1" /></figure>
+          <figure><img loading="lazy" src="assets/content/textile-school-backpacks/02.jpg" alt="护脊类学龄儿童背包作品 2" /></figure>
+          <figure><img loading="lazy" src="assets/content/textile-school-backpacks/03.jpg" alt="护脊类学龄儿童背包作品 3" /></figure>
+          <figure><img loading="lazy" src="assets/content/textile-school-backpacks/04.jpg" alt="护脊类学龄儿童背包作品 4" /></figure>
+          <figure><img loading="lazy" src="assets/content/textile-school-backpacks/05.jpg" alt="护脊类学龄儿童背包作品 5" /></figure>
+          <figure><img loading="lazy" src="assets/content/textile-school-backpacks/19-new-study-scene.jpg" alt="护脊类学龄儿童背包学习场景与收纳说明" /></figure>
+          <figure><img loading="lazy" src="assets/content/textile-school-backpacks/20-new-spine-growth.jpg" alt="护脊类学龄儿童背包脊椎成长与调节装置说明" /></figure>
+          <figure><img loading="lazy" src="assets/content/textile-school-backpacks/21-new-weight-balance.jpg" alt="护脊类学龄儿童背包科学配重与多场景使用说明" /></figure>
+          <figure><img loading="lazy" src="assets/content/textile-school-backpacks/22-new-ergonomic-system.jpg" alt="护脊类学龄儿童背包环抱式减负系统说明" /></figure>
+          <figure><img loading="lazy" src="assets/content/textile-school-backpacks/23-school-backpack-lifestyle-board.png" alt="护脊类学龄儿童背包户外使用与内部收纳场景" /></figure>
+        </div>
+      </section>
+
+      <section class="textile-project textile-project--smiley">
+        <div class="collection-heading">
+          <p>03 / Textile Project</p>
+          <h2>03</h2>
+          <div>
+            <h3>东南亚多巴胺系列</h3>
+            <small class="collection-title-en">Smiley Day Dopamine Series</small>
+          </div>
+        </div>
+        <aside class="collection-note"><span>项目注释 / Project Notes</span><p>2025年项目，主要面向东南亚市场，核心人群为20-35岁之间的女性；整个系列核心是明亮活泼，多巴胺色系除了是个性表达，在视觉心理中也可以在一定程度上释放心理压力，从电脑包、旅行收纳到背包，建立明亮、统一且可延展的产品视觉系统。材质以尼龙为主，是户外常用的材质，具有一定的凉感；适合东南亚热带的季节天气</p></aside>
+        <div class="complete-image-gallery complete-image-gallery--mixed" aria-label="2025 Smiley Day 多巴胺系列完整作品">
+          <figure><img loading="lazy" src="assets/content/textile-2025/01-smileyday-logo.jpg" alt="Smiley Day 品牌标志设计" /></figure>
+          <figure><img loading="lazy" src="assets/content/textile-2025/02-diy-badges.jpg" alt="Smiley Day DIY 徽章设计" /></figure>
+          <figure><img loading="lazy" src="assets/content/textile-2025/06-backpack-system.jpg" alt="Smiley Day 儿童双肩包设计" /></figure>
+          <figure>
+            <img loading="lazy" src="assets/content/textile-2025/07-prototype-close.jpg" alt="Smiley Day 旅行化妆包和 CCD 收纳包" />
+            <figcaption><span>旅行化妆包 / CCD收纳包</span><small>Travel Makeup Bag / CCD Storage Bag</small></figcaption>
+          </figure>
+          <figure><img loading="lazy" src="assets/content/textile-2025/11-design-board.jpg" alt="Smiley Day 设计图 03" /></figure>
+          <figure><img loading="lazy" src="assets/content/textile-2025/12-design-board.jpg" alt="Smiley Day 设计图 04" /></figure>
+          <figure>
+            <img loading="lazy" src="assets/content/textile-2025/14-design-board.jpg" alt="Smiley Day 单肩 iPad 包设计" />
+            <figcaption><span>单肩 iPad包</span><small>Single-shoulder iPad Bag</small></figcaption>
+          </figure>
+          <figure>
+            <img loading="lazy" src="assets/content/textile-2025/15-design-board.jpg" alt="Smiley Day 旅行化妆包设计" />
+            <figcaption><span>旅行化妆包</span><small>Travel Makeup Bag</small></figcaption>
+          </figure>
+          <figure>
+            <img loading="lazy" src="assets/content/textile-2025/17-design-board.jpg" alt="Smiley Day 单肩电脑包设计" />
+            <figcaption><span>单肩电脑包</span><small>Single-shoulder Laptop Bag</small></figcaption>
+          </figure>
+          <figure><img loading="lazy" src="assets/content/textile-2025/19-design-board.jpg" alt="Smiley Day 设计图 11" /></figure>
+          <figure><img loading="lazy" src="assets/content/textile-2025/20-design-board.jpg" alt="Smiley Day 设计图 12" /></figure>
+          <figure><img loading="lazy" src="assets/content/textile-2025/22-product-image.jpg" alt="Smiley Day 产品效果图" /></figure>
+          <figure>
+            <img loading="lazy" src="assets/content/textile-2025/08-prototype-wide.jpg" alt="Smiley Day 样品落地修改现场" />
+            <figcaption><span>样品落地修改的现场 🤯</span><small>On-site Sample Refinement 🤯</small></figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="textile-project textile-project--stationery">
+        <div class="collection-heading">
+          <p>04 / Textile Project</p><h2>04</h2>
+          <div><h3>其他周边产品</h3><small class="collection-title-en">Stationery &amp; Outdoor Product Development</small></div>
+        </div>
+        <aside class="collection-note"><span>项目注释 / Project Notes</span><p class="stationery-project-note"><span>围绕学龄儿童的收纳、携带与使用场景，延展笔袋/学科袋等文具产品、以单品差异化为开发目标；</span><span class="note-detail">1/ 雨衣材质为透气风衣的丝塔隆材质加上冲锋衣的无车缝压边工艺；不仅轻薄，还达到了5级防水，重新定义儿童雨衣。</span><span class="note-detail">2/ 学科袋的出现，是场景需求所致；常规的文件袋我们常见的 3-5元左右一个，薄，无厚度；学科袋基于学校分科的情况以及中国消费当时呈现的“口红效应”的背景，首次出售高达30元，学汛期间，月销过万（销量受断货影响有所保留），线下线上均热卖，不过该品短短一两年就在市场仿照跟进下退出历史舞台。</span><span class="note-detail">3/ 翻转笔袋：基于低年级轻收纳需求做的新结构。</span></p></aside>
+        <div class="complete-image-gallery complete-image-gallery--catalog collection-gallery-single" aria-label="文具开发作品">
+          <figure><img loading="lazy" src="assets/content/textile-stationery/01.jpg" alt="文具开发作品 1" /></figure>
+          <figure><img loading="lazy" src="assets/content/textile-stationery/02.jpg" alt="文具开发作品 2" /></figure>
+          <figure><img loading="lazy" src="assets/content/textile-stationery/03-subject-bag-board.png" alt="语文与数学学科袋系列设计展示" /></figure>
+        </div>
+      </section>
+
+      <section class="textile-project textile-project--zingroo">
+        <div class="collection-heading">
+          <p>05 / Textile Project</p><h2>05</h2>
+          <div><h3>Zingroo 品牌与产品系统</h3><small class="collection-title-en">Zingroo Brand &amp; Product System</small></div>
+        </div>
+        <aside class="collection-note"><span>项目注释 / Project Notes</span><p>2021年项目，面向中国线下百货商超等经销渠道，品牌策略主要以多图案/多sku去应对线下订货需求、统一品牌的版型设计，分别定位为1/贵族系列：材质使用了pu皮做图案印刷面拼接古治尼龙；2/休闲系列：细腻的涤纶布料，多口袋的设计；3/艺术系列：比较有光泽的尼龙材质配合抽象插画画风；总结：该整套系列面向线下经销渠道，主要优势就是图案多样/版型设计语言规范/供货折扣力度大。</p></aside>
+        <div class="complete-image-gallery complete-image-gallery--catalog" aria-label="2020 Zingroo 品牌产品画册完整作品">
+          <figure><img loading="lazy" src="assets/content/textile-2020/catalog-page-01.jpg" alt="Zingroo 品牌产品画册第 1 页" /></figure>
+          <figure><img loading="lazy" src="assets/content/textile-2020/catalog-page-04.jpg" alt="Zingroo 品牌产品画册第 4 页" /></figure>
+          <figure><img loading="lazy" src="assets/content/textile-2020/catalog-page-05.jpg" alt="Zingroo 品牌产品画册第 5 页" /></figure>
+          <figure><img loading="lazy" src="assets/content/textile-2020/catalog-page-06.jpg" alt="Zingroo 品牌产品画册第 6 页" /></figure>
+          <figure><img loading="lazy" src="assets/content/textile-2020/catalog-page-07.jpg" alt="Zingroo 品牌产品画册第 7 页" /></figure>
+          <figure><img loading="lazy" src="assets/content/textile-2020/catalog-page-08.jpg" alt="Zingroo 品牌产品画册第 8 页" /></figure>
+          <figure><img loading="lazy" src="assets/content/textile-2020/catalog-page-09.jpg" alt="Zingroo 品牌产品画册第 9 页" /></figure>
+          <figure><img loading="lazy" src="assets/content/textile-2020/catalog-page-10.jpg" alt="Zingroo 品牌产品画册第 10 页" /></figure>
+          <figure><img loading="lazy" src="assets/content/textile-2020/catalog-page-11.jpg" alt="Zingroo 品牌产品画册第 11 页" /></figure>
+          <figure><img loading="lazy" src="assets/content/textile-2020/catalog-page-12.jpg" alt="Zingroo 品牌产品画册第 12 页" /></figure>
+          <figure><img loading="lazy" src="assets/content/textile-2020/catalog-page-13.jpg" alt="Zingroo 品牌产品画册第 13 页" /></figure>
+          <figure><img loading="lazy" src="assets/content/textile-2020/catalog-page-14.jpg" alt="Zingroo 品牌产品画册第 14 页" /></figure>
+          <figure><img loading="lazy" src="assets/content/textile-2020/catalog-page-15.jpg" alt="Zingroo 品牌产品画册第 15 页" /></figure>
+          <figure><img loading="lazy" src="assets/content/textile-2020/catalog-page-17.jpg" alt="Zingroo 品牌产品画册第 17 页" /></figure>
+          <figure><img loading="lazy" src="assets/content/textile-2020/catalog-page-18.jpg" alt="Zingroo 品牌产品画册第 18 页" /></figure>
+          <figure><img loading="lazy" src="assets/content/textile-2020/catalog-page-19.jpg" alt="Zingroo 品牌产品画册第 19 页" /></figure>
+          <figure><img loading="lazy" src="assets/content/textile-2020/catalog-page-20.jpg" alt="Zingroo 品牌产品画册第 20 页" /></figure>
+          <figure><img loading="lazy" src="assets/content/textile-2020/catalog-page-21.jpg" alt="Zingroo 品牌产品画册第 21 页" /></figure>
+          <figure><img loading="lazy" src="assets/content/textile-2020/catalog-page-22.jpg" alt="Zingroo 品牌产品画册第 22 页" /></figure>
+          <figure><img loading="lazy" src="assets/content/textile-2020/catalog-page-25.jpg" alt="Zingroo 品牌产品画册第 25 页" /></figure>
+          <figure><img loading="lazy" src="assets/content/textile-2020/catalog-page-26.jpg" alt="Zingroo 品牌产品画册第 26 页" /></figure>
+          <figure><img loading="lazy" src="assets/content/textile-2020/catalog-page-28.jpg" alt="Zingroo 品牌产品画册第 28 页" /></figure>
+          <figure><img loading="lazy" src="assets/content/textile-2020/catalog-page-29.jpg" alt="Zingroo 品牌产品画册第 29 页" /></figure>
+          <figure><img loading="lazy" src="assets/content/textile-2020/catalog-page-30.jpg" alt="Zingroo 品牌产品画册第 30 页" /></figure>
+          <figure><img loading="lazy" src="assets/content/textile-2020/catalog-page-32.jpg" alt="Zingroo 品牌产品画册第 32 页" /></figure>
+          <figure><img loading="lazy" src="assets/content/textile-2020/catalog-page-33.jpg" alt="Zingroo 品牌产品画册第 33 页" /></figure>
+        </div>
+      </section>
+
+      </section>
+
+      <section class="work-section graphic-design" id="graphic-design">
+        <div class="poster-orbit" data-poster-orbit tabindex="0" aria-label="平面设计作品滚动透视网格；滚轮、拖动或方向键可浏览，点击图片放大">
+          <div class="poster-perspective-grid" data-poster-grid>
+            <figure><img src="assets/content/graphic-design/work-06.jpg" alt="平面设计作品 1" /></figure>
+            <figure><img src="assets/content/graphic-design/work-01.jpg" alt="平面设计作品 2" /></figure>
+            <figure><img src="assets/content/graphic-design/work-03.jpg" alt="平面设计作品 3" /></figure>
+            <figure><img src="assets/content/graphic-design/work-07.jpg" alt="平面设计作品 4" /></figure>
+            <figure><img src="assets/content/graphic-design/orbit-fire-poster-01.png" alt="消防宣传海报 1" /></figure>
+            <figure><img src="assets/content/graphic-design/orbit-fire-poster-02.png" alt="消防宣传海报 2" /></figure>
+            <figure><img src="assets/content/graphic-design/vi-page-01.jpg" alt="春日古茗品牌 VI 第 1 页" /></figure>
+            <figure><img src="assets/content/graphic-design/vi-page-05.jpg" alt="春日古茗品牌 VI 第 5 页" /></figure>
+            <figure><img src="assets/content/graphic-design/vi-page-10.jpg" alt="春日古茗品牌 VI 第 10 页" /></figure>
+            <figure><img src="assets/content/graphic-design/vi-page-12.jpg" alt="春日古茗品牌 VI 第 12 页" /></figure>
+            <figure><img src="assets/content/graphic-design/vi-page-13.jpg" alt="春日古茗品牌 VI 第 13 页" /></figure>
+            <figure><img src="assets/content/graphic-design/vi-page-14.jpg" alt="春日古茗品牌 VI 第 14 页" /></figure>
+            <figure><img src="assets/content/graphic-design/vi-page-15.jpg" alt="春日古茗品牌 VI 第 15 页" /></figure>
+            <figure><img src="assets/content/graphic-design/vi-page-16.jpg" alt="春日古茗品牌 VI 第 16 页" /></figure>
+            <figure><img src="assets/content/graphic-design/vi-page-17.jpg" alt="春日古茗品牌 VI 第 17 页" /></figure>
+            <figure><img src="assets/content/graphic-design/vi-page-18.jpg" alt="春日古茗品牌 VI 第 18 页" /></figure>
+            <figure><img src="assets/content/graphic-design/vi-page-21.jpg" alt="春日古茗品牌 VI 第 21 页" /></figure>
+            <figure><img src="assets/content/graphic-design/vi-page-22.jpg" alt="春日古茗品牌 VI 第 22 页" /></figure>
+            <figure><img src="assets/content/graphic-design/fire-vi/fire-vi-page-01.jpg" alt="消防宣传品牌 VI 第 1 页" /></figure>
+            <figure><img src="assets/content/graphic-design/fire-vi/fire-vi-page-02.jpg" alt="消防宣传品牌 VI 第 2 页" /></figure>
+            <figure><img src="assets/content/graphic-design/fire-vi/fire-vi-page-03.jpg" alt="消防宣传品牌 VI 第 3 页" /></figure>
+            <figure><img src="assets/content/graphic-design/fire-vi/fire-vi-page-04.jpg" alt="消防宣传品牌 VI 第 4 页" /></figure>
+            <figure><img src="assets/content/graphic-design/fire-vi/fire-vi-page-05.jpg" alt="消防宣传品牌 VI 第 5 页" /></figure>
+            <figure><img src="assets/content/graphic-design/fire-vi/fire-vi-page-06.jpg" alt="消防宣传品牌 VI 第 6 页" /></figure>
+            <figure><img src="assets/content/graphic-design/fire-vi/fire-vi-page-07.jpg" alt="消防宣传品牌 VI 第 7 页" /></figure>
+            <figure><img src="assets/content/graphic-design/fire-vi/fire-vi-page-08.jpg" alt="消防宣传品牌 VI 第 8 页" /></figure>
+            <figure><img src="assets/content/graphic-design/fire-vi/fire-vi-page-09.jpg" alt="消防宣传品牌 VI 第 9 页" /></figure>
+            <figure><img src="assets/content/graphic-design/fire-vi/fire-vi-page-10.jpg" alt="消防宣传品牌 VI 第 10 页" /></figure>
+            <figure><img src="assets/content/graphic-design/fire-vi/fire-vi-page-11.jpg" alt="消防宣传品牌 VI 第 11 页" /></figure>
+            <figure><img src="assets/content/graphic-design/fire-vi/fire-vi-page-12.jpg" alt="消防宣传品牌 VI 第 12 页" /></figure>
+            <figure><img src="assets/content/graphic-design/fire-vi/fire-vi-page-13.jpg" alt="消防宣传品牌 VI 第 13 页" /></figure>
+            <figure><img src="assets/content/graphic-design/fire-vi/fire-vi-page-14.jpg" alt="消防宣传品牌 VI 第 14 页" /></figure>
+          </div>
+          <div class="graphic-grid-ui">
+            <div class="graphic-section-heading">
+              <h2>平面设计</h2>
+              <i aria-hidden="true"></i>
+              <p>04 / Graphic Design<small>Selected Works</small></p>
+            </div>
+            <div class="poster-grid-hint" aria-hidden="true"><span>Auto scroll · Hover · Click</span><b>↕</b></div>
+          </div>
+        </div>
+        <aside class="graphic-side-preview" data-graphic-preview aria-live="polite">
+          <button type="button" data-graphic-preview-close aria-label="关闭右侧大图">×</button>
+          <div class="graphic-side-preview-nav" aria-label="切换预览作品">
+            <button type="button" data-graphic-preview-prev aria-label="查看上一张">←</button>
+            <button type="button" data-graphic-preview-next aria-label="查看下一张">→</button>
+          </div>
+          <div class="graphic-side-preview-empty">
+            <span>Graphic Design</span>
+            <small>Hover a work · Click to preview</small>
+          </div>
+          <figure>
+            <img data-graphic-preview-image alt="" />
+            <figcaption><span data-graphic-preview-caption></span><small data-graphic-preview-count></small></figcaption>
+          </figure>
+        </aside>
+      </section>
+
+      <section class="work-section about home-about-section about-detail-section" id="about" aria-label="关于我">
+        <div class="home-about-inner about-detail-inner">
+          <div class="home-about-heading about-detail-heading">
+            <p>05 / 关于我</p>
+            <h2><small>关于我</small></h2>
+          </div>
+          <div class="home-about-content about-detail-content">
+        <div class="about-layout">
+          <div class="about-left-column">
+            <div class="about-photo-carousel" data-about-carousel>
+              <div class="about-photo-track" data-about-track aria-label="Elione 个人与生活照片">
+                <figure class="portrait-frame"><img src="assets/about/photos/photo-07.jpg" alt="沈婕薇 Elione 个人照片 1" /></figure>
+                <figure class="portrait-frame"><img src="assets/about/photos/photo-01.jpg" alt="沈婕薇 Elione 个人照片 2" /></figure>
+                <figure class="portrait-frame"><img src="assets/about/photos/photo-04.jpg" alt="沈婕薇 Elione 个人照片 3" /></figure>
+                <figure class="portrait-frame"><img src="assets/about/photos/photo-10.jpg" alt="沈婕薇 Elione 个人照片 4" /></figure>
+              </div>
+              <div class="about-photo-controls">
+                <div class="about-photo-buttons">
+                  <button type="button" data-about-prev aria-label="上一张照片">←</button>
+                  <button type="button" data-about-next aria-label="下一张照片">→</button>
+                </div>
+                <p class="about-photo-count" aria-live="polite"><span data-about-current>01</span> / <span>04</span></p>
+              </div>
+            </div>
+            <div class="contact-block">
+              <p>联系我</p>
+              <span>商务电话：17859381562</span>
+              <span>微信：Eillioness</span>
+              <a href="mailto:eillione@foxmail.com">eillione@foxmail.com</a>
+              <a href="mailto:garecelle@gmail.com">garecelle@gmail.com</a>
+              <a href="https://www.linkedin.com/public-profile/settings" target="_blank" rel="noreferrer">LinkedIn: elione s</a>
+            </div>
+          </div>
+          <div class="about-copy">
+            <p>
+              <span>我是沈婕薇 Elione，产品经理/自由设计师；<br />MBTI: INTJ<br />喜欢在产品逻辑和视觉情绪之间找到平衡。</span>
+            </p>
+            <p>
+              <span>设计专业出身的产品经理，拥有NPDP国际产品经理认证，掌握项目管理和产品开发方法论；并对品牌产品研发有较高审美把控。2019年-2026年，8年时间工作聚焦儿童市场。前5年深耕国内市场细分领域：儿童背包及文具，熟悉产品设计、结构落地、工艺与供应链开发，关注消费者与使用者，在该细分领域具有无可替代的核心竞争力；后3年顺应跨境趋势进入跨境品牌工作，开始跨境市场分析以及研究欧美教育体系下的产品开发。</span>
+            </p>
+            <p>
+              <span>无论作为产品经理还是设计师，我的灵感来自生活本身；人群观察研究、展览、城市发展、市场变化，而我们本身也处在变化中。我注重个人的生活方式和情绪，我相信一位有温度的产品开发者，才能开发出有温度、符合用户需求的好产品。</span>
+            </p>
+            <div class="life-grid">
+              <span>玩具市场</span>
+              <span>视觉传达</span>
+              <span>数据调研</span>
+              <span>市场研究</span>
+              <span>人群研究</span>
+              <span>阅读</span>
+            </div>
+          </div>
+        </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="assets/vendor/three-r149.min.js"></script>
+    <script src="assets/vendor/gsap-3.12.5.min.js"></script>
+    <script src="assets/home-book/home-book.js?v=20261124-home-preload-14"></script>
+    <script src="script.js?v=20261124-route-preload-19"></script>
+    <script src="language.js?v=20261124-research-intro-11"></script>
+  </body>
+</html>
