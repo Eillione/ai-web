@@ -19,6 +19,6 @@
 
 ## Cloudflare Pages 发布
 
-推送到 `main` 后，GitHub Actions 会将网站发布到现有的 `elione-sjw` Pages 项目，并核对 `https://elione-sjw.com/` 的首页内容。也可以从 Actions 页签手动运行 **Deploy website to Cloudflare Pages**。
+推送到 `main` 后，GitHub Actions 会将网站发布到现有的 `elione-sjw` Pages 项目，并核对线上提交标记及首页状态。也可以从 Actions 页签手动运行 **Deploy website to Cloudflare Pages**。
 
 仓库需配置 Actions Secret `CLOUDFLARE_API_TOKEN`，令牌只需对应 Cloudflare 账号的 **Cloudflare Pages: Edit** 权限。发布包排除未使用的超大原始媒体，网站实际引用的压缩媒体仍会部署。

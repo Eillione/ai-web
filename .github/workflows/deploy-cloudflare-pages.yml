@@ -43,6 +43,7 @@ jobs:
           node --check "$SITE_DIR/script.js"
           node --check "$SITE_DIR/assets/home-book/home-book.js"
           test -s "$SITE_DIR/index.html"
+          printf '%s\n' "$GITHUB_SHA" > "$SITE_DIR/deployment-version.txt"
           oversized=$(find "$SITE_DIR" -type f -size +26214400c -print)
           if [[ -n "$oversized" ]]; then
             echo "::error::At least one asset exceeds the Cloudflare Pages 25 MiB limit."
@@ -64,17 +65,19 @@ jobs:
           npx --yes wrangler@4.168.0 pages deploy "$SITE_DIR" \
             --project-name=elione-sjw --branch=main --commit-hash="$GITHUB_SHA"
 
-      - name: Verify the production homepage
+      - name: Verify the production version and homepage
         shell: bash
         run: |
           for attempt in {1..8}; do
             if curl --silent --show-error --fail --max-time 15 \
-              --output "$RUNNER_TEMP/elione-live.html" \
-              "https://elione-sjw.com/?deploy=$GITHUB_SHA" &&
-              cmp -s "$SITE_DIR/index.html" "$RUNNER_TEMP/elione-live.html"; then
+              --output "$RUNNER_TEMP/elione-live-version.txt" \
+              "https://elione-sjw.com/deployment-version.txt?deploy=$GITHUB_SHA" &&
+              cmp -s "$SITE_DIR/deployment-version.txt" "$RUNNER_TEMP/elione-live-version.txt" &&
+              curl --silent --show-error --fail --max-time 15 \
+                --output /dev/null "https://elione-sjw.com/?deploy=$GITHUB_SHA"; then
               exit 0
             fi
             sleep 5
           done
-          echo "::error::The production homepage did not match the published commit."
+          echo "::error::The production version or homepage could not be verified."
           exit 1
