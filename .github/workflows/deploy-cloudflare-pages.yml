@@ -1,0 +1,80 @@
+name: Deploy website to Cloudflare Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: cloudflare-pages-elione-sjw-production
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      SITE_DIR: ${{ runner.temp }}/elione-pages
+
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '22'
+          package-manager-cache: false
+
+      - name: Package and validate website
+        shell: bash
+        run: |
+          mkdir -p "$SITE_DIR"
+          git archive HEAD index.html styles.css script.js language.js product-dev-overrides.css reconnect-overrides.css assets |
+            tar -x -C "$SITE_DIR" \
+              --exclude=assets/audio/8bite-2025.flac \
+              --exclude=assets/home-book/camera-video-hug-bear.mp4 \
+              --exclude=assets/home-book/camera-video-smart-dog.mp4
+
+          node --check "$SITE_DIR/script.js"
+          node --check "$SITE_DIR/assets/home-book/home-book.js"
+          test -s "$SITE_DIR/index.html"
+          oversized=$(find "$SITE_DIR" -type f -size +26214400c -print)
+          if [[ -n "$oversized" ]]; then
+            echo "::error::At least one asset exceeds the Cloudflare Pages 25 MiB limit."
+            printf '%s\n' "$oversized"
+            exit 1
+          fi
+
+      - name: Publish to Cloudflare Pages
+        env:
+          CLOUDFLARE_ACCOUNT_ID: 9266a0fff6614f412e80d3719ce92343
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          WRANGLER_SEND_METRICS: 'false'
+        shell: bash
+        run: |
+          if [[ -z "$CLOUDFLARE_API_TOKEN" ]]; then
+            echo "::error::Set the repository Actions secret CLOUDFLARE_API_TOKEN to enable publishing."
+            exit 1
+          fi
+          npx --yes wrangler@4.168.0 pages deploy "$SITE_DIR" \
+            --project-name=elione-sjw --branch=main --commit-hash="$GITHUB_SHA"
+
+      - name: Verify the production homepage
+        shell: bash
+        run: |
+          for attempt in {1..8}; do
+            if curl --silent --show-error --fail --max-time 15 \
+              --output "$RUNNER_TEMP/elione-live.html" \
+              "https://elione-sjw.com/?deploy=$GITHUB_SHA" &&
+              cmp -s "$SITE_DIR/index.html" "$RUNNER_TEMP/elione-live.html"; then
+              exit 0
+            fi
+            sleep 5
+          done
+          echo "::error::The production homepage did not match the published commit."
+          exit 1
