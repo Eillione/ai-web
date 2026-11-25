@@ -17,8 +17,6 @@ jobs:
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     timeout-minutes: 20
-    env:
-      SITE_DIR: ${{ runner.temp }}/elione-pages
 
     steps:
       - uses: actions/checkout@v6
@@ -33,9 +31,11 @@ jobs:
       - name: Package and validate website
         shell: bash
         run: |
+          SITE_DIR="$RUNNER_TEMP/elione-pages"
+          printf 'SITE_DIR=%s\n' "$SITE_DIR" >> "$GITHUB_ENV"
           mkdir -p "$SITE_DIR"
           git archive HEAD index.html styles.css script.js language.js product-dev-overrides.css reconnect-overrides.css assets |
-            tar -x -C "$SITE_DIR" \
+            tar -xf - -C "$SITE_DIR" \
               --exclude=assets/audio/8bite-2025.flac \
               --exclude=assets/home-book/camera-video-hug-bear.mp4 \
               --exclude=assets/home-book/camera-video-smart-dog.mp4
