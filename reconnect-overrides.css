@@ -1066,6 +1066,18 @@ body * {
   overflow: hidden;
   background: #111;
   border: 0;
+  cursor: pointer;
+}
+
+.object-camera__screen:has(video:not([src]))::after {
+  content: "▶";
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  color: #f4fbff;
+  font-size: clamp(12px, 2vw, 26px);
+  pointer-events: none;
 }
 
 .object-camera__video {

@@ -6,7 +6,6 @@
   experience.dataset.initialized = "true";
 
   const motion = window.gsap;
-  const THREE = window.THREE;
   const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const loader = experience.querySelector("[data-book-loader]");
   const loaderBar = experience.querySelector("[data-book-loader-bar]");
@@ -14,6 +13,7 @@
   const mosaic = experience.querySelector("[data-book-mosaic]");
   const stage = experience.querySelector("[data-book-stage]");
   const video = experience.querySelector("[data-book-video]");
+  const cameraVideo = experience.querySelector("[data-camera-video]");
   const videoCutout = experience.querySelector("[data-book-video-cutout]");
   const notebookFinal = experience.querySelector("[data-book-notebook-final]");
   const pageNodes = Array.from(experience.querySelectorAll("[data-book-page]"));
@@ -21,9 +21,10 @@
   // The opening film resolves into the first browsable spread: the cart page.
   // Intro remains in the loop as the supplied personal-profile composition.
   const pageOrder = ["cart", "intro", "objects"];
-  let activePage = "intro";
+  let activePage = "cart";
   let introReady = false;
   let objectScene = null;
+  let objectSceneLoading = null;
   let introVisual = video;
   let pageTurnCleanupTimer = 0;
 
@@ -84,80 +85,15 @@
     });
   }
 
-  function collectHomeAssetUrls() {
-    const urls = new Set();
-    const home = document.querySelector("#home") || experience;
-    home.querySelectorAll("img[src], video[src], video source[src], audio[src], audio source[src]").forEach((element) => {
-      const url = element.currentSrc || element.getAttribute("src");
-      if (url) urls.add(url);
-    });
-    ["assets/backgrounds/home-section-02-monet.jpg", "assets/backgrounds/home-section-03-gaddi.jpg"].forEach((url) => urls.add(url));
-    return [...urls];
-  }
-
-  async function consumeResponse(response) {
-    if (!response.ok || !response.body) return;
-    const reader = response.body.getReader();
-    while (!(await reader.read()).done) {
-      // Reading the stream to completion allows the browser HTTP cache to retain the full asset.
-    }
-  }
-
-  function preloadImage(url) {
-    return new Promise((resolve) => {
-      const image = new Image();
-      let settled = false;
-      const finish = () => {
-        if (settled) return;
-        settled = true;
-        resolve();
-      };
-      image.onload = finish;
-      image.onerror = finish;
-      image.src = url;
-      if (image.complete) finish();
-    });
-  }
-
-  async function cacheHomeAsset(url) {
-    const isImage = /\.(?:avif|gif|jpe?g|png|svg|webp)(?:[?#]|$)/i.test(url);
-    if (isImage) return preloadImage(url);
-    try {
-      const response = await fetch(url, { cache: "force-cache", credentials: "same-origin" });
-      await consumeResponse(response);
-    } catch (_error) {
-      // file:// previews cannot fetch media; the DOM media elements still use preload="auto".
-    }
-  }
-
-  async function preloadHomeAssets() {
-    // Let the following site script create the floating homepage artwork before collecting URLs.
-    await new Promise((resolve) => window.setTimeout(resolve, 0));
-    const urls = collectHomeAssetUrls();
-    if (!urls.length) return;
-    let completed = 0;
-    let cursor = 0;
-    const worker = async () => {
-      while (cursor < urls.length) {
-        const url = urls[cursor];
-        cursor += 1;
-        await cacheHomeAsset(url);
-        completed += 1;
-        setLoadingValue(4 + (completed / urls.length) * 94);
-      }
-    };
-    await Promise.all(Array.from({ length: Math.min(4, urls.length) }, worker));
-  }
-
-  function waitForWindowLoad() {
-    if (document.readyState === "complete") return Promise.resolve();
-    return new Promise((resolve) => {
-      const fallback = window.setTimeout(resolve, 2200);
-      window.addEventListener("load", () => {
-        window.clearTimeout(fallback);
-        resolve();
-      }, { once: true });
-    });
+  async function waitForCartArtwork() {
+    const cart = pages.get("cart");
+    const artwork = Array.from(cart?.querySelectorAll(".cart-layout-reference, .cart-basket") || []);
+    let timer;
+    await Promise.race([
+      Promise.allSettled(artwork.map((image) => image.decode?.())),
+      new Promise((resolve) => { timer = window.setTimeout(resolve, 800); }),
+    ]);
+    window.clearTimeout(timer);
   }
 
   function initializeVideoCutout() {
@@ -375,10 +311,7 @@
     revealExperience();
     initializeGameLoader();
     setLoadingValue(4);
-    await Promise.all([
-      preloadHomeAssets(),
-      new Promise((resolve) => window.setTimeout(resolve, 2400)),
-    ]);
+    await waitForCartArtwork();
     setLoadingValue(100);
     introReady = true;
     experience.classList.add("is-intro-ready");
@@ -558,17 +491,11 @@
 
     experience.dataset.page = name;
     if (name === "cart") animateCartEntrance();
-    if (name === "objects") {
-      objectScene ||= createObjectScene();
-      objectScene?.resize();
-      objectScene?.resetCamera(true);
-      const cameraVideo = experience.querySelector("[data-camera-video]");
-      if (cameraVideo) {
-        if (cameraVideo.readyState === 0) cameraVideo.load();
-        cameraVideo.play().catch(() => {});
-      }
+    if (name === "objects") void prepareObjectScene();
+    if (oldName === "objects" && name !== "objects") {
+      stopCameraVideo();
+      closeObjectDialog();
     }
-    if (oldName === "objects" && name !== "objects") closeObjectDialog();
   }
 
   experience.querySelectorAll("[data-book-next]").forEach((button) => {
@@ -581,7 +508,7 @@
   function initializePageSwipe() {
     if (!stage) return;
     let gesture = null;
-    const interactiveSelector = "a, button, dialog, [data-draggable-item], [data-object-focus], .book-id-card-motion";
+    const interactiveSelector = 'a, button, [role="button"], dialog, [data-draggable-item], [data-object-focus], .book-id-card-motion';
 
     stage.addEventListener("pointerdown", (event) => {
       if (event.button !== 0 || event.target.closest(interactiveSelector)) return;
@@ -623,73 +550,52 @@
     });
   }
 
+  function stopCameraVideo() {
+    if (!cameraVideo?.hasAttribute("src")) return;
+    cameraVideo.pause();
+    cameraVideo.removeAttribute("src");
+    cameraVideo.load();
+  }
+
   function initializeCameraVideo() {
-    const cameraVideo = experience.querySelector("[data-camera-video]");
     if (!cameraVideo) return;
     const cameraScreen = cameraVideo.closest(".object-camera__screen");
-    const cameraRoot = cameraVideo.closest(".object-camera");
-    const videoSources = Array.from(cameraVideo.querySelectorAll("source"))
-      .map((source) => source.getAttribute("src"))
-      .filter(Boolean);
-    let videoIndex = Number(cameraVideo.dataset.videoIndex || 0);
-
-    const enableSound = () => {
-      cameraVideo.muted = false;
-      cameraVideo.defaultMuted = false;
-      cameraVideo.removeAttribute("muted");
-      cameraVideo.volume = 1;
-    };
-
-    const playWithSound = () => {
-      enableSound();
-      cameraVideo.play().catch(() => {});
-    };
-
-    cameraRoot?.addEventListener("pointerdown", enableSound, { capture: true });
+    const videoSources = [cameraVideo.dataset.cameraPrimarySrc, cameraVideo.dataset.cameraSecondarySrc].filter(Boolean);
+    let videoIndex = 0;
 
     const playCurrentVideo = () => {
-      cameraVideo.currentTime = 0;
+      const source = videoSources[videoIndex];
+      if (!source) return;
+      if (cameraVideo.getAttribute("src") !== source) cameraVideo.src = source;
       cameraVideo.play().catch(() => {});
-    };
-
-    const switchVideo = () => {
-      if (videoSources.length < 2) return;
-      videoIndex = (videoIndex + 1) % videoSources.length;
-      cameraVideo.dataset.videoIndex = String(videoIndex);
-      cameraVideo.src = videoSources[videoIndex];
-      cameraVideo.load();
-      cameraVideo.addEventListener("loadeddata", playCurrentVideo, { once: true });
     };
 
     experience.querySelectorAll("[data-camera-action]").forEach((button) => {
       button.addEventListener("click", () => {
-        enableSound();
         const action = button.dataset.cameraAction;
-        if (action === "switch") {
-          switchVideo();
+        if (action === "switch" && videoSources.length > 1) {
+          videoIndex = (videoIndex + 1) % videoSources.length;
+          playCurrentVideo();
         } else if (action === "pause") {
           cameraVideo.pause();
-        } else if (cameraVideo.paused) {
-          cameraVideo.play().catch(() => {});
-        } else {
-          cameraVideo.pause();
+        } else if (action === "toggle") {
+          if (cameraVideo.paused) playCurrentVideo();
+          else cameraVideo.pause();
         }
       });
     });
 
-    cameraVideo.addEventListener("click", (event) => {
-      event.preventDefault();
-      event.stopPropagation();
-      playWithSound();
-    });
     cameraScreen?.addEventListener("click", (event) => {
       event.preventDefault();
-      playWithSound();
+      playCurrentVideo();
     });
     cameraScreen?.addEventListener("keydown", (event) => {
       if (event.key !== "Enter" && event.key !== " ") return;
       event.preventDefault();
-      playWithSound();
+      playCurrentVideo();
+    });
+    window.addEventListener("hashchange", () => {
+      if (location.hash && location.hash !== "#home") stopCameraVideo();
     });
   }
 
@@ -815,7 +721,33 @@
     closeObjectDialog();
   });
 
-  function createObjectScene() {
+  async function prepareObjectScene() {
+    if (!objectScene && !objectSceneLoading) {
+      objectSceneLoading = (async () => {
+        if (!window.THREE) {
+          await new Promise((resolve, reject) => {
+            const script = document.createElement("script");
+            script.src = "assets/vendor/three-r149.min.js";
+            script.onload = resolve;
+            script.onerror = () => {
+              script.remove();
+              reject(new Error("Three.js could not be loaded"));
+            };
+            document.head.append(script);
+          });
+        }
+        objectScene = createObjectScene(window.THREE);
+      })().catch(() => {
+        // The object's HTML navigation and camera remain available without WebGL.
+      }).finally(() => { objectSceneLoading = null; });
+    }
+    await objectSceneLoading;
+    if (activePage !== "objects" || !objectScene) return;
+    objectScene.resize();
+    objectScene.resetCamera(true);
+  }
+
+  function createObjectScene(THREE) {
     const canvas = experience.querySelector("[data-book-object-canvas]");
     if (!canvas || !THREE) return null;
 

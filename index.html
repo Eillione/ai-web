@@ -12,12 +12,9 @@
       document.documentElement.dataset.initialRoute = (location.hash || "#home").slice(1);
     </script>
     <link rel="icon" href='data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"%3E%3Crect width="64" height="64" rx="14" fill="%2311110f"/%3E%3Ctext x="32" y="43" text-anchor="middle" font-family="Arial" font-size="34" font-weight="800" fill="white"%3EE%3C/text%3E%3C/svg%3E' />
-    <link rel="preload" as="image" href="assets/backgrounds/home-section-02-monet.jpg" />
-    <link rel="preload" as="image" href="assets/backgrounds/home-section-03-gaddi.jpg" />
-    <link rel="preload" as="image" href="assets/typewriter/typewriter-machine-generated.png" />
-    <link rel="stylesheet" href="styles.css?v=20261115-reconnect-1" />
+    <link rel="stylesheet" href="styles.css?v=20261125-first-load" />
     <link rel="stylesheet" href="product-dev-overrides.css?v=20261123-iteration-12" />
-    <link rel="stylesheet" href="reconnect-overrides.css?v=20261124-market-table-34" />
+    <link rel="stylesheet" href="reconnect-overrides.css?v=20261125-camera-on-demand" />
   </head>
   <body>
     <div class="site-grain" aria-hidden="true"></div>
@@ -90,11 +87,11 @@
                   <a href="#about"><span>关于我</span></a>
                 </nav>
               </header>
-              <section class="book-spread book-spread--intro is-active" data-book-page="intro" aria-label="书本开场">
+              <section class="book-spread book-spread--intro" data-book-page="intro" aria-label="书本开场" aria-hidden="true" inert>
                 <div class="book-intro-media">
                   <div class="book-notebook-final" data-book-notebook-final aria-hidden="true">
                     <div class="book-notebook-canvas">
-                      <img class="book-notebook-base" src="assets/home-book/intro-composite.png" alt="Elione 个人档案记事本首页" draggable="false" />
+                      <img class="book-notebook-base" src="assets/home-book/intro-composite.webp" alt="Elione 个人档案记事本首页" loading="lazy" decoding="async" draggable="false" />
                       <nav class="book-tab-hotspots" aria-label="彩色标签作品目录">
                         <a class="book-tab-hotspot book-tab-hotspot--research" href="#content-analysis" aria-label="进入产品研究思辨板块"><span>产品研究思辨</span></a>
                         <a class="book-tab-hotspot book-tab-hotspot--product" href="#product-dev" aria-label="进入跨境产品开发板块"><span>跨境产品开发</span></a>
@@ -102,7 +99,7 @@
                         <a class="book-tab-hotspot book-tab-hotspot--graphic" href="#graphic-design" aria-label="进入平面设计板块"><span>平面设计</span></a>
                       </nav>
                       <div class="book-id-card-motion" aria-label="Elione 个人工牌">
-                        <img class="book-id-card" src="assets/about/decor/id-card.png" alt="Elione 个人工牌" draggable="false" />
+                        <img class="book-id-card" src="assets/about/decor/id-card.png" alt="Elione 个人工牌" loading="lazy" decoding="async" draggable="false" />
                       </div>
                     </div>
                   </div>
@@ -113,18 +110,18 @@
                 </nav>
               </section>
 
-              <section class="book-spread book-spread--cart" data-book-page="cart" aria-label="可拖动物品购物篮页面" aria-hidden="true">
-                <img class="cart-layout-reference" src="assets/home-book/cart-layout-reference.png" alt="" aria-hidden="true" draggable="false" />
+              <section class="book-spread book-spread--cart is-active" data-book-page="cart" aria-label="可拖动物品购物篮页面">
+                <img class="cart-layout-reference" src="assets/home-book/cart-layout-reference.webp" alt="" aria-hidden="true" fetchpriority="high" draggable="false" />
                 <div class="binder-page binder-page--right">
                   <div class="cart-stage" data-cart-stage>
-                    <img class="cart-basket" src="assets/home-book/chrome-basket-reference.png" alt="银色铬金属网格购物篮" draggable="false" />
-                    <img class="cart-item cart-item--storybook" src="assets/home-book/cart-items/storybook.png" alt="故事绘画书" data-draggable-item draggable="false" />
-                    <img class="cart-item cart-item--lunch" src="assets/home-book/cart-items/lunch-bag.png" alt="粉色午餐包" data-draggable-item draggable="false" />
-                    <img class="cart-item cart-item--backpack" src="assets/home-book/cart-items/backpack.png" alt="儿童背包" data-draggable-item draggable="false" />
-                    <img class="cart-item cart-item--dog" src="assets/home-book/cart-items/plush-dog.png" alt="毛绒狗玩具" data-draggable-item draggable="false" />
-                    <img class="cart-item cart-item--princess" src="assets/home-book/cart-items/princess-kit.png" alt="公主手作套装" data-draggable-item draggable="false" />
-                    <img class="cart-item cart-item--doll" src="assets/home-book/cart-items/doll-fabric.png" alt="玩偶布艺套装" data-draggable-item draggable="false" />
-                    <img class="cart-item cart-item--emotion" src="assets/home-book/cart-items/emotion-book.png" alt="情绪学习绘本" data-draggable-item draggable="false" />
+                    <img class="cart-basket" src="assets/home-book/chrome-basket-reference.webp" alt="银色铬金属网格购物篮" draggable="false" />
+                    <img class="cart-item cart-item--storybook" src="assets/home-book/cart-items/storybook.webp" alt="故事绘画书" data-draggable-item draggable="false" />
+                    <img class="cart-item cart-item--lunch" src="assets/home-book/cart-items/lunch-bag.webp" alt="粉色午餐包" data-draggable-item draggable="false" />
+                    <img class="cart-item cart-item--backpack" src="assets/home-book/cart-items/backpack.webp" alt="儿童背包" data-draggable-item draggable="false" />
+                    <img class="cart-item cart-item--dog" src="assets/home-book/cart-items/plush-dog.webp" alt="毛绒狗玩具" data-draggable-item draggable="false" />
+                    <img class="cart-item cart-item--princess" src="assets/home-book/cart-items/princess-kit.webp" alt="公主手作套装" data-draggable-item draggable="false" />
+                    <img class="cart-item cart-item--doll" src="assets/home-book/cart-items/doll-fabric.webp" alt="玩偶布艺套装" data-draggable-item draggable="false" />
+                    <img class="cart-item cart-item--emotion" src="assets/home-book/cart-items/emotion-book.webp" alt="情绪学习绘本" data-draggable-item draggable="false" />
                   </div>
                   <p class="cart-instruction">（可以尝试拖动物品加入购物车）</p>
                   <nav class="cart-tab-links" aria-label="购物篮页板块目录">
@@ -145,15 +142,15 @@
                 <div class="object-layout-frame">
                   <p class="object-camera-quote">In the middle of every difficulty lies opportunity.<br />Welcome to my world.</p>
                   <a class="object-printer-link" href="#contact" aria-label="打印联系方式并跳转到联系板块">
-                    <img src="assets/typewriter/typewriter-machine-generated.png" alt="蓝色打字机" draggable="false" />
+                    <img src="assets/typewriter/typewriter-machine-generated.png" alt="蓝色打字机" loading="lazy" decoding="async" draggable="false" />
                     <span>CONTACT<br /><small>打印联系方式 ↓</small></span>
                   </a>
                   <div class="object-camera" aria-label="情绪变化熊互动相机">
                     <div class="object-camera__screen" role="button" tabindex="0" aria-label="播放视频并开启声音">
-                      <video class="object-camera__video" data-camera-video data-video-index="0" playsinline muted loop preload="metadata">
-                        <source src="assets/content/product-development/ai/videos/emotion-hug-bear.m4v" type="video/mp4" />
-                        <source src="assets/content/product-development/ai/videos/smart-dialog-dog.m4v" type="video/mp4" />
-                      </video>
+                      <video class="object-camera__video" data-camera-video
+                        data-camera-primary-src="assets/content/product-development/ai/videos/emotion-hug-bear.m4v"
+                        data-camera-secondary-src="assets/content/product-development/ai/videos/smart-dialog-dog.m4v"
+                        playsinline loop preload="none"></video>
                     </div>
                     <img class="object-camera__frame" src="assets/home-book/camera-frame.png" alt="银色数码相机，屏幕内播放抱抱熊与智能对话小狗互动视频" draggable="false" />
                     <p class="object-camera__play-label" aria-hidden="true">play with me!</p>
@@ -199,7 +196,7 @@
             </span>
             <span class="home-cd-player__copy"><strong>8BITE — 2025</strong><small data-home-cd-status>PLAYING · VINYL</small></span>
           </button>
-          <audio data-home-cd-audio src="assets/audio/8bite-2025.m4a" loop preload="auto"></audio>
+          <audio data-home-cd-audio src="assets/audio/8bite-2025.m4a" loop preload="none"></audio>
         </div>
         <div class="float-field" data-floating-gallery></div>
         <a class="hero-learn-link" href="#content-analysis" aria-label="产品研究思辨">Time tries truth.</a>
@@ -308,7 +305,7 @@
               <header><p>DIY / 06</p><h4>分阶剪纸书套装</h4></header>
               <div class="product-project-lead product-project-lead--diy-video">
                 <button class="product-video-entry product-video-entry--small" type="button" data-product-video-src="assets/content/product-development/diy/videos/papercut-kit.m4v" data-product-video-title="分阶剪纸书套装" aria-label="播放产品视频：分阶剪纸书套装">
-                  <video muted playsinline preload="metadata" aria-hidden="true" tabindex="-1"><source src="assets/content/product-development/diy/videos/papercut-kit.m4v" type="video/mp4" /></video>
+                  <video muted playsinline preload="none" aria-hidden="true" tabindex="-1"><source src="assets/content/product-development/diy/videos/papercut-kit.m4v" type="video/mp4" /></video>
                   <span><b>播放产品视频</b><small>分阶剪纸书套装</small></span>
                 </button>
                 <p class="product-project-summary"><strong class="product-project-summary-lead">#4,097 玩具和游戏 · BS榜单 Top 16 儿童纸艺套装 · 亚马逊推荐精选黑标</strong>剪纸套装产品线以儿童剪刀技能发展为核心，从"精细动作能力培养"而非"单一主题"出发进行产品规划。围绕3-6岁儿童精细动作发展规律，以4个循序渐进的学习阶段设计由易到难的成长路径，从直线剪、曲线剪、形状剪逐步过渡到折叠、粘贴、场景搭建等综合创作能力，让孩子在循序渐进的挑战中建立动手能力和创作信心。同年龄段需要的四合一技能培养方法远不止于剪！孩子们通过剪、折、贴甚至撕——这是幼儿学习的基础活动，实现教育价值与趣味体验的结合。未来，剪纸套装产品线将围绕"主题拓展、玩法优化迭代"方向持续开品。</p>
@@ -358,7 +355,7 @@
               <header><p>DIY / 05</p><h4>Storybook故事绘画书</h4></header>
               <div class="product-project-lead product-project-lead--diy-video">
                 <button class="product-video-entry product-video-entry--small" type="button" data-product-video-src="assets/content/product-development/diy/videos/storybook-writing-kit.m4v" data-product-video-title="Storybook故事绘画书" aria-label="播放产品视频：Storybook故事绘画书">
-                  <video muted playsinline preload="metadata" aria-hidden="true" tabindex="-1"><source src="assets/content/product-development/diy/videos/storybook-writing-kit.m4v" type="video/mp4" /></video>
+                  <video muted playsinline preload="none" aria-hidden="true" tabindex="-1"><source src="assets/content/product-development/diy/videos/storybook-writing-kit.m4v" type="video/mp4" /></video>
                   <span><b>播放产品视频</b><small>Storybook故事绘画书</small></span>
                 </button>
                 <p class="product-project-summary"><strong class="product-project-summary-lead">项目注释：BS榜单 #21 in Scrapbooking Kits · 评分 4.8</strong><strong class="product-project-summary-lead product-project-summary-lead--secondary">亚马逊推荐精选黑标</strong>绘画书产品线面向6–10岁儿童，以创意思维和写作能力培养为核心，构建一套循序渐进的故事创作体系。产品以绘画作为兴趣引入，通过主题创作激发孩子的想象力，再结合主题引导卡、主题单词卡及写作描述学习卡片，为孩子提供丰富的创作素材和表达支架，帮助他们逐步建立完整的写作思维。 产品遵循"画—词—句—文"的成长路径：从绘制故事场景、激发创意开始，逐步积累主题词汇，学习人物、场景、动作及情绪的描述方式，再过渡到句子组织和完整故事创作，让孩子在创作过程中自然掌握观察、联想、逻辑组织和语言表达能力。这种由兴趣驱动、循序渐进的学习方式，有效降低了写作难度，帮助孩子突破"不知道写什么、不会组织内容、表达不够丰富"等常见问题，建立写作兴趣与表达自信。</p>
@@ -398,11 +395,11 @@
                 <p><strong>寓教于乐</strong>露西不仅可爱，还能帮助孩子练习说话。只需发出“学说”的指令，露西就能重复孩子说的话，以轻松有趣的方式促进语言发展、增强自信心和沟通能力。</p>
                 <p><strong>语音控制，乐趣无穷</strong>语音控制让玩耍时光充满魔力。说“去吃东西”，露西就会发出可爱的舔舐声。告诉她“开心点”，她就会高兴地摇尾巴。每个指令都能激发孩子的想象力、角色扮演能力和爱心行为。</p>
               </div>
-              <div class="product-project-gallery product-project-gallery--equal"><figure class="product-image--full-row product-image--centered-board"><img loading="lazy" src="assets/content/product-development/ai/01-lucy/joycat-lucy-toby-smart-pet.png" alt="JoyCat Lucy / Toby 智能宠物项目展示" /></figure><figure><img loading="lazy" src="assets/content/product-development/ai/01-lucy/01.jpg" alt="Lucy 智能宠物项目图片 1" /></figure><figure><img loading="lazy" src="assets/content/product-development/ai/01-lucy/02.png" alt="Lucy 智能宠物项目图片 2" /></figure><button class="product-video-entry product-video-entry--equal" type="button" data-product-video-src="assets/content/product-development/ai/videos/smart-dialog-dog.m4v" data-product-video-title="智能对话小狗" aria-label="播放产品视频：智能对话小狗"><video muted playsinline preload="metadata" aria-hidden="true" tabindex="-1"><source src="assets/content/product-development/ai/videos/smart-dialog-dog.m4v" type="video/mp4" /></video><span><b>播放产品视频</b><small>智能对话小狗</small></span></button><figure class="product-image--full-row product-image--review"><img loading="lazy" src="assets/content/product-development/ai/01-lucy/03.jpg" alt="Lucy / Toby 用户评价" /></figure></div>
+              <div class="product-project-gallery product-project-gallery--equal"><figure class="product-image--full-row product-image--centered-board"><img loading="lazy" src="assets/content/product-development/ai/01-lucy/joycat-lucy-toby-smart-pet.png" alt="JoyCat Lucy / Toby 智能宠物项目展示" /></figure><figure><img loading="lazy" src="assets/content/product-development/ai/01-lucy/01.jpg" alt="Lucy 智能宠物项目图片 1" /></figure><figure><img loading="lazy" src="assets/content/product-development/ai/01-lucy/02.png" alt="Lucy 智能宠物项目图片 2" /></figure><button class="product-video-entry product-video-entry--equal" type="button" data-product-video-src="assets/content/product-development/ai/videos/smart-dialog-dog.m4v" data-product-video-title="智能对话小狗" aria-label="播放产品视频：智能对话小狗"><video muted playsinline preload="none" aria-hidden="true" tabindex="-1"><source src="assets/content/product-development/ai/videos/smart-dialog-dog.m4v" type="video/mp4" /></video><span><b>播放产品视频</b><small>智能对话小狗</small></span></button><figure class="product-image--full-row product-image--review"><img loading="lazy" src="assets/content/product-development/ai/01-lucy/03.jpg" alt="Lucy / Toby 用户评价" /></figure></div>
             </article>
-            <article class="product-project product-project--puppy-care"><header><p>AI / 02</p><h4>电子小狗过家家玩具</h4></header><div class="product-project-lead"><button class="product-video-entry product-video-entry--small" type="button" data-product-video-src="assets/content/product-development/ai/videos/puppy-care-roleplay.m4v" data-product-video-title="过家家" aria-label="播放产品视频：过家家"><video muted playsinline preload="metadata" aria-hidden="true" tabindex="-1"><source src="assets/content/product-development/ai/videos/puppy-care-roleplay.m4v" type="video/mp4" /></video><span><b>播放产品视频</b><small>过家家</small></span></button><p class="product-project-summary">项目注释：在亚马逊互动玩具的大盘中，占比最高的形态就是仙人掌玩偶以及过家家套装。过家家套装主要走礼品属性，爆发在12月。主要调整了毛绒品质、音源内容以及狗屋形态（市场原来的形态是飞机箱），狗屋的模具以及品质都做了更新，走高端礼品路线。</p></div><div class="product-project-gallery"><figure class="product-image--full-row product-image--centered-board"><img loading="lazy" src="assets/content/product-development/ai/02-role-play/puppy-care-playset-2026.jpg" alt="电子过家家智能玩具项目展示" /></figure></div></article>
-            <article class="product-project product-project--compact-title product-project--cactus"><header><p>AI / 03</p><h4>仙人掌摇铃电子玩具</h4></header><div class="product-project-lead"><button class="product-video-entry product-video-entry--small" type="button" data-product-video-src="assets/content/product-development/ai/videos/cactus-listing.m4v" data-product-video-title="仙人掌" aria-label="播放产品视频：仙人掌"><video muted playsinline preload="metadata" aria-hidden="true" tabindex="-1"><source src="assets/content/product-development/ai/videos/cactus-listing.m4v" type="video/mp4" /></video><span><b>播放产品视频</b><small>仙人掌</small></span></button><p class="product-project-summary">项目注释：面向0+低龄儿童的多感官互动需求，将传统唱跳仙人掌升级为“玩偶＋摇铃/沙锤”的组合体验。产品通过音乐播放、语音跟读、摆动唱跳和按键触发形成即时反馈，并把可抓握的沙锤配件融入安抚、节奏感与亲子互动场景；在保留低门槛操作的同时，强化听觉刺激、动作追视与陪伴属性。</p></div><div class="product-project-gallery"><figure class="product-image--full-row product-image--centered-board"><img loading="lazy" src="assets/content/product-development/ai/03-other/cactus-interactive-2026.jpg" alt="0+yrs 仙人掌摇铃电子互动玩具项目展示" /></figure></div></article>
-            <article class="product-project product-project--emotion-bear"><header><p>AI / 04</p><h4>情绪互动抱抱熊</h4></header><div class="product-project-lead"><button class="product-video-entry product-video-entry--small" type="button" data-product-video-src="assets/content/product-development/ai/videos/emotion-hug-bear.m4v" data-product-video-title="情绪互动抱抱熊" aria-label="播放产品视频：情绪互动抱抱熊"><video muted playsinline preload="metadata" aria-hidden="true" tabindex="-1"><source src="assets/content/product-development/ai/videos/emotion-hug-bear.m4v" type="video/mp4" /></video><span><b>播放产品视频</b><small>情绪互动抱抱熊</small></span></button><p class="product-project-summary">项目注释：围绕儿童情绪识别、陪伴安抚与照护角色扮演开发的互动抱抱熊。产品用四色灯光对应快乐、安抚、平静与生气等情绪状态，孩子可通过按压手掌触发音乐、使用奶瓶触发饮水音效，并在拥抱、喂养和照顾过程中获得即时反馈。开发重点是把情绪表达转化为无需联网、入口简单的多感官互动，让低龄儿童在重复游戏中练习识别情绪、表达感受和建立关怀行为。</p></div><div class="product-project-gallery product-project-gallery--emotion-bear"><figure class="product-image--full-row product-image--centered-board"><img loading="lazy" src="assets/content/product-development/ai/04-emotion-bear-board.png" alt="情绪互动抱抱熊产品功能与互动场景展示" /></figure></div></article>
+            <article class="product-project product-project--puppy-care"><header><p>AI / 02</p><h4>电子小狗过家家玩具</h4></header><div class="product-project-lead"><button class="product-video-entry product-video-entry--small" type="button" data-product-video-src="assets/content/product-development/ai/videos/puppy-care-roleplay.m4v" data-product-video-title="过家家" aria-label="播放产品视频：过家家"><video muted playsinline preload="none" aria-hidden="true" tabindex="-1"><source src="assets/content/product-development/ai/videos/puppy-care-roleplay.m4v" type="video/mp4" /></video><span><b>播放产品视频</b><small>过家家</small></span></button><p class="product-project-summary">项目注释：在亚马逊互动玩具的大盘中，占比最高的形态就是仙人掌玩偶以及过家家套装。过家家套装主要走礼品属性，爆发在12月。主要调整了毛绒品质、音源内容以及狗屋形态（市场原来的形态是飞机箱），狗屋的模具以及品质都做了更新，走高端礼品路线。</p></div><div class="product-project-gallery"><figure class="product-image--full-row product-image--centered-board"><img loading="lazy" src="assets/content/product-development/ai/02-role-play/puppy-care-playset-2026.jpg" alt="电子过家家智能玩具项目展示" /></figure></div></article>
+            <article class="product-project product-project--compact-title product-project--cactus"><header><p>AI / 03</p><h4>仙人掌摇铃电子玩具</h4></header><div class="product-project-lead"><button class="product-video-entry product-video-entry--small" type="button" data-product-video-src="assets/content/product-development/ai/videos/cactus-listing.m4v" data-product-video-title="仙人掌" aria-label="播放产品视频：仙人掌"><video muted playsinline preload="none" aria-hidden="true" tabindex="-1"><source src="assets/content/product-development/ai/videos/cactus-listing.m4v" type="video/mp4" /></video><span><b>播放产品视频</b><small>仙人掌</small></span></button><p class="product-project-summary">项目注释：面向0+低龄儿童的多感官互动需求，将传统唱跳仙人掌升级为“玩偶＋摇铃/沙锤”的组合体验。产品通过音乐播放、语音跟读、摆动唱跳和按键触发形成即时反馈，并把可抓握的沙锤配件融入安抚、节奏感与亲子互动场景；在保留低门槛操作的同时，强化听觉刺激、动作追视与陪伴属性。</p></div><div class="product-project-gallery"><figure class="product-image--full-row product-image--centered-board"><img loading="lazy" src="assets/content/product-development/ai/03-other/cactus-interactive-2026.jpg" alt="0+yrs 仙人掌摇铃电子互动玩具项目展示" /></figure></div></article>
+            <article class="product-project product-project--emotion-bear"><header><p>AI / 04</p><h4>情绪互动抱抱熊</h4></header><div class="product-project-lead"><button class="product-video-entry product-video-entry--small" type="button" data-product-video-src="assets/content/product-development/ai/videos/emotion-hug-bear.m4v" data-product-video-title="情绪互动抱抱熊" aria-label="播放产品视频：情绪互动抱抱熊"><video muted playsinline preload="none" aria-hidden="true" tabindex="-1"><source src="assets/content/product-development/ai/videos/emotion-hug-bear.m4v" type="video/mp4" /></video><span><b>播放产品视频</b><small>情绪互动抱抱熊</small></span></button><p class="product-project-summary">项目注释：围绕儿童情绪识别、陪伴安抚与照护角色扮演开发的互动抱抱熊。产品用四色灯光对应快乐、安抚、平静与生气等情绪状态，孩子可通过按压手掌触发音乐、使用奶瓶触发饮水音效，并在拥抱、喂养和照顾过程中获得即时反馈。开发重点是把情绪表达转化为无需联网、入口简单的多感官互动，让低龄儿童在重复游戏中练习识别情绪、表达感受和建立关怀行为。</p></div><div class="product-project-gallery product-project-gallery--emotion-bear"><figure class="product-image--full-row product-image--centered-board"><img loading="lazy" src="assets/content/product-development/ai/04-emotion-bear-board.png" alt="情绪互动抱抱熊产品功能与互动场景展示" /></figure></div></article>
           </section>
 
           <section class="product-category product-category--iteration" aria-labelledby="product-iteration-title">
@@ -1083,10 +1080,9 @@
       </section>
     </main>
 
-    <script src="assets/vendor/three-r149.min.js"></script>
     <script src="assets/vendor/gsap-3.12.5.min.js"></script>
-    <script src="assets/home-book/home-book.js?v=20261124-home-preload-14"></script>
-    <script src="script.js?v=20261124-route-preload-19"></script>
+    <script src="assets/home-book/home-book.js?v=20261125-camera-on-demand"></script>
+    <script src="script.js?v=20261125-first-load"></script>
     <script src="language.js?v=20261124-research-intro-11"></script>
   </body>
 </html>

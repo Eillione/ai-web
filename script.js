@@ -169,7 +169,7 @@ function createFloatingItems() {
     const image = document.createElement("img");
     image.src = work.src;
     image.alt = "";
-    image.loading = "eager";
+    image.loading = "lazy";
     image.decoding = "async";
     item.append(image);
 
@@ -772,11 +772,24 @@ function initializeProductVideoViewer() {
   const closeButton = viewer.querySelector(".product-video-lightbox__close");
   let activeTrigger = null;
 
+  const previewObserver = typeof IntersectionObserver === "function"
+    ? new IntersectionObserver((entries, observer) => {
+        for (const entry of entries) {
+          if (!entry.isIntersecting) continue;
+          entry.target.preload = "metadata";
+          entry.target.load();
+          observer.unobserve(entry.target);
+        }
+      }, { rootMargin: "200px" })
+    : null;
+
   triggers.forEach((trigger) => {
     const preview = trigger.querySelector("video");
-    preview?.addEventListener("loadedmetadata", () => {
+    if (!preview) return;
+    preview.addEventListener("loadedmetadata", () => {
       if (Number.isFinite(preview.duration) && preview.duration > .2) preview.currentTime = .1;
     }, { once: true });
+    previewObserver?.observe(preview);
   });
 
   const closeViewer = () => {
@@ -1861,7 +1874,6 @@ function initializeHomeCdPlayer() {
   const audio = player?.querySelector("[data-home-cd-audio]");
   if (!player || !toggle || !status || !audio) return;
 
-  let wantsMusic = true;
   audio.volume = 0.32;
 
   const setVisualState = (playing, message) => {
@@ -1872,7 +1884,6 @@ function initializeHomeCdPlayer() {
   };
 
   const playMusic = async () => {
-    wantsMusic = true;
     try {
       await audio.play();
       setVisualState(true, "PLAYING · VINYL");
@@ -1882,7 +1893,6 @@ function initializeHomeCdPlayer() {
   };
 
   const pauseMusic = () => {
-    wantsMusic = false;
     audio.pause();
     setVisualState(false);
   };
@@ -1892,20 +1902,11 @@ function initializeHomeCdPlayer() {
     else playMusic();
   });
 
-  document.querySelector('[data-game-control="start"]')?.addEventListener("pointerdown", () => {
-    if (wantsMusic) playMusic();
-  });
-
-  document.addEventListener("pointerdown", (event) => {
-    if (!wantsMusic || event.target.closest("[data-home-cd-toggle]")) return;
-    if (audio.paused) playMusic();
-  }, { capture: true });
-
   audio.addEventListener("play", () => setVisualState(true, "PLAYING · VINYL"));
   audio.addEventListener("pause", () => setVisualState(false));
   audio.addEventListener("error", () => setVisualState(false, "音乐文件加载失败"));
 
-  window.requestAnimationFrame(() => playMusic());
+  setVisualState(false, "点击播放 · 8BITE — 2025");
 }
 
 function initializePrinterTransition() {
@@ -2063,65 +2064,6 @@ function showRoute() {
   if (route === "about") window.requestAnimationFrame(() => aboutExperience?.playIntro());
 }
 
-function initializeRouteAssetPreloader() {
-  const routeSelectors = ["#product-dev", "#textile-design"];
-  let started = false;
-  let homeReady = Boolean(document.querySelector("[data-book-loader].is-complete, [data-book-loader][hidden]"));
-
-  const collectUrls = () => {
-    const urls = new Set();
-    routeSelectors.forEach((selector) => {
-      document.querySelectorAll(`${selector} img[src], ${selector} video[src], ${selector} video source[src], ${selector} audio[src], ${selector} audio source[src]`).forEach((element) => {
-        const url = element.currentSrc || element.getAttribute("src");
-        if (url) urls.add(url);
-      });
-    });
-    return [...urls];
-  };
-
-  const consumeResponse = async (response) => {
-    if (!response.ok || !response.body) return;
-    const reader = response.body.getReader();
-    while (!(await reader.read()).done) {
-      // Drain progressively so large images and videos are cached without holding a full Blob in memory.
-    }
-  };
-
-  const prefetchRoutes = async () => {
-    const urls = collectUrls();
-    let cursor = 0;
-    const worker = async () => {
-      while (cursor < urls.length) {
-        const url = urls[cursor];
-        cursor += 1;
-        try {
-          const response = await fetch(url, { cache: "force-cache", credentials: "same-origin" });
-          await consumeResponse(response);
-        } catch (_error) {
-          // Local file previews may reject fetch; regular navigation still loads the resource normally.
-        }
-      }
-    };
-    await Promise.all(Array.from({ length: Math.min(3, urls.length) }, worker));
-    document.documentElement.dataset.detailAssetsCached = "true";
-  };
-
-  const maybeStart = () => {
-    const route = window.location.hash.slice(1) || "home";
-    if (started || !homeReady || route !== "home") return;
-    started = true;
-    const schedule = window.requestIdleCallback || ((callback) => window.setTimeout(callback, 500));
-    schedule(() => { void prefetchRoutes(); }, { timeout: 1800 });
-  };
-
-  window.addEventListener("homearchive:ready", () => {
-    homeReady = true;
-    maybeStart();
-  }, { once: true });
-  window.addEventListener("hashchange", maybeStart);
-  maybeStart();
-}
-
 envelopeStage.addEventListener("mouseenter", activateTypewriter);
 envelopeStage.addEventListener("mouseleave", () => {
   if (!state.envelopeInView) envelopeStage.classList.remove("is-open");
@@ -2153,7 +2095,6 @@ initializeProductLineJumps();
 initializeProductProjectDirectory();
 initializeGraphicImageViewer();
 initializeProductVideoViewer();
-initializeRouteAssetPreloader();
 initializeMotionReveals();
 initializeTiltInteractions();
 showRoute();
