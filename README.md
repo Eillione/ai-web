@@ -1,4 +1,4 @@
-# Elione Personal Website
+# lvy Personal Website
 
 静态个人网站。建议通过本地静态服务器预览，例如 `python3 -m http.server 5173`。
 

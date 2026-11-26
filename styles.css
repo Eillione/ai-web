@@ -7238,7 +7238,7 @@ body.detail-view .home-burn-effect {
 }
 
 .typewriter-paper::before {
-  content: "elione.2026";
+  content: "lvy.2026";
   position: absolute;
   top: 18px;
   left: 24px;
@@ -12284,6 +12284,15 @@ body.detail-view .site-header .nav-links { display: grid !important; }
 .book-notebook-canvas { overflow: visible; }
 
 .book-notebook-base { z-index: 1; }
+
+.book-notebook-name {
+  position: absolute;
+  z-index: 2;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
 
 .book-id-card-motion {
   --card-rx: 0deg;
